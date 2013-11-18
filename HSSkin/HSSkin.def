@@ -1,0 +1,12 @@
+; HSSkin.def : Declares the module parameters for the DLL.
+
+LIBRARY      "HSSkin"
+
+EXPORTS
+	InitEntity
+	UninitEntity
+	GetServiceObject
+	OnFrameNotify
+    ; Explicit exports can go here
+SECTIONS
+	._hsskin_data	READ WRITE SHARED    

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="GB2312"?>
+<root>
+	<FontTemplet name="ClassicalFont"/>
+	<ClassicalFont>
+		<Group name="">
+			<ID2002  name="报价抬头字段列" FontName="宋体" FontHeight="16" FontWeight="FONT_NORMAL" />
+			<ID2003  name="报价证券名称" FontName="宋体" FontHeight="16" FontWeight="FONT_NORMAL" />
+			<ID2004  name="报价证券代码" FontName="system" FontHeight="16" FontWeight="FONT_BOLD" />
+			<ID2005  name="行情更新.高亮文本" FontName="system" FontHeight="16" FontWeight="FONT_BOLD" />
+			<ID2006  name="报价动态文本" FontName="system" FontHeight="12" FontWeight="FONT_BOLD" />
+			<ID2007  name="报价固定文本" FontName="system" FontHeight="12" FontWeight="FONT_BOLD" />
+			<ID2008  name="状态栏数据文本" FontName="宋体" FontHeight="14" FontWeight="FONT_BOLD" />
+			<ID2009  name="Tab标签文本" FontName="宋体" FontHeight="12" FontWeight="FONT_NORMAL" />
+			<ID2010  name="F10资讯内容" FontName="宋体" FontHeight="16" FontWeight="FONT_NORMAL" />
+			<ID2011  name="图元横坐标" FontName="System" FontHeight="12" FontWeight="FONT_BOLD" />
+			<ID2012  name="图元纵坐标" FontName="System" FontHeight="12" FontWeight="FONT_BOLD" />
+			<ID2013  name="浮动框字段文本" FontName="宋体" FontHeight="16" FontWeight="FONT_NORMAL" />
+			<ID2014  name="浮动框动态文本" FontName="System" FontHeight="16" FontWeight="FONT_BOLD" />
+			<ID2015  name="图元顶部标题" FontName="宋体" FontHeight="12" FontWeight="FONT_NORMAL" />
+			<ID2016  name="图元内文本" FontName="Arial" FontHeight="12" FontWeight="FONT_NORMAL" />
+			<ID2017  name="日线周期" FontName="宋体" FontHeight="12" FontWeight="FONT_BOLD"/>
+			<ID2018  name="TIP提示标题" FontName="Arial" FontHeight="12" FontWeight="FONT_BOLD" />
+			<ID2019  name="TIP提示文本" FontName="Arial" FontHeight="12" FontWeight="FONT_NORMAL" />
+			<ID2020  name="右图字段名称" FontName="宋体" FontHeight="16" FontWeight="FONT_NORMAL"/>
+			<ID2021  name="右图.分价.明细证券名称" FontName="宋体" FontHeight="19" FontWeight="FONT_BOLD" />
+			<ID2022  name="右图.分价.明细证券代码" FontName="宋体" FontHeight="19" FontWeight="FONT_BOLD" />
+			<ID2023  name="右图配财值页文本" FontName="宋体" FontHeight="14" FontWeight="FONT_NORMAL" />
+			<ID2024  name="右图动态文本" FontName="System" FontHeight="13" FontWeight="FONT_BOLD" FontItalic="" OutPre="1" Pitch="0" ChartSet="134"/>
+			<ID2025  name="大盘右图指数名称" FontName="宋体" FontHeight="16" FontWeight="FONT_NORMAL" />
+			<ID2026  name="右图单位名称" FontName="宋体" FontHeight="14" FontWeight="FONT_BOLD" />
+			<ID2027  name="右图期货成交类型" FontName="宋体" FontHeight="14" FontWeight="FONT_BOLD" />
+			<ID2028  name="买卖队列标题" FontName="宋体" FontHeight="12" FontWeight="FONT_NORMAL" />
+			<ID2029  name="成本分布云文本" FontName="宋体" FontHeight="14" FontWeight="FONT_NORMAL"/>
+			<ID2030  name="明细表时间列" FontName="System" FontHeight="16" FontWeight="FONT_BOLD"/>
+			<ID2031  name="分价表成交价列" FontName="System" FontHeight="16" FontWeight="FONT_BOLD"/>
+			<ID2032  name="打印标题文本" FontName="宋体" FontHeight="14" FontWeight="FONT_NORMAL"/>
+			<ID2033  name="打印页脚文本" FontName="宋体" FontHeight="12" FontWeight="FONT_NORMAL"/>
+			<ID2034  name="跑马灯数据文本" FontName="宋体" FontHeight="14" FontWeight="FONT_NORMAL"/>
+			<ID2035  name="图层标签页文本" FontName="宋体" FontHeight="12" FontWeight="FONT_NORMAL"/>		
+			<ID2036  name="图元标题框文本" FontName="宋体" FontHeight="12" FontWeight="FONT_NORMAL"/>	
+			<ID2037  name="交易图元文本" FontName="宋体" FontHeight="12" FontWeight="FONT_NORMAL" />
+		</Group>
+	</ClassicalFont>
+</root>

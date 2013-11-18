@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<root>
+	<KeyboardOrderType>
+		<OrderType id="股票风格">
+	  </OrderType>
+	  <OrderType id="期货风格">
+	  </OrderType>
+	  <OrderType id="港股风格">
+	  </OrderType>
+	  <OrderType id="外汇风格">
+	  </OrderType>
+	  <OrderType id="金阳光">
+	 			<Item MarketType="1101" MarketName="上证Ａ股"/>
+	 			<Item MarketType="1102" MarketName="上证Ｂ股"/>
+	 			<Item MarketType="1201" MarketName="深证A股"/>
+	 			<Item MarketType="1202" MarketName="深证B股"/>
+	 			<Item MarketType="1100" MarketName="上证指数"/>
+	 			<Item MarketType="1200" MarketName="深证指数"/>
+	 			<Item MarketType="1103" MarketName="上证债券"/>
+	 			<Item MarketType="1104" MarketName="上证基金"/>
+	 			<Item MarketType="1109" MarketName="上证ETF"/>
+	 			<Item MarketType="110A" MarketName="上证权证"/>
+	 			<Item MarketType="110F" MarketName="上证其他"/>
+	 			<Item MarketType="1203" MarketName="深证债券"/>	 			
+	 			<Item MarketType="1204" MarketName="深证基金"/>
+	 			<Item MarketType="1206" MarketName="中小盘股"/>
+	 			<Item MarketType="120A" MarketName="深证权证"/>
+	 			<Item MarketType="120F" MarketName="深证其他"/>
+	 			<Item MarketType="0005" MarketName="三板"/>
+	 			<Item MarketType="4301" MarketName="郑州小麦"/>
+	 			<Item MarketType="4302" MarketName="郑州棉花"/>
+	 			<Item MarketType="4303" MarketName="郑州白糖"/>
+	 			<Item MarketType="4304" MarketName="PTA"/>
+	 			<Item MarketType="4305" MarketName="菜籽油"/>
+	 			<Item MarketType="430F" MarketName="郑州市场"/>
+	 			<Item MarketType="4201" MarketName="上海金属"/>
+	 			<Item MarketType="4202" MarketName="上海橡胶"/>
+	 			<Item MarketType="4203" MarketName="上海能源"/>
+	 			<Item MarketType="4205" MarketName="黄金期货"/>
+	 			<Item MarketType="420F" MarketName="上海市场"/>
+	 			<Item MarketType="4101" MarketName="大连豆类"/>
+	 			<Item MarketType="4102" MarketName="大连玉米"/>
+	 			<Item MarketType="4103" MarketName="大连豆油"/>
+	 			<Item MarketType="4107" MarketName="聚乙烯"/>
+	 			<Item MarketType="4108" MarketName="棕榈油"/>
+	 			<Item MarketType="410f" MarketName="大连市场"/>
+	 			<Item MarketType="4501" MarketName="股指期货"/>
+	 			<Item MarketType="120D" MarketName="创业板"/>
+	 			<Item MarketType="1208" MarketName="深圳LOF"/>
+	 			<Item MarketType="120B" MarketName="开放式基金"/>
+	 			<Item MarketType="4204" MarketName="股指期货"/>
+	   </OrderType>
+	</KeyboardOrderType>
+	<KeyboardCutShort>
+	<!--	 <Item Key="0" KeyName="主菜单" CmdID="99"/> -->
+		<!-- <Item Key="16" KeyName="信息地雷" CmdID="100"/> -->
+		 <Item Key="21" KeyName="闪电买入" CmdID="101"/>
+		 <Item Key="23" KeyName="闪电卖出" CmdID="102"/>
+		 <Item Key="00" KeyName="叠加大盘指数" CmdID="103"/>
+		 <Item Key="1" KeyName="上Ａ报价" CmdID="113"/>
+		 <Item Key="2" KeyName="上B报价" CmdID="114"/>
+		 <Item Key="3" KeyName="深Ａ报价" CmdID="115"/>
+		 <Item Key="4" KeyName="深Ｂ报价" CmdID="116"/>
+		 <Item Key="5" KeyName="上债报价" CmdID="117"/>
+		 <Item Key="6" KeyName="深债报价" CmdID="118"/>
+		 	<Item Key="7" KeyName="上金报价" CmdID="119"/>
+		  <Item Key="8" KeyName="深金报价" CmdID="120"/>
+		 <Item Key="9" KeyName="中小盘报价" CmdID="121"/>
+		 <Item Key="30" KeyName="创业板" CmdID="131"/>
+		 <Item Key="31" KeyName="创业板涨幅" CmdID="132"/>
+		 <Item Key="60" KeyName="Ａ股涨幅" CmdID="133"/>
+		 <Item Key="80" KeyName="Ａ股综和" CmdID="134"/>
+		 <Item Key="61" KeyName="上Ａ涨幅" CmdID="135"/>
+		 <Item Key="62" KeyName="上Ｂ涨幅" CmdID="136"/>
+		 <Item Key="63" KeyName="深Ａ涨幅" CmdID="137"/>
+		 <Item Key="64" KeyName="深Ｂ涨幅" CmdID="138"/>
+		 <Item Key="65" KeyName="上债涨幅" CmdID="139"/>
+		 <Item Key="66" KeyName="深债涨幅" CmdID="140"/>
+		 <Item Key="67" KeyName="上金涨幅" CmdID="141"/>
+		 <Item Key="68" KeyName="深金涨幅" CmdID="142"/>
+		 <Item Key="69" KeyName="中小盘涨幅" CmdID="143"/>
+		 <Item Key="81" KeyName="上Ａ综和" CmdID="144"/>
+		 <Item Key="82" KeyName="上Ｂ综和" CmdID="145"/>
+		 <Item Key="83" KeyName="深Ａ综和" CmdID="146"/>
+		 <Item Key="84" KeyName="深Ｂ综和" CmdID="147"/>
+		 <Item Key="85" KeyName="上债综和" CmdID="148"/>
+		 <Item Key="86" KeyName="深债综和" CmdID="149"/>
+		 <Item Key="89" KeyName="中小盘综和" CmdID="150"/>
+		 <Item Key="8001" KeyName="Ａ股综和一分钟" CmdID="151"/>
+		 <Item Key="8002" KeyName="Ａ股综和二分钟" CmdID="152"/>
+		 <Item Key="8003" KeyName="Ａ股综和三分钟" CmdID="153"/>
+		 <Item Key="8004" KeyName="Ａ股综和四分钟" CmdID="154"/>
+		 <Item Key="8005" KeyName="Ａ股综和五分钟" CmdID="155"/>
+		 <Item Key="8010" KeyName="Ａ股综和十分钟" CmdID="156"/>
+		 <Item Key="8015" KeyName="Ａ股综和十五分钟" CmdID="157"/>	
+		 <Item Key="01" KeyName="热键F1 成交明细" CmdID="160"/>
+		 <Item Key="02" KeyName="热键F2 分价表" CmdID="161"/>
+		 <Item Key="03" KeyName="热键F3 上证领先指数" CmdID="162"/>
+		 <Item Key="04" KeyName="热键F4 深证领先指数" CmdID="163"/>
+		 <Item Key="05" KeyName="热键F5" CmdID="164"/>
+		 <Item Key="06" KeyName="热键F6 自选板块" CmdID="165"/>
+		 <Item Key="07" KeyName="热键F7 周期逆切换" CmdID="166"/>
+		 <Item Key="08" KeyName="热键F8 周期切换" CmdID="167"/>
+	<!--	 <Item Key="09" KeyName="热键Ctrl+X 画线工具" CmdID="168"/>-->
+		 <Item Key="10" KeyName="热键F10 个股资讯" CmdID="169"/> 
+		 <Item Key="1" KeyName="1分钟线" CmdID="200"/>
+		 <Item Key="2" KeyName="5分钟线" CmdID="201"/>
+		 <Item Key="3" KeyName="15分钟线" CmdID="202"/>
+		 <Item Key="4" KeyName="30分钟线" CmdID="203"/>
+		 <Item Key="5" KeyName="60分钟线" CmdID="204"/>
+		 <Item Key="6" KeyName="日线" CmdID="205"/>
+		 <Item Key="7" KeyName="周线" CmdID="206"/>
+		 <Item Key="8" KeyName="月线" CmdID="207"/>
+		 <Item Key="9" KeyName="多日线" CmdID="208"/>
+  </KeyboardCutShort>
+</root>

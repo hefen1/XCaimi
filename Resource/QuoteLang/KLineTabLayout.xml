@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="GB2312"?>
+<root>
+	<TechKLineTabSet DefaultGroup="指标" />
+	<Index count="2">
+		<Tech_Index name="指标" value="0">
+			<Item id="20001" name="MACD" index_name="指数平滑异同移动平均线" index_type="1" line_type="16"/>
+			<Item id="20002" name="KDJ" index_name="kdj指标" index_type="1"  line_type="16"/>
+			<Item id="20003" name="BOLL" index_name="布林通道" index_type="1"  line_type="8"/>
+			<Item id="20004" name="RSI" index_name="相对强弱指数" index_type="1" line_type="16"/>
+			<Item id="20005" name="DMI" index_name="趋向指数" index_type="1"  line_type="16"/>
+			<Item id="20006" name="更多指标" index_name="" index_type=""  line_type=""/>
+	  </Tech_Index>
+	  <More_Tech name="更多指标" value="1">
+			<Item id="20021" name="MACD" index_name="指数平滑异同移动平均线" index_type="1" line_type="16"/>
+			<Item id="20022" name="KDJ" index_name="kdj指标" index_type="1" line_type="16"/>
+			<Item id="20023" name="BOLL" index_name="布林通道" index_type="1" line_type="8"/>
+			<Item id="20024" name="RSI" index_name="相对强弱指数" index_type="1" line_type="16"/>
+			<Item id="20025" name="DMI" index_name="趋向指数" index_type="1" line_type="16"/>
+			<Item id="20026" name="MI" index_name="动量指标" index_type="1" line_type="16"/>
+			<Item id="20027" name="PSY" index_name="心理线" index_type="1" line_type="16"/>
+	  </More_Tech>
+	</Index>
+	<Templete count="1">
+		<Tech_Templete name="模板" value="0">
+			<Item id="20011" name="缺省" Default_Index="VOL,1:MACD,1" raito="0.6" />
+			<Item id="20012" name="二图" Default_Index="VOL,1" raito="0.6" />
+			<Item id="20013" name="三图" Default_Index="VOL,1:MACD,1" raito="0.6" />
+			<Item id="20014" name="四图" Default_Index="VOL,1:MACD,1:DMI,1" raito="0.4" />
+			<Item id="20015" name="六图" Default_Index="VOL,1:MACD,1:DMI,1:DMA,1:TRIX,1" raito="0.3" />
+			<Item id="20016" name="九图" Default_Index="VOL,1:MACD,1:DMI,1:DMA,1:TRIX,1:CR,1:VR,1:OBV,1" raito="0.2" />
+		</Tech_Templete>
+	</Templete>
+</root>
+

@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ECEE911E-FDD8-4D66-B4BD-F57D28AAB3B8}</ProjectGuid>
+    <RootNamespace>HSFormulaManDll</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.61030.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\bin\HSWinner_Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\bin\HSWinner\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\lib\Release/YlsCompMan.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\..\Common;..\..\HelperLib;..\..\Controls\YtControl\GridCtrl;..\..\BizEntity\Quote\QuoteComm;.\FormulaCalc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <StructMemberAlignment>1Byte</StructMemberAlignment>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Release/YlsCompMan.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>HelperLibS.lib;YtControl.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)FormulaMan.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\FormulaMan.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName).pdb </ProgramDatabaseFile>
+      <StripPrivateSymbols>$(OutDir)$(ProjectName)_STRIPPED.pdb </StripPrivateSymbols>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)$(ProjectName).map</MapFileName>
+      <MapExports>true</MapExports>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences />
+      <EnableCOMDATFolding />
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(TargetDir)$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\lib\Debug/YlsCompMan.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\Common;..\..\HelperLib;..\..\Controls\YtControl\GridCtrl;..\..\BizEntity\Quote\QuoteComm;.\FormulaCalc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <StructMemberAlignment>1Byte</StructMemberAlignment>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Debug/FormulaMan.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+    </ResourceCompile>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <Link>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>HelperLibSD.lib;YtControlD.lib;zlibSD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)FormulaMan.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\FormulaMan.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <ProgramDatabaseFile>$(OutDir)FormulaMan.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <ImportLibrary>$(TargetDir)$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CompManWinApp.cpp" />
+    <ClCompile Include="DlgFormulaEdit.cpp" />
+    <ClCompile Include="DlgFormulaFind.cpp" />
+    <ClCompile Include="DlgFormulaMan.cpp" />
+    <ClCompile Include="DlgInputUnionName.cpp" />
+    <ClCompile Include="DlgSaveTrig.cpp" />
+    <ClCompile Include="DlgStrategy.cpp" />
+    <ClCompile Include="DlgStrategyHQ.cpp" />
+    <ClCompile Include="DlgStrategyJY.cpp" />
+    <ClCompile Include="DlgStrategyMain.cpp" />
+    <ClCompile Include="DlgStrategyManage.cpp" />
+    <ClCompile Include="DlgStrategyTest.cpp" />
+    <ClCompile Include="DlgTestStrategy.cpp" />
+    <ClCompile Include="ExpTabCtrl.cpp" />
+    <ClCompile Include="FormulaExport.cpp" />
+    <ClCompile Include="HSBaseDialog.cpp" />
+    <ClCompile Include="..\..\Common\HSBizDialog.cpp" />
+    <ClCompile Include="KBEdit.cpp" />
+    <ClCompile Include="SelUnionDlg.cpp" />
+    <ClCompile Include="BaseListCtrl.cpp" />
+    <ClCompile Include="CHSProgressCtrl.cpp" />
+    <ClCompile Include="CompileEditView.cpp" />
+    <ClCompile Include="DlgError.cpp" />
+    <ClCompile Include="DlgEstopPeriod.cpp" />
+    <ClCompile Include="DlgFormulaImportExport.cpp" />
+    <ClCompile Include="DlgFunctionMan.cpp" />
+    <ClCompile Include="dlgnotesAndEidolon.cpp" />
+    <ClCompile Include="EditEidolon.cpp" />
+    <ClCompile Include="HeaderCtrlEx.cpp" />
+    <ClCompile Include="HSNumEdit.cpp" />
+    <ClCompile Include="HSNumRangeEdit.cpp" />
+    <ClCompile Include="HSNumSpinEdit.cpp" />
+    <ClCompile Include="HSShadeButton.cpp" />
+    <ClCompile Include="HSSpin.cpp" />
+    <ClCompile Include="InportPromptDlg.cpp" />
+    <ClCompile Include="InputPassPwD.cpp" />
+    <ClCompile Include="OnlineList.cpp" />
+    <ClCompile Include="ScriptEditViewFormula.cpp" />
+    <ClCompile Include="SpinEditEx.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TreeCtrlFormula.cpp" />
+    <ClCompile Include="TreeDroptarget.cpp" />
+    <ClCompile Include="AdvancedAlarmData.cpp" />
+    <ClCompile Include="DlgAddProjectToBlock.cpp" />
+    <ClCompile Include="DlgAddStockToAlarm.cpp" />
+    <ClCompile Include="DlgAlarmAnalysis.cpp" />
+    <ClCompile Include="DlgAlarmMan.cpp" />
+    <ClCompile Include="DlgAlarmParamSet.cpp" />
+    <ClCompile Include="DlgAlarmSet.cpp" />
+    <ClCompile Include="DlgBlockAnalysis.cpp" />
+    <ClCompile Include="DlgBlockPicAnalysis.cpp" />
+    <ClCompile Include="DlgUniteAnalysis.cpp" />
+    <ClCompile Include="DlgExchOptimize.cpp" />
+    <ClCompile Include="DlgExchParamSet.cpp" />
+    <ClCompile Include="DlgSingleExchCalcResult.cpp" />
+    <ClCompile Include="ExchCalcMain.cpp" />
+    <ClCompile Include="ExchYouSelCaclData.cpp" />
+    <ClCompile Include="HSNewWizDialog.cpp" />
+    <ClCompile Include="HSNewWizPage.cpp" />
+    <ClCompile Include="RichEditCtrlEx.cpp" />
+    <ClCompile Include="RichEditCtrlResult.cpp" />
+    <ClCompile Include="SheetExchMain.cpp" />
+    <ClCompile Include="TabCtrlExch.cpp" />
+    <ClCompile Include="WizPageExchBase.cpp" />
+    <ClCompile Include="WizPageExchBuy.cpp" />
+    <ClCompile Include="WizPageExchModel.cpp" />
+    <ClCompile Include="WizPageExchResult.cpp" />
+    <ClCompile Include="WizPageExchSelIndicator.cpp" />
+    <ClCompile Include="WizPageExchSell.cpp" />
+    <ClCompile Include="WizPageUnionExchCaclResult.cpp" />
+    <ClCompile Include="DlgCondition.cpp" />
+    <ClCompile Include="DlgConSelStock.cpp" />
+    <ClCompile Include="DlgFormulaBrowser.cpp" />
+    <ClCompile Include="DlgIndicatorSelStock.cpp" />
+    <ClCompile Include="DlgIntelligentSelStock.cpp" />
+    <ClCompile Include="DlgSetStockAndTime.cpp" />
+    <ClCompile Include="DlgTailorSelStock.cpp" />
+    <ClCompile Include="DlgUnionConSelStock.cpp" />
+    <ClCompile Include="DlgUnionList.cpp" />
+    <ClCompile Include="FormulaCalc\ExchData.cpp" />
+    <ClCompile Include="FormulaCalc\ExpPublic.cpp" />
+    <ClCompile Include="FormulaCalc\express.cpp" />
+    <ClCompile Include="FormulaCalc\ExpValue.cpp" />
+    <ClCompile Include="FormulaCalc\FormulaCalc.cpp" />
+    <ClCompile Include="FormulaCalc\FunExpresion.cpp" />
+    <ClCompile Include="FormulaCalc\HSDataSource.cpp" />
+    <ClCompile Include="FormulaCalc\SystemFun.cpp" />
+    <ClCompile Include="FormulaCalc\Tools.cpp" />
+    <ClCompile Include="FormulaCalc\Value.cpp" />
+    <ClCompile Include="FormulaCalc\VarValue.cpp" />
+    <ClCompile Include="..\..\Common\FormulaManPublic.cpp" />
+    <ClCompile Include="..\..\Common\KeyBoardStruct.cpp" />
+    <ClCompile Include="..\..\Common\WinnerApplication.cpp" />
+    <ClCompile Include="HSDownloadData.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FormulaMan.def" />
+    <None Include="res\avi1.bin" />
+    <None Include="res\CompMan.rc2" />
+    <None Include="res\cursor1.cur" />
+    <None Include="res\idr_drag.cur" />
+    <None Include="idr_drag.cur" />
+    <None Include="nodrop.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="bitmap1.bmp" />
+    <Image Include="bitmap1_.bmp" />
+    <Image Include="res\bitmap1_.bmp" />
+    <Image Include="res\bitmap2.bmp" />
+    <Image Include="bitmap2_.bmp" />
+    <Image Include="res\bitmap2_.bmp" />
+    <Image Include="res\bitmap3.bmp" />
+    <Image Include="bitmap3.bmp" />
+    <Image Include="res\bitmap3_.bmp" />
+    <Image Include="bitmap3_.bmp" />
+    <Image Include="bitmap_d.bmp" />
+    <Image Include="res\bitmap_d.bmp" />
+    <Image Include="res\bitmap_f.bmp" />
+    <Image Include="bitmap_f.bmp" />
+    <Image Include="res\bmp00001.bmp" />
+    <Image Include="res\bmp00002.bmp" />
+    <Image Include="res\bmp00003.bmp" />
+    <Image Include="bmp00013.bmp" />
+    <Image Include="res\bmp00013.bmp" />
+    <Image Include="bmp00014.bmp" />
+    <Image Include="res\bmp00014.bmp" />
+    <Image Include="bmp00015.bmp" />
+    <Image Include="res\bmp00015.bmp" />
+    <Image Include="res\bmp00016.bmp" />
+    <Image Include="bmp00016.bmp" />
+    <Image Include="res\checkbox.bmp" />
+    <Image Include="checkbox.bmp" />
+    <Image Include="res\classview.bmp" />
+    <Image Include="classview.bmp" />
+    <Image Include="res\close.bmp" />
+    <Image Include="closebtn.bmp" />
+    <Image Include="res\closebtn.bmp" />
+    <Image Include="res\drawimag.bmp" />
+    <Image Include="drawimag.bmp" />
+    <Image Include="funimage.bmp" />
+    <Image Include="res\funimage.bmp" />
+    <Image Include="res\HxCpLang.ico" />
+    <Image Include="HxCpLang.ico" />
+    <Image Include="res\HxCpLangDoc.ico" />
+    <Image Include="HxCpLangDoc.ico" />
+    <Image Include="idd_alli.bmp" />
+    <Image Include="res\idd_alli.bmp" />
+    <Image Include="NewQuote.ico" />
+    <Image Include="res\outimage.bmp" />
+    <Image Include="outimage.bmp" />
+    <Image Include="resource.bmp" />
+    <Image Include="res\resource.bmp" />
+    <Image Include="res\treeImageList.bmp" />
+    <Image Include="treeImageList.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseListCtrl.h" />
+    <ClInclude Include="CHSProgressCtrl.h" />
+    <ClInclude Include="CompileEditView.h" />
+    <ClInclude Include="DlgError.h" />
+    <ClInclude Include="DlgEstopPeriod.h" />
+    <ClInclude Include="DlgFormulaImportExport.h" />
+    <ClInclude Include="DlgFunctionMan.h" />
+    <ClInclude Include="dlgnotesAndEidolon.h" />
+    <ClInclude Include="EditEidolon.h" />
+    <ClInclude Include="HeaderCtrlEx.h" />
+    <ClInclude Include="HSNumEdit.h" />
+    <ClInclude Include="HSNumRangeEdit.h" />
+    <ClInclude Include="HSNumSpinEdit.h" />
+    <ClInclude Include="HSShadeButton.h" />
+    <ClInclude Include="HSSpin.h" />
+    <ClInclude Include="InportPromptDlg.h" />
+    <ClInclude Include="InputPassPwD.h" />
+    <ClInclude Include="OnlineList.h" />
+    <ClInclude Include="ScriptEditViewFormula.h" />
+    <ClInclude Include="SpinEditEx.h" />
+    <ClInclude Include="TreeCtrlFormula.h" />
+    <ClInclude Include="TreeDroptarget.h" />
+    <ClInclude Include="AdvancedAlarmData.h" />
+    <ClInclude Include="DlgAddProjectToBlock.h" />
+    <ClInclude Include="DlgAddStockToAlarm.h" />
+    <ClInclude Include="DlgAlarmAnalysis.h" />
+    <ClInclude Include="DlgAlarmMan.h" />
+    <ClInclude Include="DlgAlarmParamSet.h" />
+    <ClInclude Include="DlgAlarmSet.h" />
+    <ClInclude Include="DlgBlockAnalysis.h" />
+    <ClInclude Include="DlgBlockPicAnalysis.h" />
+    <ClInclude Include="DlgUniteAnalysis.h" />
+    <ClInclude Include="DlgCondition.h" />
+    <ClInclude Include="DlgConSelStock.h" />
+    <ClInclude Include="DlgFormulaBrowser.h" />
+    <ClInclude Include="DlgIndicatorSelStock.h" />
+    <ClInclude Include="DlgIntelligentSelStock.h" />
+    <ClInclude Include="DlgSetStockAndTime.h" />
+    <ClInclude Include="DlgTailorSelStock.h" />
+    <ClInclude Include="DlgUnionConSelStock.h" />
+    <ClInclude Include="DlgUnionList.h" />
+    <ClInclude Include="DlgExchOptimize.h" />
+    <ClInclude Include="DlgExchParamSet.h" />
+    <ClInclude Include="DlgSingleExchCalcResult.h" />
+    <ClInclude Include="ExchCalcMain.h" />
+    <ClInclude Include="ExchYouSelCaclData.h" />
+    <ClInclude Include="HSNewWizDialog.h" />
+    <ClInclude Include="HSNewWizPage.h" />
+    <ClInclude Include="RichEditCtrlEx.h" />
+    <ClInclude Include="RichEditCtrlResult.h" />
+    <ClInclude Include="SheetExchMain.h" />
+    <ClInclude Include="TabCtrlExch.h" />
+    <ClInclude Include="WizPageExchBase.h" />
+    <ClInclude Include="WizPageExchBuy.h" />
+    <ClInclude Include="WizPageExchModel.h" />
+    <ClInclude Include="WizPageExchResult.h" />
+    <ClInclude Include="WizPageExchSelIndicator.h" />
+    <ClInclude Include="WizPageExchSell.h" />
+    <ClInclude Include="WizPageUnionExchCaclResult.h" />
+    <ClInclude Include="CompManWinApp.h" />
+    <ClInclude Include="DlgFormulaEdit.h" />
+    <ClInclude Include="DlgFormulaFind.h" />
+    <ClInclude Include="DlgFormulaMan.h" />
+    <ClInclude Include="DlgInputUnionName.h" />
+    <ClInclude Include="DlgSaveTrig.h" />
+    <ClInclude Include="DlgStrategy.h" />
+    <ClInclude Include="DlgStrategyHQ.h" />
+    <ClInclude Include="DlgStrategyJY.h" />
+    <ClInclude Include="DlgStrategyMain.h" />
+    <ClInclude Include="DlgStrategyManage.h" />
+    <ClInclude Include="DlgStrategyTest.h" />
+    <ClInclude Include="DlgTestStrategy.h" />
+    <ClInclude Include="ExpTabCtrl.h" />
+    <ClInclude Include="FormulaExport.h" />
+    <ClInclude Include="HSBaseDialog.h" />
+    <ClInclude Include="KBEdit.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SelUnionDlg.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="FormulaCalc\CompileInterFace.h" />
+    <ClInclude Include="FormulaCalc\ExchData.h" />
+    <ClInclude Include="FormulaCalc\ExportDll.h" />
+    <ClInclude Include="FormulaCalc\ExpPublic.h" />
+    <ClInclude Include="FormulaCalc\Express.h" />
+    <ClInclude Include="FormulaCalc\ExpValue.h" />
+    <ClInclude Include="FormulaCalc\FormulaCalc.h" />
+    <ClInclude Include="FormulaCalc\FormulaStruct.h" />
+    <ClInclude Include="FormulaCalc\FunExpresion.h" />
+    <ClInclude Include="FormulaCalc\FxjFormulaStruct.h" />
+    <ClInclude Include="FormulaCalc\FxjFunc.h" />
+    <ClInclude Include="FormulaCalc\HSDataSource.h" />
+    <ClInclude Include="FormulaCalc\HxCompileOut.h" />
+    <ClInclude Include="FormulaCalc\MfcBaseOut.h" />
+    <ClInclude Include="FormulaCalc\PubStruct.h" />
+    <ClInclude Include="FormulaCalc\RegMsg.h" />
+    <ClInclude Include="FormulaCalc\SystemFun.h" />
+    <ClInclude Include="FormulaCalc\targetver.h" />
+    <ClInclude Include="FormulaCalc\Tools.h" />
+    <ClInclude Include="FormulaCalc\Value.h" />
+    <ClInclude Include="FormulaCalc\VarValue.h" />
+    <ClInclude Include="..\..\Common\FormulaManInterFace.h" />
+    <ClInclude Include="..\..\Common\FormulaManPublic.h" />
+    <ClInclude Include="..\..\Common\KeyBoardStruct.h" />
+    <ClInclude Include="..\..\Common\WinnerApplication.h" />
+    <ClInclude Include="HSDownloadData.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CompMan.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Controls\zipFileDll\zipFileDll.vcxproj">
+      <Project>{4cafb30e-a602-443c-9387-2d29b50bf09c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\HelperLib\HelperLib.vcxproj">
+      <Project>{dc272474-ac0f-4bd0-ba8f-da1992a338b4}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="CompMan.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

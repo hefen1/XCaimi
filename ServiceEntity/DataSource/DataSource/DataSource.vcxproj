@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{80940506-CDF2-45EB-A78F-E662C082F8F6}</ProjectGuid>
+    <RootNamespace>DataSource</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.61030.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\..\bin\HSWinner\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\..\bin\HSWinner_Release\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\Common;..\..\..\HelperLib;..\..\..\Controls\tinyxpath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>HelperLibSD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\DataSource.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\..\..\Common;..\..\..\HelperLib;..\..\..\Controls\tinyxpath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>HelperLibS.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\DataSource.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences />
+      <EnableCOMDATFolding />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AutoRequest.cpp" />
+    <ClCompile Include="BlockManger.cpp" />
+    <ClCompile Include="CommBouseManager.cpp" />
+    <ClCompile Include="ConfigManager.cpp" />
+    <ClCompile Include="DataSinkConnectManager.cpp" />
+    <ClCompile Include="DataSource.cpp" />
+    <ClCompile Include="DataSourceImpl.cpp" />
+    <ClCompile Include="..\..\..\Common\DLLEntryBase.cpp" />
+    <ClCompile Include="DSWriteFile.cpp" />
+    <ClCompile Include="MapPreSubscrition.cpp" />
+    <ClCompile Include="..\..\..\Common\PackEntry.cpp" />
+    <ClCompile Include="ProgressDlg.cpp" />
+    <ClCompile Include="PyjcManager.cpp" />
+    <ClCompile Include="RecvDataDeal.cpp" />
+    <ClCompile Include="ReplyDataManger.cpp" />
+    <ClCompile Include="RequestResponceDataManager.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StockInfo.cpp" />
+    <ClCompile Include="stockManager.cpp" />
+    <ClCompile Include="SubscriptionManager.cpp" />
+    <ClCompile Include="..\..\..\Common\WinnerApplication.cpp" />
+    <ClCompile Include="WndRecvData.cpp" />
+    <ClCompile Include="WriteReadStandardConfig.cpp" />
+    <ClCompile Include="DataCache.cpp" />
+    <ClCompile Include="HSDisk.cpp" />
+    <ClCompile Include="InfoData.cpp" />
+    <ClCompile Include="KLineDataFile.cpp" />
+    <ClCompile Include="TrendFile.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSource.def" />
+    <None Include="res\DataSource.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AutoRequest.h" />
+    <ClInclude Include="BlockManger.h" />
+    <ClInclude Include="CommBourseManager.h" />
+    <ClInclude Include="ConfigManager.h" />
+    <ClInclude Include="DataSinkConnectManager.h" />
+    <ClInclude Include="DataSource.h" />
+    <ClInclude Include="..\..\..\Common\DataSourceDefine.h" />
+    <ClInclude Include="..\..\..\Common\DataSourceDefineEx.h" />
+    <ClInclude Include="DataSourceImpl.h" />
+    <ClInclude Include="..\..\..\Common\DataSourceSinkDefine.h" />
+    <ClInclude Include="..\..\..\Common\DLLEntryBase.h" />
+    <ClInclude Include="DSWriteFile.h" />
+    <ClInclude Include="..\..\..\Common\hsds_comudata.h" />
+    <ClInclude Include="..\..\..\Common\hsstructnew.h" />
+    <ClInclude Include="MapPreSubscrition.h" />
+    <ClInclude Include="..\..\..\Common\NetEngineInterface.h" />
+    <ClInclude Include="..\..\..\Common\PackEntry.h" />
+    <ClInclude Include="Performance.h" />
+    <ClInclude Include="ProgressDlg.h" />
+    <ClInclude Include="PyjcManager.h" />
+    <ClInclude Include="ReplyDataManger.h" />
+    <ClInclude Include="RequestResponceDataManager.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="stockManager.h" />
+    <ClInclude Include="SubscriptionManager.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="..\..\..\Common\WinnerApplication.h" />
+    <ClInclude Include="WndRecvData.h" />
+    <ClInclude Include="WriteReadStandardConfig.h" />
+    <ClInclude Include="DataCache.h" />
+    <ClInclude Include="HSDisk.h" />
+    <ClInclude Include="InfoData.h" />
+    <ClInclude Include="KLineDataFile.h" />
+    <ClInclude Include="TrendFile.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DataSource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="DataSource.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

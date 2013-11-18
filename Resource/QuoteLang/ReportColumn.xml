@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="GB2312"?>
+<root>
+<!--
+单元格属性 CellMask
+
+#define CELL_BORDER_ENY        0x000F  // 全边框
+#define CELL_BORDER_LEFT       0x0001  // 左边框
+#define CELL_BORDER_RIGHT      0x0002  // 右边框
+#define CELL_BORDER_TOP        0x0004  // 上边框
+#define CELL_BORDER_BOTTOM     0x0008  // 下边框
+
+#define CELL_RESIZABLEWE       0x0010  // 可以拖动左边框改变单元格大小
+#define CELL_MOVABLE           0x0020  // 可以选中拖动位置
+#define CELL_BK_HIGHLIGHT      0x0040  // 背景高亮
+#define CELL_TIP               0x0080  // 显示Tip
+
+-->
+	<!--Item id="10075" name="雷"     CellMask="08" width="64"/ -->
+	<ColumnProperty DefaultGroup="股票行情字段">
+		<StockQuote name="股票行情字段">
+			<Item id="10047" name="名称"   CellMask="08" width="90"/>
+			<Item id="10063" name="委卖价" CellMask="38"  width="64"/>
+			<Item id="10062" name="委买量" CellMask="38"  width="64"/>
+			<Item id="10061" name="委买价" CellMask="38"  width="64"/>
+			<Item id="10060" name="量比"   CellMask="38"  width="64"/>
+			<Item id="10059" name="昨收"   CellMask="38"  width="64"/>	
+			<Item id="10057" name="涨幅%"  CellMask="38"  width="64"/>
+			<Item id="10056" name="卖出"   CellMask="38"  width="64"/>
+			<Item id="10055" name="买入"   CellMask="38"  width="64"/>
+			<Item id="10054" name="最低"   CellMask="38"  width="64"/>
+			<Item id="10053" name="最高"   CellMask="38"  width="64"/>
+			<Item id="10052" name="现手"   CellMask="38"  width="64"/>
+			<Item id="10051" name="总手"   CellMask="38"  width="64"/>
+			<Item id="10050" name="涨跌"   CellMask="38"  width="64"/>
+			<Item id="10049" name="现价"   CellMask="38"  width="64"/>
+			<Item id="10048" name="开盘"   CellMask="38"  width="64"/>
+			<Item id="10058" name="代码"   CellMask="08" width="64"/>
+			<Item id="10073" name="序"     CellMask="08" width="64"/>
+			<Item id="10072" name="委差"   CellMask="38"  width="64"/>
+			<Item id="10071" name="委比"   CellMask="38"  width="64"/>
+			<Item id="10070" name="振幅%"  CellMask="38"  width="64"/>
+			<Item id="10069" name="均价"   CellMask="38"  width="64"/>
+			<Item id="10068" name="涨速"   CellMask="38"  width="64"/>	
+			<Item id="10067" name="总金额(万)" CellMask="38" width="90"/>
+			<Item id="10066" name="外盘"   CellMask="38"  width="64"/>
+			<Item id="10065" name="内盘"   CellMask="38"  width="64"/>
+			<Item id="10064" name="委卖量" CellMask="38"  width="64"/>
+			<Item id="10076" name="箭"     CellMask="08" width="64"/>
+			<Item id="10077" name="反汇率" CellMask="38"  width="64"/>		
+		</StockQuote>
+		
+		<StockQuoteEx name="股票扩展行情">
+			<Item id="10111" name="买五量" CellMask="38" width="56"/>		
+			<Item id="10110" name="买五价" CellMask="38" width="56"/>		
+			<Item id="10109" name="买四量" CellMask="38" width="56"/>		
+			<Item id="10108" name="买四价" CellMask="38" width="56"/>		
+			<Item id="10107" name="买三量" CellMask="38" width="56"/>		
+			<Item id="10106" name="买三价" CellMask="38" width="56"/>		
+			<Item id="10105" name="买二量" CellMask="38" width="56"/>		
+			<Item id="10104" name="买二价" CellMask="38" width="56"/>		
+			<Item id="10103" name="买一量" CellMask="38" width="56"/>		
+			<Item id="10102" name="买一价" CellMask="38" width="56"/>		
+			<Item id="10125" name="成交方向" CellMask="38" width="70"/>		
+			<Item id="10126" name="净值" CellMask="38"   width="40"/>		
+			<Item id="10127" name="利息" CellMask="38"   width="40"/>		
+			<Item id="10124" name="市盈率" CellMask="38" width="64"/>		
+			<Item id="10123" name="5日均量" CellMask="38" width="64"/>		
+			<Item id="10122" name="换手率%" CellMask="38" width="64"/>		
+			<Item id="10121" name="卖五量" CellMask="38"  width="56"/>		
+			<Item id="10120" name="卖五价" CellMask="38"  width="56"/>		
+			<Item id="10119" name="卖四量" CellMask="38"  width="56"/>		
+			<Item id="10118" name="卖四价" CellMask="38"  width="56"/>		
+			<Item id="10117" name="卖三量" CellMask="38"  width="56"/>		
+			<Item id="10116" name="卖三价" CellMask="38"  width="56"/>		
+			<Item id="10115" name="卖二量" CellMask="38"  width="56"/>		
+			<Item id="10114" name="卖二价" CellMask="38"  width="56"/>		
+			<Item id="10113" name="卖一量" CellMask="38"  width="56"/>		
+			<Item id="10112" name="卖一价" CellMask="38"  width="56"/>		
+		</StockQuoteEx>
+
+		<DetailGrid name="明细表">
+			<Item id="11006" name="实际笔数" CellMask="38" width="64"/>		
+			<Item id="11005" name="现手"     CellMask="38" width="40"/>		
+			<Item id="11004" name="卖出价"   CellMask="38" width="64"/>		
+			<Item id="11003" name="买入价"   CellMask="38" width="56"/>		
+			<Item id="11002" name="涨跌值"   CellMask="38" width="56"/>		
+			<Item id="11001" name="成交价"   CellMask="38" width="56"/>		
+			<Item id="11000" name="时间"     CellMask="38" width="40"/>		
+			<Item id="11023" name="最高"     CellMask="38" width="40"/>		
+			<Item id="11022" name="开盘"     CellMask="38" width="40"/>		
+			<Item id="11021" name="涨跌"     CellMask="38" width="40"/>		
+			<Item id="11020" name="时间"     CellMask="38" width="80"/>		
+			<Item id="11028" name="5量"      CellMask="38" width="40"/>		
+			<Item id="11027" name="5价"      CellMask="38" width="40"/>		
+			<Item id="11026" name="成交量"   CellMask="38" width="80"/>		
+			<Item id="11025" name="收盘"     CellMask="38" width="64"/>		
+			<Item id="11024" name="最低"     CellMask="38" width="40"/>		
+			<Item id="11050" name="平数"     CellMask="38" width="40"/>		
+			<Item id="11049" name="成交量"   CellMask="38" width="56"/>		
+			<Item id="11048" name="累计成交量" CellMask="38" width="80"/>		
+			<Item id="11047" name="成交值"     CellMask="38" width="56"/>		
+			<Item id="11046" name="累计成交值" CellMask="38" width="80"/>		
+			<Item id="11045" name="跌数"     CellMask="38" width="40"/>		
+			<Item id="11044" name="涨数"     CellMask="38" width="40"/>		
+			<Item id="11043" name="涨跌幅"   CellMask="38" width="56"/>		
+			<Item id="11042" name="涨跌值"   CellMask="38" width="56"/>		
+			<Item id="11041" name="指数"     CellMask="38" width="40"/>		
+			<Item id="11040" name="时间"     CellMask="38" width="40"/>		
+			<Item id="11070" name="外盘"     CellMask="38" width="40"/>		
+			<Item id="11068" name="内盘"     CellMask="38" width="40"/>		
+			<Item id="11069" name="分手比(%)" CellMask="38" width="80"/>		
+			<Item id="11067" name="分手"     CellMask="38" width="40"/>		
+			<Item id="11066" name="成交价"   CellMask="38" width="56"/>		
+			<Item id="11094" name="红利"     CellMask="38" width="40"/>		
+			<Item id="11093" name="配价"     CellMask="38" width="40"/>		
+			<Item id="11092" name="配股"     CellMask="38" width="40"/>		
+			<Item id="11091" name="送股"  CellMask="38" width="40"/>		
+			<Item id="11087" name="卖买5" CellMask="38" width="56"/>		
+			<Item id="11086" name="卖买4" CellMask="38" width="56"/>		
+			<Item id="11085" name="卖买3" CellMask="38" width="56"/>		
+			<Item id="11084" name="卖买2" CellMask="38" width="56"/>		
+			<Item id="11083" name="卖买1" CellMask="38" width="56"/>		
+			<Item id="11082" name="成交"  CellMask="38" width="40"/>		
+			<Item id="11090" name="时间"  CellMask="38" width="40"/>		
+			<Item id="11007" name="总持"  CellMask="38" width="40"/>		
+			<Item id="11008" name="开平仓" CellMask="38" width="56"/>		
+		</DetailGrid>
+
+		<EquityData name="股本数据">
+			<Item id="11151" name="总股本(万)" CellMask="38" width="80"/>		
+			<Item id="11159" name="A2转配股"   CellMask="38" width="70"/>		
+			<Item id="111B8" name="职工股"  CellMask="38" width="56"/>		
+			<Item id="11157" name="流通A股" CellMask="38" width="64"/>		
+			<Item id="11156" name="H股" CellMask="38" width="32"/>		
+			<Item id="11155" name="B股" CellMask="38" width="32"/>		
+			<Item id="11154" name="法人股" CellMask="38" width="56"/>		
+			<Item id="11153" name="发起人法人股" CellMask="38" width="90"/>		
+			<Item id="11152" name="国家股" CellMask="38" width="56"/>		
+		</EquityData>
+
+		<FinancialData name="财务数据">
+			<Item id="11183" name="主营利润" CellMask="38" width="120"/>		
+			<Item id="11182" name="主营收入" CellMask="38" width="120"/>		
+			<Item id="11181" name="股东权益" CellMask="38" width="120"/>		
+			<Item id="11180" name="每股公积金(元)" CellMask="38" width="120"/>		
+			<Item id="11179" name="资本公积金" CellMask="38" width="120"/>		
+			<Item id="11178" name="长期负债" CellMask="38" width="120"/>		
+			<Item id="11177" name="流动负债" CellMask="38" width="120"/>		
+			<Item id="11176" name="长期投资" CellMask="38" width="120"/>		
+			<Item id="11175" name="无形资产" CellMask="38" width="120"/>		
+			<Item id="11174" name="固定资产" CellMask="38" width="120"/>		
+			<Item id="11173" name="流动资产" CellMask="38" width="120"/>		
+			<Item id="11172" name="总资产(千)" CellMask="38" width="120"/>		
+			<Item id="11199" name="净资收益率%" CellMask="38" width="120"/>		
+			<Item id="11198" name="股东权益比%" CellMask="38" width="120"/>		
+			<Item id="11197" name="调整每股净资产" CellMask="38" width="120"/>		
+			<Item id="11196" name="每股净资产" CellMask="38" width="120"/>		
+			<Item id="11195" name="每股收益(元)" CellMask="38" width="120"/>		
+			<Item id="11194" name="每股未分配(元)" CellMask="38" width="120"/>		
+			<Item id="11193" name="未分配利润" CellMask="38" width="120"/>		
+			<Item id="11192" name="净利润" CellMask="38"  width="120"/>		
+			<Item id="11191" name="税后利润" CellMask="38" width="120"/>		
+			<Item id="11190" name="利润总额" CellMask="38" width="120"/>		
+			<Item id="11189" name="上年损益调整" CellMask="38" width="120"/>		
+			<Item id="111B8" name="营业外收支" CellMask="38" width="120"/>		
+			<Item id="11187" name="补贴收入" CellMask="38" width="120"/>		
+			<Item id="11186" name="投资收益" CellMask="38" width="120"/>		
+			<Item id="11185" name="营业利润" CellMask="38" width="120"/>		
+			<Item id="11B8" name="其他利润" CellMask="38" width="120"/>		
+		</FinancialData>
+
+		<RelationalAnalysis name="联动分析">
+			<Item id="11231" name="A股10涨幅" CellMask="38" width="64"/>		
+			<Item id="11230" name="A股5日涨幅" CellMask="38" width="64"/>		
+			<Item id="11229" name="A股涨幅" CellMask="38" width="64"/>		
+			<Item id="11228" name="A股流通盘比例" CellMask="38" width="64"/>		
+			<Item id="11227" name="A股流通盘" CellMask="38" width="64"/>		
+			<Item id="11226" name="A股成交量" CellMask="38" width="64"/>		
+			<Item id="11225" name="A股最新价" CellMask="38" width="64"/>		
+			<Item id="11224" name="A股名称" CellMask="38" width="64"/>		
+			<Item id="11223" name="A股代码" CellMask="38" width="64"/>		
+			<Item id="11247" name="B股60涨幅" CellMask="38" width="64"/>		
+			<Item id="11246" name="B股20涨幅" CellMask="38" width="64"/>		
+			<Item id="11245" name="B股10涨幅" CellMask="38" width="64"/>		
+			<Item id="11244" name="B股5日涨幅" CellMask="38" width="64"/>		
+			<Item id="11243" name="B股涨幅" CellMask="38" width="64"/>		
+			<Item id="11242" name="B股流通盘比例" CellMask="38" width="64"/>		
+			<Item id="11241" name="B股流通盘" CellMask="38" width="64"/>		
+			<Item id="11240" name="B股成交量" CellMask="38" width="64"/>		
+			<Item id="11239" name="B股最新价" CellMask="38" width="64"/>		
+			<Item id="11238" name="B股名称" CellMask="38" width="64"/>		
+			<Item id="11237" name="B股代码" CellMask="38" width="64"/>		
+			<Item id="11236" name="A股流通盘市值" CellMask="38" width="64"/>		
+			<Item id="11235" name="A股换手率" CellMask="38" width="64"/>		
+			<Item id="11234" name="A股市盈率" CellMask="38" width="64"/>		
+			<Item id="11233" name="A股60涨幅" CellMask="38" width="64"/>		
+			<Item id="11232" name="A股20涨幅" CellMask="38" width="64"/>		
+			<Item id="11263" name="H股换手率" CellMask="38" width="64"/>		
+			<Item id="11262" name="H股市盈率" CellMask="38" width="64"/>		
+			<Item id="11261" name="H股60涨幅" CellMask="38" width="64"/>		
+			<Item id="11260" name="H股20涨幅" CellMask="38" width="64"/>		
+			<Item id="11259" name="H股10涨幅" CellMask="38" width="64"/>		
+			<Item id="112B8" name="H股5日涨幅" CellMask="38" width="64"/>		
+			<Item id="11257" name="H股涨幅" CellMask="38" width="64"/>		
+			<Item id="11256" name="H股流通盘比例" CellMask="38" width="64"/>		
+			<Item id="11255" name="H股流通盘" CellMask="38" width="64"/>		
+			<Item id="11254" name="H股成交量" CellMask="38" width="64"/>		
+			<Item id="11253" name="H股最新价" CellMask="38" width="64"/>		
+			<Item id="11252" name="H股名称" CellMask="38" width="64"/>		
+			<Item id="11251" name="H股代码" CellMask="38" width="64"/>		
+			<Item id="11250" name="B股流通盘市值" CellMask="38" width="64"/>		
+			<Item id="11249" name="B股换手率" CellMask="38" width="64"/>		
+			<Item id="11248" name="B股市盈率" CellMask="38" width="64"/>		
+			<Item id="11271" name="删除..." CellMask="38" width="64"/>		
+			<Item id="11270" name="净资产收益率%" CellMask="38" width="64"/>		
+			<Item id="11269" name="每股净资产(元)" CellMask="38" width="64"/>		
+			<Item id="11268" name="每股收益(元)" CellMask="38" width="64"/>		
+			<Item id="11267" name="总股本" CellMask="38" width="64"/>		
+			<Item id="11266" name="A股/H股价格" CellMask="38" width="64"/>		
+			<Item id="11265" name="A股/B股价格" CellMask="38" width="64"/>		
+			<Item id="11264" name="H股流通盘市值" CellMask="38" width="64"/>		
+		</RelationalAnalysis>
+
+		<FormAnalysis name="报表分析">
+			<Item id="10367" name="60日强度" CellMask="38" width="40"/>		
+			<Item id="10366" name="20日强度" CellMask="38" width="40"/>		
+			<Item id="10365" name="10日强度" CellMask="38" width="40"/>		
+			<Item id="10364" name="5日强度" CellMask="38"  width="40"/>		
+			<Item id="10363" name="3日强度" CellMask="38"  width="40"/>		
+			<Item id="10362" name="今日强度" CellMask="38" width="40"/>		
+			<Item id="10361" name="重心价" CellMask="38"   width="40"/>		
+			<Item id="10360" name="股票数" CellMask="38"   width="40"/>		
+			<Item id="10359" name="领涨股票" CellMask="38" width="40"/>		
+			<Item id="103B8" name="成交比例" CellMask="38" width="40"/>		
+			<Item id="10357" name="权涨幅" CellMask="38"   width="64"/>		
+			<Item id="10371" name="量变幅度" CellMask="38" width="40"/>		
+			<Item id="10370" name="震荡幅度" CellMask="38" width="40"/>		
+			<Item id="10369" name="涨跌幅度" CellMask="38" width="40"/>		
+			<Item id="10368" name="年线强度" CellMask="38" width="40"/>		
+		</FormAnalysis>
+
+		<ZiXun name="资讯/EMAIL字段">
+			<Item id="11727" name="新闻保护" CellMask="38" width="64"/>		
+			<Item id="11726" name="读写标记" CellMask="38" width="64"/>		
+			<Item id="11743" name="抄送" CellMask="38"   width="64"/>		
+			<Item id="11742" name="敏感度" CellMask="38"   width="64"/>		
+			<Item id="11741" name="到期时间" CellMask="38" width="64"/>		
+			<Item id="11740" name="大小" CellMask="38"     width="64"/>		
+			<Item id="11739" name="收件人" CellMask="38"   width="64"/>		
+			<Item id="11738" name="已读" CellMask="38"     width="64"/>		
+			<Item id="11737" name="下载状态" CellMask="38" width="64"/>		
+			<Item id="11736" name="发送时间" CellMask="38" width="64"/>		
+			<Item id="11735" name="重要性" CellMask="38"   width="64"/>		
+			<Item id="11734" name="创建时间" CellMask="38"   width="64"/>		
+			<Item id="11733" name="信息提供者" CellMask="38" width="64"/>		
+			<Item id="11732" name="附件" CellMask="38"    width="64"/>		
+			<Item id="11731" name="作者" CellMask="38"    width="64"/>		
+			<Item id="11730" name="接收时间" CellMask="38"   width="64"/>		
+			<Item id="11729" name="新闻标题" CellMask="38"   width="64"/>		
+			<Item id="11728" name="新闻板块/栏目" CellMask="38"   width="64"/>		
+			<Item id="11748" name="发件人" CellMask="38"   width="64"/>		
+			<Item id="11747" name="Mail内部版本" CellMask="38" width="64"/>		
+			<Item id="11746" name="需要回执" CellMask="38"  width="64"/>		
+			<Item id="11745" name="类别" CellMask="38"   width="64"/>		
+			<Item id="11744" name="联系人字段" CellMask="38" width="64"/>		
+		</ZiXun>
+
+		<FutureQuote name="期货行情">
+			<Item id="10159" name="卖价" CellMask="38"  width="80"/>		
+			<Item id="101B8" name="买价" CellMask="38"  width="80"/>		
+			<Item id="10157" name="最低" CellMask="38"  width="80"/>		
+			<Item id="10156" name="最高" CellMask="38"  width="80"/>		
+			<Item id="10155" name="昨收盘" CellMask="38"  width="56"/>		
+			<Item id="10154" name="开盘" CellMask="38"  width="80"/>		
+			<Item id="10153" name="商品名称" CellMask="38"  width="80"/>		
+			<Item id="10152" name="商品代码" CellMask="38"  width="70"/>		
+			<Item id="10175" name="现量" CellMask="38"  width="70"/>		
+			<Item id="10174" name="市场" CellMask="38"  width="70"/>		
+			<Item id="10173" name="结算价" CellMask="38"  width="56"/>		
+			<Item id="10172" name="持仓量" CellMask="38"  width="56"/>		
+			<Item id="10171" name="成交量" CellMask="38"  width="70"/>		
+			<Item id="10170" name="最新价" CellMask="38"  width="56"/>		
+			<Item id="10161" name="卖量" CellMask="38"  width="56"/>		
+			<Item id="10160" name="买量" CellMask="38"  width="56"/>		
+			<Item id="10185" name="前结价" CellMask="38"  width="56"/>		
+			<Item id="10B8" name="现平仓" CellMask="38"  width="56"/>		
+			<Item id="10183" name="现开仓" CellMask="38"  width="56"/>		
+			<Item id="10182" name="持仓差" CellMask="38"  width="56"/>		
+			<Item id="10181" name="IO差" CellMask="38"  width="56"/>		
+			<Item id="10180" name="昨结算" CellMask="38"  width="56"/>		
+			<Item id="10179" name="现结算" CellMask="38"  width="56"/>		
+			<Item id="10178" name="涨幅%" CellMask="38"  width="56"/>		
+			<Item id="10177" name="涨跌" CellMask="38"  width="64"/>		
+			<Item id="10176" name="总持仓" CellMask="38"  width="56"/>		
+		</FutureQuote>
+
+		<Block name="板块信息">
+			<Item id="11334" name="推荐人" CellMask="38"  width="64"/>		
+			<Item id="11335" name="日期" CellMask="38"  width="64"/>		
+			<Item id="11336" name="买价" CellMask="38"  width="64"/>		
+			<Item id="11337" name="卖价" CellMask="38"  width="64"/>		
+		</Block>
+
+		<UserDef name="自定义">
+		</UserDef>
+
+		<OriginalUsed name="内部使用">
+		</OriginalUsed>
+
+		<FiancilaAnalysis name="财务分析">
+		</FiancilaAnalysis>
+	</ColumnProperty>
+</root>
+

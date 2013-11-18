@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="财务数据">
+      <UniqueIdentifier>{b2292cde-2892-44b1-8d83-4a6f01a0322d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="五档行情">
+      <UniqueIdentifier>{8051ed2b-ef31-4f5e-bd55-c6a4260b3c81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="分笔、逐笔">
+      <UniqueIdentifier>{c2d1acb4-2265-4284-ab06-d25563937f54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="标题">
+      <UniqueIdentifier>{2f74e343-f417-40e7-9dbc-ea8b2db828ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="除权">
+      <UniqueIdentifier>{f0a2eb7f-b7c8-4bbb-ae68-f207dee6215b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="成交明细">
+      <UniqueIdentifier>{c0defa1a-2424-48aa-9e9a-7765ffcfb898}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="分价">
+      <UniqueIdentifier>{391cf5b4-308e-4130-b21d-5af969ad723a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="F10咨询">
+      <UniqueIdentifier>{f70a714c-91f1-4200-a74c-bbf1af43ded8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="行情报价">
+      <UniqueIdentifier>{8d24aad7-8e4d-40c1-b7da-a3f47c31a169}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="信息地雷">
+      <UniqueIdentifier>{1436205d-b82d-4422-bdd9-cf2f1b3043d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="值">
+      <UniqueIdentifier>{a15701b2-7c70-46ac-8c8b-0f4d9cf63cd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="十挡行情">
+      <UniqueIdentifier>{753f1aab-bf44-4d65-882a-d74984cf6418}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="交易五档行情">
+      <UniqueIdentifier>{51534b8c-fb54-4fe4-97b8-04fb2bc850a3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DiagramRTable.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\QuoteComm\DrawBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\FormulaManPublic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\WinnerApplication.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawRFinance.cpp">
+      <Filter>财务数据</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawRStockForm.cpp">
+      <Filter>五档行情</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawRTick.cpp">
+      <Filter>分笔、逐笔</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawRStockTitle.cpp">
+      <Filter>标题</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawExitRight.cpp">
+      <Filter>除权</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawTrendDetail.cpp">
+      <Filter>成交明细</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawFenPrice.cpp">
+      <Filter>分价</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawInfo.cpp">
+      <Filter>F10咨询</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawQuoteReport.cpp">
+      <Filter>行情报价</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawQuoteTabCtrl.cpp">
+      <Filter>行情报价</Filter>
+    </ClCompile>
+    <ClCompile Include="MarkContentDlg.cpp">
+      <Filter>行情报价</Filter>
+    </ClCompile>
+    <ClCompile Include="QuoteColumnSetting.cpp">
+      <Filter>行情报价</Filter>
+    </ClCompile>
+    <ClCompile Include="QuoteNewTabGroupDlg.cpp">
+      <Filter>行情报价</Filter>
+    </ClCompile>
+    <ClCompile Include="QuoteSort.cpp">
+      <Filter>行情报价</Filter>
+    </ClCompile>
+    <ClCompile Include="QuoteTabSetting.cpp">
+      <Filter>行情报价</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawXXDL.cpp">
+      <Filter>信息地雷</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawRValue.cpp">
+      <Filter>值</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawRLevelForm.cpp">
+      <Filter>十挡行情</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawTradeStockForm.cpp">
+      <Filter>交易五档行情</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DiagramRTable.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="res\DiagramRTable.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DiagramRTable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawRFinance.h">
+      <Filter>财务数据</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawRStockForm.h">
+      <Filter>五档行情</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawRTick.h">
+      <Filter>分笔、逐笔</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawRStockTitle.h">
+      <Filter>标题</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawExitRight.h">
+      <Filter>除权</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawTrendDetail.h">
+      <Filter>成交明细</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawFenPrice.h">
+      <Filter>分价</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawInfo.h">
+      <Filter>F10咨询</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawQuoteReport.h">
+      <Filter>行情报价</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawQuoteReportStruct.h">
+      <Filter>行情报价</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawQuoteTabCtrl.h">
+      <Filter>行情报价</Filter>
+    </ClInclude>
+    <ClInclude Include="MarkContentDlg.h">
+      <Filter>行情报价</Filter>
+    </ClInclude>
+    <ClInclude Include="QuoteColumnSetting.h">
+      <Filter>行情报价</Filter>
+    </ClInclude>
+    <ClInclude Include="QuoteNewTabGroupDlg.h">
+      <Filter>行情报价</Filter>
+    </ClInclude>
+    <ClInclude Include="QuoteSort.h">
+      <Filter>行情报价</Filter>
+    </ClInclude>
+    <ClInclude Include="QuoteTabSetting.h">
+      <Filter>行情报价</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawXXDL.h">
+      <Filter>信息地雷</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawRValue.h">
+      <Filter>值</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawRLevelForm.h">
+      <Filter>十挡行情</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawTradeStockForm.h">
+      <Filter>交易五档行情</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DiagramRTable.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

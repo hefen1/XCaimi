@@ -1,0 +1,9 @@
+; QuoteReport.def : 声明 DLL 的模块参数。
+
+LIBRARY      "QuoteReport"
+
+EXPORTS
+    ; 此处可以是显式导出
+	InitEntity
+	UninitEntity
+	GetEntityInstance

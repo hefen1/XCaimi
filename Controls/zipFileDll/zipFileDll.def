@@ -1,0 +1,8 @@
+; zipFileDll.def : Declares the module parameters for the DLL.
+
+LIBRARY      "zipFileDll"
+
+EXPORTS
+    ; Explicit exports can go here
+	ZipFile
+	UnZipFile

@@ -1,0 +1,9 @@
+; ConfigCore.def : Declares the module parameters for the DLL.
+
+LIBRARY      "ConfigCore"
+
+EXPORTS
+		InitEntity
+		UninitEntity
+		GetServiceObject
+    ; Explicit exports can go here

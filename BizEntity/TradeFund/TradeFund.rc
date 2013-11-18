@@ -1,0 +1,245 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\TradeFund.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_FUNDENTRUST DIALOGEX 0, 0, 131, 251
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    EDITTEXT        IDC_ED_FUNDCODE,44,3,73,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "基金代码",IDC_ST_FUND,6,7,33,8
+    LTEXT           "基金名称",IDC_ST_FUNDNAME,6,22,33,8,NOT WS_VISIBLE
+    CONTROL         "",IDC_ED_FUNDNAME,"Static",SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | NOT WS_VISIBLE | WS_GROUP,44,18,73,15,WS_EX_CLIENTEDGE
+    LTEXT           "基金净值",IDC_ST_FUNDNAV,6,38,33,8,NOT WS_VISIBLE
+    CONTROL         "",IDC_ED_FUNDNAV,"Static",SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | NOT WS_VISIBLE | WS_GROUP,44,34,73,15,WS_EX_CLIENTEDGE
+    LTEXT           "可用资金",IDC_ST_ENABLEBALANCE,6,53,33,8,NOT WS_VISIBLE
+    CONTROL         "",IDC_ED_ENABLEBALANCE,"Static",SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | NOT WS_VISIBLE | WS_GROUP,44,49,73,15,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_ED_BALANCE,44,65,73,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "认购金额",IDC_ST_BALANCE,8,68,33,8,NOT WS_VISIBLE
+    PUSHBUTTON      "委托[F3]",IDC_BT_OK,75,83,42,14
+    LTEXT           "收费方式",IDC_ST_CHARGETYPE,8,99,33,8,NOT WS_VISIBLE
+    COMBOBOX        IDC_CB_CHARGETYPE,44,97,73,93,CBS_DROPDOWNLIST | CBS_NOINTEGRALHEIGHT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "分红方式",IDC_ST_DIVIDENDMETHOD,8,117,33,8,NOT WS_VISIBLE
+    COMBOBOX        IDC_CB_DIVIDENDMETHOD,44,115,73,93,CBS_DROPDOWNLIST | CBS_NOINTEGRALHEIGHT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "巨额赎回",IDC_ST_EXCEEDFLAG,8,136,33,8,NOT WS_VISIBLE
+    COMBOBOX        IDC_CB_EXCEEDFLAG,44,134,73,93,CBS_DROPDOWNLIST | CBS_NOINTEGRALHEIGHT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ED_TRANSCODE,44,151,73,14,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_VISIBLE
+    LTEXT           "转入代码",IDC_ST_TRANSCODE,8,154,33,8,NOT WS_VISIBLE
+    LTEXT           "预约日期",IDC_ST_HOPEDATE,8,172,33,8,NOT WS_VISIBLE
+    CONTROL         "",IDC_DT_HOPEDATE,"SysDateTimePick32",DTS_RIGHTALIGN | NOT WS_VISIBLE | WS_TABSTOP,44,168,73,15
+    LTEXT           "起始日期",IDC_ST_BEGINDATE,8,192,33,8,NOT WS_VISIBLE
+    CONTROL         "",IDC_DT_BEGINDATE,"SysDateTimePick32",DTS_RIGHTALIGN | NOT WS_VISIBLE | WS_TABSTOP,44,188,73,15
+    LTEXT           "终止日期",IDC_ST_ENDDATE,8,212,33,8,NOT WS_VISIBLE
+    CONTROL         "",IDC_DT_ENDDATE,"SysDateTimePick32",DTS_RIGHTALIGN | NOT WS_VISIBLE | WS_TABSTOP,44,208,73,15
+    EDITTEXT        IDC_ED_FUNDDATE,44,228,73,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "月扣款日",IDC_ST_FUNDDATE,8,231,33,8,NOT WS_VISIBLE
+END
+
+IDD_DIALOG_FUNDQUERY DIALOGEX 0, 0, 316, 180
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG_FUNDRISKTEST DIALOGEX 0, 0, 552, 180
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    PUSHBUTTON      "提交",IDC_BT_OK,104,8,42,14
+    PUSHBUTTON      "下一题",IDC_BT_NEXT,56,8,42,14
+    PUSHBUTTON      "上一题",IDC_BT_BACK,7,8,42,14
+END
+
+IDD_DIALOG_HSFUNDOPEN DIALOGEX 0, 0, 316, 180
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    LTEXT           "基金公司",IDC_ST_FUNDCOMPANY,15,21,33,8
+    COMBOBOX        IDC_CB_FUNDCOMPANY,51,19,73,93,CBS_DROPDOWNLIST | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "开户[F3]",IDC_BT_OK,82,39,42,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_FUNDENTRUST, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 124
+        BOTTOMMARGIN, 199
+    END
+
+    IDD_DIALOG_FUNDQUERY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_DIALOG_FUNDRISKTEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 545
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_DIALOG_HSFUNDOPEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "TradeFund.dll"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "TradeFund.dll"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(936)
+#include "res\TradeFund.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

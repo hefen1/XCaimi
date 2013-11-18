@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="GB2312"?>
+<root>
+	<DefualtGroup name="股票市场"/>
+	<DefualtItem id="4"/>
+	<Group name="股票市场">
+		<Item id="1" name="全部" BlockName="" PageType="82" PageTagType="8100" MarketType="0" ColGroup="股票" MenuMask="10000" DefinedMenu=""/>
+		<Item id="2" name="系统板块" BlockName="" PageType="82" PageTagType="300" MarketType="8202" ColGroup="股票" MenuMask="400" DefinedMenu=""/>
+		<Item id="3" name="自选板块" BlockName="" PageType="82" PageTagType="200" MarketType="8202" ColGroup="股票" MenuMask="800" DefinedMenu=""/>
+		<Item id="4" name="上证Ａ股" BlockName="" PageType="82" PageTagType="8100" MarketType="1101" ColGroup="股票" MenuMask="" DefinedMenu=""/>
+		<Item id="5" name="深证Ａ股" BlockName="" PageType="82" PageTagType="8100" MarketType="1201,1206,120d" ColGroup="股票" MenuMask="" DefinedMenu=""/>
+		<Item id="6" name="上证Ｂ股" BlockName="" PageType="82" PageTagType="8100" MarketType="1102" ColGroup="股票" MenuMask="" DefinedMenu=""/>
+		<Item id="7" name="深证Ｂ股" BlockName="" PageType="82" PageTagType="8100" MarketType="1202" ColGroup="股票" MenuMask="" DefinedMenu=""/>
+		<Item id="8" name="上证债券" BlockName="" PageType="82" PageTagType="8100" MarketType="1103" ColGroup="债券" MenuMask="" DefinedMenu=""/>
+		<Item id="9" name="深证债券" BlockName="" PageType="82" PageTagType="8100" MarketType="1203" ColGroup="债券" MenuMask="" DefinedMenu=""/>
+		<Item id="10" name="上证基金" BlockName="" PageType="82" PageTagType="8100" MarketType="1104" ColGroup="基金" MenuMask="" DefinedMenu=""/>
+		<Item id="11" name="深证基金" BlockName="" PageType="82" PageTagType="8100" MarketType="1204" ColGroup="基金" MenuMask="" DefinedMenu=""/>
+		<Item id="12" name="上证权证" BlockName="" PageType="82" PageTagType="8100" MarketType="110a" ColGroup="股票" MenuMask="" DefinedMenu=""/>
+		<Item id="13" name="深证权证" BlockName="" PageType="82" PageTagType="8100" MarketType="120a" ColGroup="股票" MenuMask="" DefinedMenu=""/>
+		<Item id="14" name="中小盘股" BlockName="" PageType="82" PageTagType="8100" MarketType="1206" ColGroup="股票" MenuMask="" DefinedMenu=""/>
+		<Item id="15" name="创业板" BlockName="" PageType="82" PageTagType="8100" MarketType="120d" ColGroup="股票" MenuMask="" DefinedMenu=""/>
+	</Group>
+</root>

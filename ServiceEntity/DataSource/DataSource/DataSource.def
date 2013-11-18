@@ -1,0 +1,12 @@
+; DataSource.def : Declares the module parameters for the DLL.
+
+LIBRARY      "DataSource"
+
+EXPORTS
+    ; Explicit exports can go here
+	InitEntity
+	UninitEntity
+	GetServiceObject
+
+SECTIONS
+	.hs_datasource_data	READ WRITE SHARED

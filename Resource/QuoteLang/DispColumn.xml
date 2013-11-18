@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="GB2312"?>
+<root>
+	<DefaultDispColGroup name="股票"/>
+	<DispColumn>
+		<Stock name="股票">
+			<Item ColumnID="10073" ColumnWidth="64"/>
+			<Item ColumnID="10058" ColumnWidth="64"/>
+			<Item ColumnID="10047" ColumnWidth="90"/>
+			<Item ColumnID="10049" ColumnWidth="64"/>
+			<Item ColumnID="10057" ColumnWidth="64"/>
+			<Item ColumnID="10052" ColumnWidth="56"/>
+			<Item ColumnID="10051" ColumnWidth="64"/>
+			<Item ColumnID="10059" ColumnWidth="64"/>
+			<Item ColumnID="10053" ColumnWidth="64"/>
+			<Item ColumnID="10048" ColumnWidth="64"/>
+			<Item ColumnID="10054" ColumnWidth="64"/>
+			<Item ColumnID="10055" ColumnWidth="64"/>
+			<Item ColumnID="10056" ColumnWidth="56"/>
+			<Item ColumnID="10050" ColumnWidth="64"/>
+			<Item ColumnID="10067" ColumnWidth="90"/>
+			<Item ColumnID="10070" ColumnWidth="56"/>
+			<Item ColumnID="10071" ColumnWidth="64"/>
+			<Item ColumnID="10060" ColumnWidth="64"/>
+		</Stock>
+		<Fund name="基金">
+			<Item ColumnID="10073" ColumnWidth="64"/>
+			<Item ColumnID="10058" ColumnWidth="64"/>
+			<Item ColumnID="10047" ColumnWidth="90"/>
+			<Item ColumnID="10049" ColumnWidth="64"/>
+			<Item ColumnID="10057" ColumnWidth="64"/>
+			<Item ColumnID="10051" ColumnWidth="64"/>
+			<Item ColumnID="10052" ColumnWidth="64"/>
+			<Item ColumnID="10059" ColumnWidth="64"/>
+			<Item ColumnID="10048" ColumnWidth="64"/>
+			<Item ColumnID="10053" ColumnWidth="64"/>
+			<Item ColumnID="10054" ColumnWidth="64"/>
+			<Item ColumnID="10055" ColumnWidth="64"/>
+			<Item ColumnID="10056" ColumnWidth="56"/>
+			<Item ColumnID="10050" ColumnWidth="64"/>
+			<Item ColumnID="10067" ColumnWidth="90"/>
+			<Item ColumnID="10070" ColumnWidth="56"/>
+			<Item ColumnID="10126" ColumnWidth="64"/>
+			<Item ColumnID="10071" ColumnWidth="64"/>
+		</Fund>
+		<Bond name="债券">
+			<Item ColumnID="10073" ColumnWidth="64"/>
+			<Item ColumnID="10058" ColumnWidth="64"/>
+			<Item ColumnID="10047" ColumnWidth="90"/>
+			<Item ColumnID="10049" ColumnWidth="64"/>
+			<Item ColumnID="10057" ColumnWidth="64"/>
+			<Item ColumnID="10051" ColumnWidth="64"/>
+			<Item ColumnID="10052" ColumnWidth="64"/>
+			<Item ColumnID="10059" ColumnWidth="64"/>
+			<Item ColumnID="10048" ColumnWidth="64"/>
+			<Item ColumnID="10053" ColumnWidth="64"/>
+			<Item ColumnID="10054" ColumnWidth="64"/>
+			<Item ColumnID="10055" ColumnWidth="64"/>
+			<Item ColumnID="10056" ColumnWidth="64"/>
+			<Item ColumnID="10050" ColumnWidth="64"/>
+			<Item ColumnID="10067" ColumnWidth="90"/>
+			<Item ColumnID="10070" ColumnWidth="90"/>
+			<Item ColumnID="10127" ColumnWidth="64"/>
+		</Bond>
+		<Future name="期货">
+			<Item ColumnID="10073" ColumnWidth="64"/>
+			<Item ColumnID="10058" ColumnWidth="64"/>
+			<Item ColumnID="10047" ColumnWidth="90"/>
+			<Item ColumnID="10170" ColumnWidth="56"/>
+			<Item ColumnID="10057" ColumnWidth="64"/>
+			<Item ColumnID="10176" ColumnWidth="56"/>
+			<Item ColumnID="10171" ColumnWidth="64"/>
+			<Item ColumnID="10175" ColumnWidth="64"/>
+			<Item ColumnID="10155" ColumnWidth="56"/>
+			<Item ColumnID="10154" ColumnWidth="64"/>
+			<Item ColumnID="10156" ColumnWidth="64"/>
+			<Item ColumnID="10157" ColumnWidth="56"/>
+			<Item ColumnID="10061" ColumnWidth="64"/>
+			<Item ColumnID="10063" ColumnWidth="64"/>
+			<Item ColumnID="10050" ColumnWidth="56"/>
+			<Item ColumnID="10160" ColumnWidth="56"/>
+			<Item ColumnID="10161" ColumnWidth="64"/>
+			<Item ColumnID="10180" ColumnWidth="56"/>
+		</Future>
+		<Finance name="财务">
+			<Item ColumnID="10073" ColumnWidth="64"/>
+			<Item ColumnID="10058" ColumnWidth="64"/>
+			<Item ColumnID="10047" ColumnWidth="90"/>
+			<Item ColumnID="11157" ColumnWidth="110"/>
+			<Item ColumnID="11151" ColumnWidth="110"/>
+			<Item ColumnID="11174" ColumnWidth="110"/>
+			<Item ColumnID="11173" ColumnWidth="110"/>
+			<Item ColumnID="11172" ColumnWidth="120"/>
+			<Item ColumnID="11192" ColumnWidth="110"/>
+			<Item ColumnID="11190" ColumnWidth="110"/>
+			<Item ColumnID="11178" ColumnWidth="120"/>
+			<Item ColumnID="11177" ColumnWidth="110"/>
+			<Item ColumnID="11199" ColumnWidth="110"/>
+			<Item ColumnID="11195" ColumnWidth="110"/>
+		</Finance>
+		<DefinedBlock name="板块">
+			<Item ColumnID="10073" ColumnWidth="64"/>
+			<Item ColumnID="10058" ColumnWidth="64"/>
+			<Item ColumnID="10047" ColumnWidth="90"/>
+			<Item ColumnID="10076" ColumnWidth="64"/>
+			<Item ColumnID="10049" ColumnWidth="64"/>
+			<Item ColumnID="10048" ColumnWidth="64"/>
+			<Item ColumnID="10050" ColumnWidth="64"/>
+			<Item ColumnID="10057" ColumnWidth="64"/>
+			<Item ColumnID="10070" ColumnWidth="64"/>
+			<Item ColumnID="10053" ColumnWidth="64"/>
+			<Item ColumnID="10054" ColumnWidth="64"/>
+			<Item ColumnID="10051" ColumnWidth="64"/>
+			<Item ColumnID="10052" ColumnWidth="64"/>
+			<Item ColumnID="10055" ColumnWidth="64"/>
+			<Item ColumnID="10056" ColumnWidth="64"/>
+			<Item ColumnID="10059" ColumnWidth="64"/>
+		</DefinedBlock>
+	</DispColumn>
+</root>

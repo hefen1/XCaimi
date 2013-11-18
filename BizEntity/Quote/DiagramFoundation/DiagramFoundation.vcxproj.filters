@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="DiagramTab">
+      <UniqueIdentifier>{fd70c4f0-0b0e-4176-8ab5-7b18a6c9c97c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DiagramTable">
+      <UniqueIdentifier>{0c4354e5-4f2b-486f-9a9a-902d22ff41f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DiagramScroll">
+      <UniqueIdentifier>{74ee572f-0e95-47f4-b277-06b205a7e1ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DiagramTitle">
+      <UniqueIdentifier>{71813e64-d99a-40a7-b5bb-7b1257c5cc1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DiagramViewInfo">
+      <UniqueIdentifier>{d62f8c7a-add5-4da4-b01b-0cf86591bdac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DiagramCalc">
+      <UniqueIdentifier>{0c9a2bf0-2008-45a7-a127-fa1ab147773c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AlalysisText">
+      <UniqueIdentifier>{4eb50be8-c627-4eee-98a2-809f8083df9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HtmlDlg">
+      <UniqueIdentifier>{5aafec70-2d95-41d3-9281-2b5d28a7bee3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DiagramFoundation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\QuoteComm\DrawBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\HelperLib\GeneralHelper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\WinnerApplication.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DiagramTab.cpp">
+      <Filter>DiagramTab</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawCell.cpp">
+      <Filter>DiagramTable</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawItem.cpp">
+      <Filter>DiagramTable</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawTableBase.cpp">
+      <Filter>DiagramTable</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawTool.cpp">
+      <Filter>DiagramTable</Filter>
+    </ClCompile>
+    <ClCompile Include="PointChangeBehavior.cpp">
+      <Filter>DiagramTable</Filter>
+    </ClCompile>
+    <ClCompile Include="HSScrollBar.cpp">
+      <Filter>DiagramScroll</Filter>
+    </ClCompile>
+    <ClCompile Include="HSTitle.cpp">
+      <Filter>DiagramTitle</Filter>
+    </ClCompile>
+    <ClCompile Include="HSViewInfo.cpp">
+      <Filter>DiagramViewInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Common\FormulaManPublic.cpp">
+      <Filter>DiagramCalc</Filter>
+    </ClCompile>
+    <ClCompile Include="HSCalculate.cpp">
+      <Filter>DiagramCalc</Filter>
+    </ClCompile>
+    <ClCompile Include="AnalysisTextData.cpp">
+      <Filter>AlalysisText</Filter>
+    </ClCompile>
+    <ClCompile Include="DHtmlShowDlg.cpp">
+      <Filter>HtmlDlg</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DiagramFoundation.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="res\DiagramFoundation.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DiagramComm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DiagramFoundation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DiagramFoundationDef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DiagramTab.h">
+      <Filter>DiagramTab</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawCell.h">
+      <Filter>DiagramTable</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawItem.h">
+      <Filter>DiagramTable</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawTableBase.h">
+      <Filter>DiagramTable</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawTableStruct.h">
+      <Filter>DiagramTable</Filter>
+    </ClInclude>
+    <ClInclude Include="HSScrollBar.h">
+      <Filter>DiagramScroll</Filter>
+    </ClInclude>
+    <ClInclude Include="HSTitle.h">
+      <Filter>DiagramTitle</Filter>
+    </ClInclude>
+    <ClInclude Include="HSViewInfo.h">
+      <Filter>DiagramViewInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="HSCalculate.h">
+      <Filter>DiagramCalc</Filter>
+    </ClInclude>
+    <ClInclude Include="AnalysisTextData.h">
+      <Filter>AlalysisText</Filter>
+    </ClInclude>
+    <ClInclude Include="DHtmlShowDlg.h">
+      <Filter>HtmlDlg</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DiagramFoundation.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

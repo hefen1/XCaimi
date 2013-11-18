@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{adf8a677-40b4-4d02-bc74-1860b7ef82c4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Inplaceedit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyBoard.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyboardDataList.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyBoardImp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyButton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WndKeyboard.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\FormulaManPublic.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\KeyBoardStruct.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\WinnerApplication.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="KeyBoard.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="res\KeyBoard.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Inplaceedit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyBoard.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardDataList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyBoardImp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyButton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WndKeyboard.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\FormulaManInterFace.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\FormulaManPublic.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\KeyboardInterface.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\KeyBoardStruct.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\WinnerApplication.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap_d.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bitmap_f.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\closebtn.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\resource.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="KeyBoard.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

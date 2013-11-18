@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<!-- 存放的内容就是HsCalla文件中的内容 -->
+<root>
+    <HsSystem name="系统配置">
+    	<SupportLevel2 value="0"/>
+      <SupportFuture value="1"/>
+      <ServerIntiMarket>
+        <QuoteServer value="0x1100|0x1200"/> <!--上海：0x1100 深圳：0x1200-->
+        <FutureServer value="0x4100|0x4200|0x4300|0x4400|0x4500"/><!--大连期货：0x4100 上海期货：0x4200 郑州期货：0x4300 黄金交易所：0x4400 股指期货：0x4500-->
+      </ServerIntiMarket>
+    </HsSystem>
+    <HsGraph name="图形相关配置">
+    </HsGraph>
+    <Infomation name="资讯类配置">  
+    	<InfoProvider value="资讯路径-特色资讯" /> 
+    </Infomation>
+    <ScrollNews name="跑马灯配置">
+        <Status>
+            <StatusName value="" />
+            <!-- 状态栏名称 -->
+            <ShowThirdIndex value="1" />
+            <ShowFourthIndex value="1" />
+            <!--状态栏指数翻滚速度(秒)-->
+            <scrollSpeed value="2" />
+						<!--根据券商要求指数栏上显示特定股票的名称-->
+            <StockName>
+            	  <stock code="1A0001" newName="沪指" />
+            	  <stock code="2A01"   newName="深指" />
+            	  <stock code="399005" newName="中小板指" />
+            	  <stock code="1B0300" newName="沪深300"  />
+            </StockName>
+            
+            <UpDownRate value="1" />
+						<Total value="1" />					
+						<ShowNewPirce value="1" />
+						<UpDown value="1" />
+						
+            <stockUserInfo>
+                <!-- 股票信息 -->
+                 <FirstList>
+                    <stock code="1A0001" codeType="4352" />
+                </FirstList>
+                <SecondList>
+                    <stock code="2A01" codeType="4608" />
+                </SecondList>
+                <ThirdList>
+                    <stock code="399005" codeType="4608" />
+                </ThirdList>
+                <FourthList>
+                    <stock code="399006" codeType="4608" />
+                </FourthList>
+            </stockUserInfo>
+        </Status>
+        <ScrollNewsBar>
+            <!-- 跑马灯配置信息 -->
+            <ShowScrollAlone value="0" />
+            <!-- ShowScrollAlone 跑马灯显示方式 0：跑马灯和状态条在同一行；1：跑马灯单独一行在状态条上面；2：状态条单独一行，跑马灯在最下面一行 -->
+            <ScrollFixed value="1" />
+            <!-- ScrollFixed 跑马灯是否固定在状态栏上 -->
+            <ScrollMultiLine value="0" />
+            <!-- ScrollMultiLine 跑马灯是否多行显示 -->
+            <ScrollSpeed value="50" />
+            <!-- ScrollSpeed 跑马灯咨询滚动速度(毫秒) -->
+            <HorizonScrollWay value="3" />
+            <!-- HorizonScrollWay行情水平滚动方向 3: 向左; 4：向右-->
+            <VerticalScrollWay value="2" />
+            <!-- VerticalScrollWay 行情垂直滚动方向 1: 向上; 2：向下-->
+            <clickWay value="0" />
+            <!-- clickWay 显示行情方式 0：单击; 1：双击  -->
+        </ScrollNewsBar>
+    </ScrollNews>
+    <Miscellany name="杂项配置">  
+    	<Section/>      
+    </Miscellany>
+</root>
+

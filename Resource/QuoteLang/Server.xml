@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<root>
+    <Quote default="海通-芜湖电信1">
+        <site name="海通-芜湖电信" IP="218.22.80.70" port="9999"/>
+        <HeartBeat value="30000" />
+    </Quote>
+    <Future default="信达期货">
+      <site name="期货1" IP="60.191.25.162" port="9900" />
+      <site name="信达期货" IP="124.160.26.147" port="9999" />
+      <site name="国泰期货" IP="222.66.232.238" port="9999" />
+    </Future>
+    <Trade>
+        <site name="交易1" IP="60.191.25.162" port="7777" />
+        <Cell id="1" default="交易1">
+           <site name="交易1" IP="60.191.25.162" port="7777" />
+        </Cell>
+        <Cell id="2" default="期货1">
+        	 <site name="期货1" IP="60.191.25.162" port="9999" />
+        </Cell>
+        <HeartBeat value="60000" />
+    </Trade>
+    <Level2 default="level2默认">
+    		<site name="level2默认" IP="192.168.87.150" port="18525" />
+    </Level2>
+    <Center />
+    <Info />
+    <Switch>
+        <Quote value="1" />
+        <Future value="1"/>
+        <Trade value="1" />
+        <Level2 value="0" />
+        <Center value="0" />
+        <Info value="0" />
+        <AutoChooseBest auto="0" />
+    </Switch>
+    <Account>
+    	<SaveAccount value="0" />
+    	<HideAccount value="0" />
+      <Level2Acc name="1001" pwd="1111" />
+    </Account>
+</root>

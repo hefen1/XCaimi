@@ -1,0 +1,9 @@
+; TradeStock.def : Declares the module parameters for the DLL.
+
+LIBRARY      "TradeStock"
+
+EXPORTS
+    InitEntity
+	UninitEntity
+	GetEntityInstance
+    ; Explicit exports can go here

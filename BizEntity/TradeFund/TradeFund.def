@@ -1,0 +1,9 @@
+; TradeFund.def : Declares the module parameters for the DLL.
+
+LIBRARY      "TradeFund"
+
+EXPORTS
+	InitEntity
+	UninitEntity
+	GetEntityInstance
+    ; Explicit exports can go here

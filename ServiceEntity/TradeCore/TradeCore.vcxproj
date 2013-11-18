@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AD6F303E-DD5E-4403-B9FF-916D16904900}</ProjectGuid>
+    <RootNamespace>TradeCore</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.61030.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\bin\HSWinner\trade\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\bin\HSWinner_Release\trade\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\Common;..\..\Common\TradeComm;..\..\Controls\tinyxpath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CallingConvention>Cdecl</CallingConvention>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\TradeCore.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\..\Common;..\..\Common\TradeComm;..\..\Controls\tinyxpath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\TradeCore.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences />
+      <EnableCOMDATFolding />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TradeCore.cpp" />
+    <ClCompile Include="Ar1Packet.cpp" />
+    <ClCompile Include="BankStockTransfer.cpp" />
+    <ClCompile Include="BusinessLogic.cpp" />
+    <ClCompile Include="ChangePassword.cpp" />
+    <ClCompile Include="..\..\Common\DLLEntryBase.cpp" />
+    <ClCompile Include="ModifyUserInfo.cpp" />
+    <ClCompile Include="..\..\Common\PackEntry.cpp" />
+    <ClCompile Include="QueryBank.cpp" />
+    <ClCompile Include="QueryBase.cpp" />
+    <ClCompile Include="QueryFund.cpp" />
+    <ClCompile Include="QueryUserInfo.cpp" />
+    <ClCompile Include="ReqHeart.cpp" />
+    <ClCompile Include="TradeAccountMng.cpp" />
+    <ClCompile Include="TradeDataBase.cpp" />
+    <ClCompile Include="TradeDataCore.cpp" />
+    <ClCompile Include="TradeLogin.cpp" />
+    <ClCompile Include="Trading.cpp" />
+    <ClCompile Include="..\..\Common\WinnerApplication.cpp" />
+    <ClCompile Include="WndTrading.cpp" />
+    <ClCompile Include="QueryStockAccount.cpp" />
+    <ClCompile Include="QueryStockDeal.cpp" />
+    <ClCompile Include="QueryStockEntrust.cpp" />
+    <ClCompile Include="QueryStockFundInfo.cpp" />
+    <ClCompile Include="QueryStockHold.cpp" />
+    <ClCompile Include="QueryStockMaxBuy.cpp" />
+    <ClCompile Include="QueryStockMaxSell.cpp" />
+    <ClCompile Include="TradeSetStockCostPrice.cpp" />
+    <ClCompile Include="TradeStockEntrust.cpp" />
+    <ClCompile Include="TradeStockWithDraw.cpp" />
+    <ClCompile Include="TradeStockZJHK.cpp" />
+    <ClCompile Include="TradeStockZJHQ.cpp" />
+    <ClCompile Include="QueryFundCompany.cpp" />
+    <ClCompile Include="QueryFundEntrust.cpp" />
+    <ClCompile Include="QueryFundHold.cpp" />
+    <ClCompile Include="QueryFundInfo.cpp" />
+    <ClCompile Include="QueryFundStockAccount.cpp" />
+    <ClCompile Include="TradeFundEntrust.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TradeCore.def" />
+    <None Include="res\TradeCore.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TradeCore.h" />
+    <ClInclude Include="Ar1Packet.h" />
+    <ClInclude Include="BankStockTransfer.h" />
+    <ClInclude Include="..\..\Common\TradeComm\BankStockTransferIntf.h" />
+    <ClInclude Include="BusinessLogic.h" />
+    <ClInclude Include="..\..\Common\TradeComm\BusinessLogicIntf.h" />
+    <ClInclude Include="ChangePassword.h" />
+    <ClInclude Include="..\..\Common\TradeComm\ChangePasswordIntf.h" />
+    <ClInclude Include="..\..\Common\DLLEntryBase.h" />
+    <ClInclude Include="ModifyUserInfo.h" />
+    <ClInclude Include="..\..\Common\TradeComm\ModifyUserInfoIntf.h" />
+    <ClInclude Include="..\..\Common\PackEntry.h" />
+    <ClInclude Include="QueryBank.h" />
+    <ClInclude Include="..\..\Common\TradeComm\QueryBankIntf.h" />
+    <ClInclude Include="QueryBase.h" />
+    <ClInclude Include="..\..\Common\TradeComm\QueryBaseIntf.h" />
+    <ClInclude Include="QueryFund.h" />
+    <ClInclude Include="..\..\Common\TradeComm\QueryFundIntf.h" />
+    <ClInclude Include="QueryUserInfo.h" />
+    <ClInclude Include="..\..\Common\TradeComm\QueryUserInfoIntf.h" />
+    <ClInclude Include="ReqHeart.h" />
+    <ClInclude Include="..\..\Common\TradeComm\ReqHeartIntf.h" />
+    <ClInclude Include="TradeAccountMng.h" />
+    <ClInclude Include="..\..\Common\TradeComm\TradeAccountMngIntf.h" />
+    <ClInclude Include="TradeDataBase.h" />
+    <ClInclude Include="..\..\Common\TradeComm\TradeDataBaseIntf.h" />
+    <ClInclude Include="TradeDataCore.h" />
+    <ClInclude Include="..\..\Common\TradeComm\TradeDataCoreIntf.h" />
+    <ClInclude Include="TradeLogin.h" />
+    <ClInclude Include="..\..\Common\TradeComm\TradeLoginIntf.h" />
+    <ClInclude Include="Trading.h" />
+    <ClInclude Include="..\..\Common\TradeComm\TradingIntf.h" />
+    <ClInclude Include="..\..\Common\WinnerApplication.h" />
+    <ClInclude Include="WndTrading.h" />
+    <ClInclude Include="QueryStockAccount.h" />
+    <ClInclude Include="..\..\Common\TradeComm\QueryStockAccountIntf.h" />
+    <ClInclude Include="QueryStockDeal.h" />
+    <ClInclude Include="..\..\Common\TradeComm\QueryStockDealIntf.h" />
+    <ClInclude Include="QueryStockEntrust.h" />
+    <ClInclude Include="..\..\Common\TradeComm\QueryStockEntrustIntf.h" />
+    <ClInclude Include="QueryStockFundInfo.h" />
+    <ClInclude Include="..\..\Common\TradeComm\QueryStockFundInfoIntf.h" />
+    <ClInclude Include="QueryStockHold.h" />
+    <ClInclude Include="..\..\Common\TradeComm\QueryStockHoldIntf.h" />
+    <ClInclude Include="QueryStockMaxBuy.h" />
+    <ClInclude Include="..\..\Common\TradeComm\QueryStockMaxBuyIntf.h" />
+    <ClInclude Include="QueryStockMaxSell.h" />
+    <ClInclude Include="..\..\Common\TradeComm\QueryStockMaxSellIntf.h" />
+    <ClInclude Include="TradeSetStockCostPrice.h" />
+    <ClInclude Include="..\..\Common\TradeComm\TradeSetStockCostPriceIntf.h" />
+    <ClInclude Include="TradeStockEntrust.h" />
+    <ClInclude Include="..\..\Common\TradeComm\TradeStockEntrustIntf.h" />
+    <ClInclude Include="TradeStockWithDraw.h" />
+    <ClInclude Include="..\..\Common\TradeComm\TradeStockWithDrawIntf.h" />
+    <ClInclude Include="TradeStockZJHK.h" />
+    <ClInclude Include="..\..\Common\TradeComm\TradeStockZJHKIntf.h" />
+    <ClInclude Include="TradeStockZJHQ.h" />
+    <ClInclude Include="..\..\Common\TradeComm\TradeStockZJHQIntf.h" />
+    <ClInclude Include="QueryFundCompany.h" />
+    <ClInclude Include="..\..\Common\TradeComm\QueryFundCompanyIntf.h" />
+    <ClInclude Include="QueryFundEntrust.h" />
+    <ClInclude Include="..\..\Common\TradeComm\QueryFundEntrustIntf.h" />
+    <ClInclude Include="QueryFundHold.h" />
+    <ClInclude Include="..\..\Common\TradeComm\QueryFundHoldIntf.h" />
+    <ClInclude Include="QueryFundInfo.h" />
+    <ClInclude Include="..\..\Common\TradeComm\QueryFundInfoIntf.h" />
+    <ClInclude Include="QueryFundStockAccount.h" />
+    <ClInclude Include="..\..\Common\TradeComm\QueryFundStockAccountIntf.h" />
+    <ClInclude Include="TradeFundEntrust.h" />
+    <ClInclude Include="..\..\Common\TradeComm\TradeFundEntrustIntf.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TradeCore.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

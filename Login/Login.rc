@@ -1,0 +1,380 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\Login.rc2""  // ??è? Microsoft Visual C++ ?¨¤?§?è?-|¨???¨￠?§o???\r\n"
+    "#include ""l.CHS\\afxres.rc""      // ?¨¤?§o?¨￠??¨￠?§|?t\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Login.dll"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "Login.dll"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_LOGIN DIALOGEX 0, 0, 336, 200
+STYLE DS_SETFONT | WS_POPUP | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    CONTROL         "登录",IDC_BUTTON_LOGIN,"Button",BS_OWNERDRAW | WS_TABSTOP,179,142,46,14
+    CONTROL         "脱机",IDC_BUTTON_TUOJI,"Button",BS_OWNERDRAW | WS_TABSTOP,239,163,47,14
+    CONTROL         "退出",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,240,142,45,14
+    CONTROL         "使用指南",IDC_BUTTON_GUIDE,"Button",BS_OWNERDRAW | WS_TABSTOP,51,163,43,14
+    CONTROL         "通讯设置",IDC_BUTTON_COMM,"Button",BS_OWNERDRAW | WS_TABSTOP,116,163,43,14
+    CONTROL         "测速",IDC_BUTTON_TEST,"Button",BS_OWNERDRAW | WS_TABSTOP,179,163,45,14
+    CONTROL         "行情+交易",IDC_RADIO_HQJY,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,53,43,58,15
+    CONTROL         "交易",IDC_RADIO_JY,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,136,43,51,15
+    CONTROL         "行情",IDC_RADIO_HQ,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,208,43,54,15
+    GROUPBOX        "",IDC_STATIC_INPUTZONE,52,61,232,79,NOT WS_VISIBLE
+    CTEXT           "",IDC_STATIC_PROGRESS,7,186,322,13
+END
+
+IDD_PROPPAGE_SRVMAN DIALOGEX 0, 0, 231, 189
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "属性页"
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_LIST_SRV,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,0,0,231,150
+    PUSHBUTTON      "设置为默认",IDC_BUTTON_DEFAULT,1,154,50,14
+    PUSHBUTTON      "增加",IDC_BUTTON_ADD,92,155,41,14
+    PUSHBUTTON      "修改",IDC_BUTTON_MODIFY,142,155,40,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DEL,190,155,41,14
+END
+
+IDD_PROPPAGE_PROXYMAN DIALOGEX 0, 0, 223, 181
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    CONTROL         "自动选择最快站点",IDC_CHECK_AUTO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,0,80,10
+    GROUPBOX        "代理",IDC_STATIC,0,16,223,151
+    CONTROL         "使用代理",IDC_CHECK_PROXY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,31,48,10
+    CONTROL         "使用绿色通道",IDC_CHECK_CHENNAL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,85,31,64,10
+    PUSHBUTTON      "测试代理",IDC_BUTTON_TEST,173,28,43,14
+    LTEXT           "代理地址",IDC_STATIC,7,52,33,8
+    LTEXT           "：",IDC_STATIC,166,53,8,8
+    EDITTEXT        IDC_EDIT_PORT,173,49,42,14,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "类型",IDC_STATIC,7,71,108,92
+    GROUPBOX        "",IDC_STATIC,123,71,93,92
+    CONTROL         "Http代理",IDC_RADIO_HTTP,"Button",BS_AUTORADIOBUTTON | WS_GROUP,28,92,48,10
+    CONTROL         "Sockets4协议",IDC_RADIO_SOCKET4,"Button",BS_AUTORADIOBUTTON,28,116,64,10
+    CONTROL         "Sockets5协议",IDC_RADIO_SOCKET5,"Button",BS_AUTORADIOBUTTON,28,140,64,10
+    LTEXT           "验证用户:",IDC_STATIC,135,85,37,8
+    EDITTEXT        IDC_EDIT_USER,135,98,73,14,ES_AUTOHSCROLL
+    LTEXT           "验证密码:",IDC_STATIC,135,121,37,8
+    EDITTEXT        IDC_EDIT_PWD,135,137,74,14,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "",IDC_EDIT_IP,"SysIPAddress32",WS_TABSTOP,64,48,100,15
+END
+
+IDD_DIALOG_SRV_SET DIALOGEX 0, 0, 237, 84
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,57,12,111,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ADDR,57,36,111,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PORT,57,59,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "确定",IDOK,180,13,50,14
+    PUSHBUTTON      "取消",IDCANCEL,180,37,50,14
+    LTEXT           "站点名称",IDC_STATIC,17,14,33,8
+    LTEXT           "站点地址",IDC_STATIC,18,39,33,8
+    LTEXT           "端口号",IDC_STATIC,25,60,25,8
+END
+
+IDD_DIALOG_SPEEDTEST DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "站点测速"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "选择",IDOK,205,162,50,14
+    PUSHBUTTON      "返回",IDCANCEL,259,162,50,14
+    CONTROL         "",IDC_TAB_SPEET,"SysTabControl32",TCS_BUTTONS,6,7,302,14
+    CONTROL         "",IDC_LIST_TEST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,24,302,131
+    PUSHBUTTON      "测速",IDC_BUTTON_TEST,7,162,50,14
+END
+
+IDD_DIALOG_JY DIALOGEX 0, 0, 222, 80
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_TRANSPARENT
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    COMBOBOX        IDC_COMBO_AccountType,41,3,48,133,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_Cell,92,3,75,121,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ACCOUNT,41,23,126,50,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_JYPWD,41,42,125,14,ES_PASSWORD | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_VALIDATE,41,62,125,14,ES_AUTOHSCROLL
+    CONTROL         "隐藏账号",IDC_CHECK_HIDENO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,174,5,48,10
+    CONTROL         "记住账号",IDC_CHECK_REMEMBER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,174,24,48,10
+    LTEXT           "登录方式",IDC_STATIC,5,5,33,8
+    LTEXT           "资金账号",IDC_ST_ACCOUNT,5,26,33,8
+    LTEXT           "交易密码",IDC_STATIC,5,45,33,8
+    LTEXT           "验证码",IDC_STATIC,13,65,25,8
+    GROUPBOX        "",IDC_STATIC_VALIDATE,169,58,52,18,NOT WS_VISIBLE
+    PUSHBUTTON      "键盘",IDC_BUTTON_SoftKeyboard,172,41,22,16
+END
+
+IDD_DIALOG_LEVELINPUT DIALOGEX 0, 0, 229, 78
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_SHACC,62,7,146,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SHPWD,62,43,146,14,ES_PASSWORD | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "上海Level2帐号",IDC_STATIC,5,10,54,8
+    LTEXT           "密码",IDC_STATIC,23,45,17,8
+    GROUPBOX        "",IDC_STATIC,0,0,229,78
+END
+
+IDD_PROPPAGE_LEVEL DIALOGEX 0, 0, 218, 89
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    LTEXT           "帐号",IDC_STATIC,35,25,17,8
+    LTEXT           "密码",IDC_STATIC,34,54,17,8
+    EDITTEXT        IDC_EDIT_SHACC_PAGE,66,22,123,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SHPWD_PAGE,66,51,123,14,ES_PASSWORD | ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "上海level2",IDC_STATIC,5,7,209,78
+END
+
+IDD_DIALOG_LEVELFRAME DIALOGEX 0, 0, 241, 97
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_STC_ZONE,0,0,241,73
+    PUSHBUTTON      "确认",IDC_BTN_LOGIN,119,81,50,14
+    PUSHBUTTON      "取消",IDC_BTN_CANCEL,191,81,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 329
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 199
+    END
+
+    IDD_PROPPAGE_SRVMAN, DIALOG
+    BEGIN
+        RIGHTMARGIN, 195
+        BOTTOMMARGIN, 127
+    END
+
+    IDD_PROPPAGE_PROXYMAN, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 180
+    END
+
+    IDD_DIALOG_SRV_SET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_DIALOG_SPEEDTEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_PROPPAGE_LEVEL, DIALOG
+    BEGIN
+        RIGHTMARGIN, 217
+        BOTTOMMARGIN, 4
+    END
+
+    IDD_DIALOG_LEVELFRAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 234
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP2             BITMAP                  "res\\bitmap1.bmp"
+IDB_BITMAP3             BITMAP                  "res\\bmp00003.bmp"
+IDB_BITMAP1             BITMAP                  "res\\userinfo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_JYNow        "正在登录交易..."
+    IDS_STRING_JYSuccess    "登录交易成功！"
+    IDS_STRING_JYFail       "登录交易失败！"
+    IDS_STRING_QuoteFail    "连接行情服务器失败！"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_QuoteNow     "正在连接行情服务器..."
+    IDS_STRING_AccountError "请输入账号"
+    IDS_STRING_PasswardError "请输入密码"
+    IDS_STRING_ValidateError "您输入的验证码错误，请重新输入！"
+    IDS_STRING_JYServerFail "连接交易服务器失败"
+    IDS_STRING_Error        "错误"
+    IDS_STRING_SrvNameNone  "站点名称不能为空"
+    IDS_STRING_SrvIPNone    "地址不能为空"
+    IDS_STRING_SrvPortNone  "端口号不能为空"
+    IDS_STRING_SrvNameRepeart "站点名称重复"
+    IDS_STRING_ProxySuccess "此代理能够连上！"
+    IDS_STRING_ProxyFail    "不能连接到该代理！"
+    IDS_STRING_ProxyTest    "代理测试"
+    IDS_STRING_ProxyNameNone "请填写代理地址！"
+    IDS_STRING_ProxyPortNone "请填写端口！"
+    IDS_STRING_ProxyKindNone "请选择代理类型！"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_EditQuoteNameNone "请选择要修改的地址！"
+    IDS_STRING_DeleteQutoNameNone "请选择要删除的地址！"
+    IDS_STRING_Level2Now    "正在连接Level2服务器..."
+    IDS_STRING_Level2Fail   "连接Level2服务器失败"
+    IDS_STRING_Level2AccOrPWDERR "Level2账号或密码错误"
+    IDS_STRING_KeyboardInit "键盘精灵初始化..."
+    IDS_STRING_KeyboardFinish "键盘精灵初始化完成！"
+    IDS_STRING_FutureFail   "连接期行情失败"
+    IDS_STRING_FutureNow    "正在连接期货行情"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\Login.rc2"  // ??è? Microsoft Visual C++ ?¨¤?§?è?-|¨???¨￠?§o???
+#include "l.CHS\afxres.rc"      // ?¨¤?§o?¨￠??¨￠?§|?t
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

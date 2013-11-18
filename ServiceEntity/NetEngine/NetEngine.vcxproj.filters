@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="源文件\common">
+      <UniqueIdentifier>{384a8fa6-2728-4b10-9e12-cd43071de608}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="头文件\common">
+      <UniqueIdentifier>{28826b5e-ee05-4494-b294-243661a98d39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ChannelsImp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectManagerAPIImp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectManagerDemon.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectorImp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectorImpDemon.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectorImpThread.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectorManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HeartBeat.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NetEngine.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="QuoteConnector.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerSpeedTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TradeConnector.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NetEngineStructDefine.cpp">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="TradePacker.cpp">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\WinnerApplication.cpp">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NetEngine.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="res\NetEngine.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ChannelsImp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ConnectorImp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ConnectorManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HeartBeat.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NetEngine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QuoteConnector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerSpeedTest.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TradeConnector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\NetEngineInterface.h">
+      <Filter>头文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="NetEngineJYAPI.h">
+      <Filter>头文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="NetEngineStructDefine.h">
+      <Filter>头文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="TradePacker.h">
+      <Filter>头文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\WinnerApplication.h">
+      <Filter>头文件\common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NetEngine.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

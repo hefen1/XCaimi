@@ -1,0 +1,9 @@
+; TradeCommAction.def : Declares the module parameters for the DLL.
+
+LIBRARY      "TradeCommAction"
+
+EXPORTS
+	InitEntity
+	UninitEntity
+	GetEntityInstance
+    ; Explicit exports can go here

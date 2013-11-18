@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="GB2312"?>
+<root>
+	<Tables>
+		<!-- 股票功能字段配置表-->
+		<!-- 查询权限状态 -->
+		<item Name="2513">
+			<column Name="purviewid" DispName="功能代码" Index="0"/>
+			<column Name="purviewname" DispName="委托方式" Index="1"/>
+			<column Name="purviewstate" DispName="当前状态" Index="2"/>
+			<column Name="operate" DispName="操作" Index="3"/>
+		</item>
+		<!-- 查询资金 -->
+		<item Name="2104" LinkTable="2502"/>
+		<item Name="2520" LinkTable="2502"/>
+		<item Name="2515" LinkTable="2502"/>
+		<item Name="3533" LinkTable="2502"/>
+		<item Name="2502">
+			<column Name="money_type" DispName="币种类别" ConvertTable="money_type" Index="0"/>
+			<column Name="current_balance" DispName="资金余额" Index="1" DispFormat="###,0.00"/>
+			<column Name="enable_balance" DispName="可用资金" Index="2" DispFormat="###,0.00"/>
+			<column Name="asset_balance" DispName="资产总值" Index="3" DispFormat="###,0.00"/>
+			<!--合计 HLType 0:表示是币种,1:表示市场-->
+			<sumcolumn HLAmountIndex="1|2|3|" HLType="0" Index="0"/>
+		</item>
+		<!-- 查询持仓 -->
+		<item Name="2103" LinkTable="2501"/>
+		<item Name="2521" LinkTable="2501"/>
+		<item Name="2517" LinkTable="2501"/>
+		<item Name="2501">
+			<column Name="stock_code" DispName="股票代码" Index="0"/>
+			<column Name="stock_name" DispName="股票名称" Index="1"/>
+			<column Name="current_amount" DispName="股票余额" Index="2" DispFormat="0"/>
+			<column Name="enable_amount" DispName="可卖数量" Index="3" DispFormat="0"/>
+			<column Name="cost_price" DispName="成本价" Index="4" DispFormat="###,0.000"/>
+			<column Name="last_price" DispName="最新价" Index="5" DispFormat="###,0.000"/>
+			<column Name="market_value" DispName="市值" Index="6" DispFormat="###,0.00"/>
+			<column Name="income_balance" DispName="买卖盈亏" Index="7" DispFormat="###,0.00"/>
+			<column Name="income_balance_ratio" DispName="盈亏率(%)" Index="8" DispFormat="###,0.00"/>
+			<column Name="stock_account" DispName="股东账号" Index="9"/>
+			<column Name="exchange_type" DispName="证券市场" ConvertTable="exchange_type" Index="10"/>
+			<!--合计 HLType 0:表示是币种,1:表示市场-->
+			<sumcolumn AmountIndex="2|3|" HLAmountIndex="6|7|" HLType="1" Index="0"/>
+			<!--汇总-->
+			<hzcolumn DispName="市场汇总" HZIndex="10|,2|3|6|7|10|,-1|2|,-1|3|,-1|6|,-1|7|" Index="0"/>
+		</item>
+		<!-- 当可撤委托
+        <item Name="2033">
+		  <column Name="exchange_type" DispName="证券市场" ConvertTable="exchange_type" Index="0"/>
+		  <column Name="stock_account" DispName="证券账号" Index="1"/>
+		  <column Name="stock_code" DispName="证券代码" Index="2"/>
+		  <column Name="stock_name" DispName="股票名称" Index="3"/>
+		  <column Name="entrust_bs" DispName="买卖方向" ConvertTable="entrust_bs" Index="4"/>
+		  <column Name="entrust_price" DispName="委托价格" Index="5"/>
+		  <column Name="entrust_amount" DispName="委托数量" Index="6"/>
+		  <column Name="business_amount" DispName="成交数量" Index="7"/>
+		  <column Name="entrust_status" DispName="委托状态" ConvertTable="entrust_status" Index="8"/>
+
+			<hzcolumn DispName="股票汇总"  HZIndex="1|2|3|,0|1|2|3|4|5|6|7|,5|6|,-1|6|,-1|7|"   Index="0"/>
+		</item>  -->
+		<!-- 当日委托 -->
+		<item Name="2105" LinkTable="2024"/>
+		<item Name="2106" LinkTable="2024"/>
+		<item Name="2522" LinkTable="2024"/>
+		<item Name="2033" LinkTable="2024">
+		</item>
+		<item Name="2034" LinkTable="2024">
+		</item>
+		<item Name="2035" LinkTable="2024">
+		</item>
+		<item Name="2024">
+			<column Name="entrust_no" DispName="合同号" Index="0"/>
+			<column Name="report_time" DispName="申报时间" DispFormat="HH:NN:SS" Index="1"/>
+			<column Name="entrust_name" DispName="委托状态" Index="2"/>
+			<column Name="stock_account" DispName="股东账号" Index="3"/>
+			<column Name="stock_code" DispName="股票代码" Index="4"/>
+			<column Name="stock_name" DispName="股票名称" Index="5"/>
+			<column Name="bs_name" DispName="买卖方向" Index="6"/>
+			<column Name="entrust_price" DispName="委托价格" Index="7"/>
+			<column Name="entrust_amount" DispName="委托数量" Index="8"/>
+			<column Name="business_price" DispName="成交价格" Index="9"/>
+			<column Name="business_amount" DispName="成交数量" Index="10"/>
+			<column Name="exchange_type" DispName="证券市场" ConvertTable="exchange_type" Index="11"/>
+			<column Name="prop_name" DispName="委托类别" Index="12"/>
+			<!--汇总-->
+			<hzcolumn DispName="股票汇总" HZIndex="3|4|6|,3|4|5|6|7|8|9|10|,-1|8|,-1|10|,7|8|,9|10|" Index="0"/>
+		</item>
+		<!-- 历史委托 -->
+		<item Name="2099" LinkTable="2025"/>
+		<item Name="2025">
+			<column Name="date" DispName="委托日期" Index="0"/>
+			<column Name="entrust_name" DispName="委托状态" Index="1"/>
+			<column Name="entrust_no" DispName="委托编号" Index="2"/>
+			<column Name="stock_account" DispName="股东账号" Index="3"/>
+			<column Name="stock_code" DispName="股票代码" Index="4"/>
+			<column Name="stock_name" DispName="股票名称" Index="5"/>
+			<column Name="bs_name" DispName="买卖方向" Index="6"/>
+			<column Name="entrust_price" DispName="委托价格" Index="7"/>
+			<column Name="entrust_amount" DispName="委托数量" Index="8"/>
+			<column Name="business_price" DispName="成交价格" Index="9"/>
+			<column Name="business_amount" DispName="成交数量" Index="10"/>
+			<column Name="exchange_type" DispName="证券市场" ConvertTable="exchange_type" Index="11"/>
+			<!--汇总-->
+			<hzcolumn DispName="股票汇总" HZIndex="3|4|6|,3|4|5|6|7|8|9|10|,-1|8|,-1|10|,7|8|,9|10|" Index="0"/>
+		</item>
+		<!-- 当日成交 -->
+		<item Name="2107" LinkTable="2026"/>
+		<item Name="2523" LinkTable="2026"/>
+		<item Name="2026">
+			<column Name="business_time" DispName="成交时间" Index="0"/>
+			<column Name="stock_account" DispName="股东账号" Index="1"/>
+			<column Name="stock_code" DispName="股票代码" Index="2"/>
+			<column Name="stock_name" DispName="股票名称" Index="3"/>
+			<column Name="business_price" DispName="成交价格" Index="4"/>
+			<column Name="business_amount" DispName="成交数量" Index="5"/>
+			<column Name="bs_name" DispName="买卖方向" Index="6"/>
+			<column Name="entrust_no" DispName="成交编号" Index="7"/>
+			<column Name="business_balance" DispName="成交金额" Index="8"/>
+			<column Name="exchange_type" DispName="证券市场" ConvertTable="exchange_type" Index="9"/>
+			<column Name="status_name" DispName="成交状态" Index="10"/>
+			<column Name="business_type" DispName="成交类别" ConvertTable="business_type" Index="11"/>
+			<!--合计 HLType 0:表示是币种,1:表示市场-->
+			<sumcolumn AmountIndex="5|" HLAmountIndex="8|" HLType="1" Index="0"/>
+			<!--汇总-->
+			<hzcolumn DispName="股票汇总" HZIndex="1|2|6|,1|2|3|4|5|6|8|9|,-1|5|,4|5|,-1|8|" Index="0"/>
+		</item>
+		<!-- 历史成交 -->
+		<item Name="2027">
+			<column Name="date" DispName="成交日期" Index="0"/>
+			<column Name="stock_account" DispName="股东账号" Index="1"/>
+			<column Name="stock_code" DispName="股票代码" Index="2"/>
+			<column Name="stock_name" DispName="股票名称" Index="3"/>
+			<column Name="business_price" DispName="成交价格" Index="4"/>
+			<column Name="business_amount" DispName="成交数量" Index="5"/>
+			<column Name="entrust_bs" DispName="买卖方向" ConvertTable="entrust_bs" Index="6"/>
+			<column Name="business_no" DispName="成交编号" Index="7"/>
+			<column Name="business_balance" DispName="成交金额" Index="8"/>
+			<column Name="exchange_type" DispName="证券市场" ConvertTable="exchange_type" Index="9"/>
+			<column Name="status_name" DispName="成交状态" Index="10"/>
+			<column Name="serial_no" DispName="流水号" Index="11"/>
+			<!--合计 HLType 0:表示是币种,1:表示市场-->
+			<sumcolumn AmountIndex="5|" HLAmountIndex="8|" HLType="1" Index="0"/>
+			<!--汇总-->
+			<hzcolumn DispName="股票汇总" HZIndex="1|2|6|,1|2|3|4|5|6|8|9|,-1|5|,4|5|,-1|8|" Index="0"/>
+		</item>
+		<!-- 资金流水 -->
+		<item Name="2028">
+			<column Name="serial_no" DispName="流水号" Index="0"/>
+			<column Name="business_date" DispName="交易日期" Index="1"/>
+			<column Name="business_flag" DispName="业务标志" Index="2"/>
+			<column Name="business_name" DispName="业务名称" Index="3"/>
+			<column Name="money_type" DispName="币种类别" ConvertTable="money_type" Index="4"/>
+			<column Name="occur_balance" DispName="资金发生额" Index="5"/>
+			<column Name="post_balance" DispName="发生后余额" Index="6"/>
+			<column Name="exchange_type" DispName="市场类别" Index="7"/>
+			<column Name="stock_code" DispName="股票标识" Index="8"/>
+			<column Name="stock_name" DispName="股票名称" Index="9"/>
+			<column Name="entrust_bs" DispName="买卖方向" Index="10"/>
+			<column Name="business_price" DispName="成交价格" Index="11"/>
+			<column Name="occur_amount" DispName="发生数量" Index="12"/>
+			<column Name="remark" DispName="备注" Index="13"/>
+		</item>
+		<!-- 查询账号 -->
+		<item Name="2507">
+			<column Name="exchange_type" DispName="交易类别" ConvertTable="MarkType" Index="0"/>
+			<column Name="stock_account" DispName="证券账号" Index="1"/>
+			<column Name="holder_status" DispName="股东状态" Index="2"/>
+			<column Name="holder_rights" DispName="股东权限 " Index="3"/>
+			<column Name="main_flag" DispName="主副标志" Index="4"/>
+			<column Name="register" DispName="指定标志" Index="5"/>
+			<column Name="enable_amount" DispName="可卖数量" Index="6"/>
+		</item>
+		<!-- 查询交割 -->
+		<item Name="2029">
+			<column Name="对账单信息" DispName="对账单信息" Index="0"/>
+		</item>
+		<!-- 查询配号 -->
+		<item Name="2030">
+			<column Name="date" DispName="发生日期" Index="0"/>
+			<column Name="serial_no" DispName="流水号" Index="1"/>
+			<column Name="exchange_type" DispName="市场类别" ConvertTable="exchange_type" Index="2"/>
+			<column Name="stock_code" DispName="股票代码" Index="3"/>
+			<column Name="stock_name" DispName="股票名称" Index="4"/>
+			<column Name="start_num" DispName="起始配号" Index="5"/>
+			<column Name="match_num" DispName="配号个数" Index="6"/>
+			<column Name="stock_account" DispName="股东账号" Index="7"/>
+		</item>
+		<!-- 查询中签 -->
+		<item Name="2031">
+			<column Name="date" DispName="发生日期" Index="0"/>
+			<column Name="exchange_type" DispName="市场类别" ConvertTable="exchange_type" Index="1"/>
+			<column Name="stock_account" DispName="股东账号" Index="2"/>
+			<column Name="stock_code" DispName="股票代码" Index="3"/>
+			<column Name="stock_name" DispName="股票名称" Index="4"/>
+			<column Name="business_price" DispName="成交价格" Index="5"/>
+			<column Name="成交金额" DispName="成交金额" Index="6"/>
+			<column Name="occur_amount" DispName="发生数量" Index="7"/>
+		</item>
+		<!--组合委托结果-->
+		<item Name="2040" LinkTable="2039"/>
+		<item Name="2044" LinkTable="2039"/>
+		<item Name="2045" LinkTable="2039"/>
+		<item Name="2039">
+			<column Name="exchange_type" DispName="市场类别" ConvertTable="exchange_type" Index="0"/>
+			<column Name="stock_account" DispName="股东账号" Index="1"/>
+			<column Name="stock_code" DispName="股票代码" Index="2"/>
+			<column Name="entrust_bs" DispName="买卖方向" ConvertTable="entrust_bs" Index="3"/>
+			<column Name="entrust_price" DispName="委托价格" Index="4"/>
+			<column Name="entrust_amount" DispName="委托数量" Index="5"/>
+			<column Name="entrust_no" DispName="合同号" Index="6"/>
+			<column Name="entrust_result" DispName="处理结果" Index="7"/>
+		</item>
+		<!-- 查询银行 -->
+		<item Name="3501">
+			<column Name="money_type" DispName="币种类别" ConvertTable="money_type" Index="0"/>
+			<column Name="bank_no" DispName="银行代码" Index="1"/>
+			<column Name="bank_name" DispName="银行名称" Index="2"/>
+			<column Name="bank_account" DispName="银行账号" Index="3"/>
+		</item>
+		<!-- 查询转账流水 -->
+		<item Name="3020" LinkTable="3015">
+		</item>
+		<item Name="3015">
+			<column Name="bank_no" DispName="银行号码" Index="0"/>
+			<column Name="bank_name" DispName="银行名称" Index="1"/>
+			<column Name="entrust_no" DispName="合同号" Index="2"/>
+			<column Name="trans_name" DispName="成交类别" Index="3"/>
+			<column Name="occur_balance" DispName="发生金额" Index="4"/>
+			<column Name="cancel_info" DispName="状态" Index="5"/>
+			<!--汇总-->
+			<!--
+            <hzcolumn DispName="转账汇总" HZIndex="0|3|,0|1|3|4|,-1|4|" Index="0"/> -->
+		</item>
+		<!-- 基金功能字段配置表-->
+		<!-- 查询基金信息-->
+		<item Name="3502">
+			<column Name="company_name" DispName="基金公司" Index="0"/>
+			<column Name="fund_code" DispName="基金代码" Index="1"/>
+			<column Name="fund_name" DispName="基金名称" Index="2"/>
+			<column Name="fund_risklevel_name" DispName="风险等级名称" Index="3"/>
+			<column Name="nav" DispName="基金净值" Index="4"/>
+			<column Name="status_name" DispName="基金状态" Index="5"/>
+			<column Name="基金状态" DispName="基金状态" Index="6"/>
+			<column Name="type_name" DispName="收费类别" Index="7"/>
+			<column Name="maxsize" DispName="发行总数" Index="8"/>
+			<column Name="par_value" DispName="发行价格" Index="9"/>
+			<column Name="最低限额" DispName="最低限额" Index="10"/>
+			<column Name="最低金额" DispName="最低金额" Index="11"/>
+		</item>
+		<!-- 查询基金账号-->
+		<item Name="3021">
+			<column Name="trans_account" DispName="基金账号" Index="0"/>
+			<column Name="fund_company" DispName="基金公司代码" Index="1"/>
+			<column Name="company_name" DispName="基金公司名称" Index="2"/>
+			<column Name="holder_name" DispName="账户姓名" Index="3"/>
+			<column Name="" DispName="" Index="4"/>
+		</item>
+		<!-- 查询基金份额-->
+		<item Name="3504">
+			<column Name="company_name" DispName="基金公司" Index="0"/>
+			<column Name="fund_code" DispName="基金代码" Index="1"/>
+			<column Name="current_share" DispName="基金当前份额" Index="2"/>
+			<column Name="enable_shares" DispName="基金可用数量" Index="3"/>
+			<column Name="fund_name" DispName="基金名称" Index="4"/>
+			<column Name="筹码原值" DispName="筹码原值" Index="5"/>
+			<column Name="market_value" DispName="市值" Index="6"/>
+			<column Name="盈利" DispName="盈利" Index="7"/>
+			<sumcolumn AmountIndex="2|3|5|6|7|" Index="0"/>
+		</item>
+		<!-- 查询基金当日委托-->
+		<item Name="3009" LinkTable="3008">
+		</item>
+		<item Name="3008">
+			<column Name="date" DispName="发生日期" Index="0"/>
+			<column Name="entrust_no" DispName="合同号" Index="1"/>
+			<column Name="trans_account" DispName="基金账号" Index="2"/>
+			<column Name="business_name" DispName="业务名称" Index="3"/>
+			<column Name="balance" DispName="交易金额" Index="4"/>
+			<column Name="shares" DispName="交易份额" Index="5"/>
+			<column Name="fund_code" DispName="基金代码" Index="6"/>
+			<column Name="fund_name" DispName="基金名称" Index="7"/>
+			<column Name="status_name" DispName="委托状态" Index="8"/>
+			<column Name="regflag" DispName="风险委托类型" ConvertTable="regflag" Index="9"/>
+			<!--合计-->
+			<sumcolumn AmountIndex="4|5|" Index="0"/>
+			<!--汇总-->
+			<hzcolumn DispName="委托汇总" HZIndex="3|6|8|,2|3|4|5|6|7|8|,-1|4|,-1|5|" Index="0"/>
+		</item>
+		<!-- 查询基金历史成交-->
+		<item Name="3023">
+			<column Name="date" DispName="发生日期" Index="0"/>
+			<column Name="allotno" DispName="申请编号" Index="1"/>
+			<column Name="fund_code" DispName="基金代码" Index="2"/>
+			<column Name="fund_name" DispName="基金名称" Index="3"/>
+			<column Name="business_name" DispName="业务名称" Index="4"/>
+			<column Name="trade_amount" DispName="交易金额" Index="5"/>
+			<column Name="trade_share" DispName="交易份额" Index="6"/>
+			<column Name="balance" DispName="成交金额" Index="7"/>
+			<column Name="shares" DispName="成交份额" Index="8"/>
+			<column Name="trade_fee" DispName="成交费用" Index="9"/>
+			<column Name="company_name" DispName="基金公司" Index="10"/>
+			<!--合计-->
+			<sumcolumn AmountIndex="5|6|7|8|9|" Index="0"/>
+			<!--汇总-->
+			<hzcolumn DispName="成交汇总" HZIndex="2|4|,2|3|4|5|6|7|8|9|10|,-1|5|,-1|6|,-1|7|,-1|8|,-1|9|" Index="0"/>
+		</item>
+		<!-- 期货功能字段配置表-->
+		<!-- 查询期货账号-->
+		<item Name="4521">
+			<column Name="futu_exch_type" DispName="市场类别" ConvertTable="MarkType" Index="0"/>
+			<column Name="exchange_name" DispName="市场名称" Index="1"/>
+			<column Name="futures_account" DispName="期货账号" Index="2"/>
+			<column Name="status_name" DispName="账号状态" Index="3"/>
+			<column Name="futures_rights" DispName="期货账号权限" Index="4"/>
+			<column Name="futures_restricts" DispName="期货账号限制" Index="5"/>
+			<column Name="main_flag" DispName="主副标志" Index="6"/>
+			<column Name="seat_no" DispName="席位号" Index="7"/>
+		</item>
+		<!-- 查询持仓-->
+		<item Name="4504">
+			<column Name="futu_exch_type" DispName="市场类别" ConvertTable="MarkType" Index="0"/>
+			<column Name="contract_code" DispName="合约代码" Index="1"/>
+			<column Name="买持仓" DispName="买持仓" Index="2"/>
+			<column Name="买均价" DispName="买均价" Index="3"/>
+			<column Name="卖持仓" DispName="卖持仓" Index="4"/>
+			<column Name="卖均价" DispName="卖均价" Index="5"/>
+			<column Name="买浮动" DispName="买浮动" Index="6"/>
+			<column Name="卖浮动" DispName="卖浮动" Index="7"/>
+			<column Name="最新价" DispName="最新价" Index="8"/>
+			<column Name="hedge_type_name" DispName="套保" Index="9"/>
+			<column Name="浮动盈亏" DispName="浮动盈亏" Index="10"/>
+			<column Name="futures_account" DispName="期货账号" Index="11"/>
+			<column Name="今买持仓" DispName="今买持仓" Index="12"/>
+			<column Name="今卖持仓" DispName="今卖持仓" Index="13"/>
+		</item>
+		<!-- 当日委托 -->
+		<item Name="4021" LinkTable="4010">
+		</item>
+		<item Name="4010">
+			<column Name="entrust_time" DispName="委托时间" Index="0"/>
+			<column Name="entrust_no" DispName="委托编号" Index="1"/>
+			<column Name="fund_account" DispName="资金账号" Index="2"/>
+			<column Name="exchange_name" DispName="交易所" ConvertTable="MarkType" Index="3"/>
+			<column Name="contract_code" DispName="合约代码" Index="4"/>
+			<column Name="money_type" DispName="币种类别" ConvertTable="money_type" Index="5"/>
+			<column Name="futures_direction_name" DispName="开平仓" Index="6"/>
+			<column Name="futu_entrust_price" DispName="委托价格" Index="7"/>
+			<column Name="entrust_bs_name" DispName="买卖方向" Index="8"/>
+			<column Name="hedge_type_name" DispName="套保" Index="9"/>
+			<column Name="status_name" DispName="状态" Index="10"/>
+			<column Name="business_amount" DispName="成交数量" Index="11"/>
+			<column Name="entrust_amount" DispName="委托数量" Index="12"/>
+			<column Name="cancel_amount" DispName="撤单数量" Index="13"/>
+			<column Name="hold_balance" DispName="开仓冻结保证金" Index="14"/>
+			<column Name="futu_entrust_type_name" DispName="委托类型名称" Index="15"/>
+			<column Name="frozen_fare" DispName="冻结费用" Index="16"/>
+			<column Name="error_message" DispName="备注" Index="17"/>
+		</item>
+		<!-- 历史委托 -->
+		<item Name="4022" LinkTable="4505">
+		</item>
+		<item Name="4505">
+			<column Name="init_date" DispName="发生日期" Index="0"/>
+			<column Name="entrust_time" DispName="委托时间" Index="1"/>
+			<column Name="entrust_no" DispName="委托编号" Index="2"/>
+			<column Name="fund_account" DispName="资金账号" Index="3"/>
+			<column Name="exchange_name" DispName="交易所" Index="4"/>
+			<column Name="contract_code" DispName="合约代码" Index="5"/>
+			<column Name="money_type" DispName="币种类别" ConvertTable="money_type" Index="6"/>
+			<column Name="futu_entrust_price" DispName="委托价格" Index="7"/>
+			<column Name="futures_direction_name" DispName="开平仓" Index="8"/>
+			<column Name="entrust_bs_name" DispName="买卖方向" Index="9"/>
+			<column Name="hedge_type_name" DispName="套保" Index="10"/>
+			<column Name="status_name" DispName="状态" Index="11"/>
+			<column Name="business_amount" DispName="成交数量" Index="12"/>
+			<column Name="entrust_amount" DispName="委托数量" Index="13"/>
+			<column Name="cancel_amount" DispName="撤单数量" Index="14"/>
+			<column Name="hold_balance" DispName="开仓冻结保证金" Index="15"/>
+			<column Name="futu_entrust_type_name" DispName="委托类型" Index="16"/>
+			<column Name="frozen_fare" DispName="冻结费用" Index="17"/>
+			<column Name="error_message" DispName="备注" Index="18"/>
+		</item>
+		<item Name="4012">
+			<column Name="serial_no" DispName="流水号" Index="0"/>
+			<column Name="init_date" DispName="交易日期" Index="1"/>
+			<column Name="business_flag" DispName="业务标志" Index="2"/>
+			<column Name="business_name" DispName="业务名称" Index="3"/>
+			<column Name="money_type" DispName="币种类别" ConvertTable="money_type" Index="4"/>
+			<column Name="occur_balance" DispName="资金发生额" Index="5"/>
+			<column Name="post_balance" DispName="发生后余额" Index="6"/>
+			<column Name="remark" DispName="备注" Index="7"/>
+			<column Name="借方" DispName="借方" Index="8"/>
+			<column Name="贷方" DispName="贷方" Index="9"/>
+			<column Name="摘要" DispName="摘要" Index="10"/>
+		</item>
+		<!--当日资金流水 -->
+		<item Name="4020">
+			<column Name="serial_no" DispName="流水号" Index="0"/>
+			<column Name="business_date" DispName="交易日期" Index="1"/>
+			<column Name="business_flag" DispName="业务标志" Index="2"/>
+			<column Name="business_name" DispName="业务名称" Index="3"/>
+			<column Name="money_type" DispName="币种类别" ConvertTable="money_type" Index="4"/>
+			<column Name="occur_balance" DispName="资金发生额" Index="5"/>
+			<column Name="post_balance" DispName="发生后余额" Index="6"/>
+			<!--<column Name="exchange_type" DispName="市场类别" Index="7"/>
+			<column Name="stock_code" DispName="股票标识" Index="8"/>
+			<column Name="stock_name" DispName="股票名称" Index="9"/>
+			<column Name="entrust_bs" DispName="买卖方向" Index="10"/>
+			<column Name="business_price" DispName="成交价格" Index="11"/>
+			<column Name="occur_amount" DispName="发生数量" Index="12"/>-->
+			<column Name="remark" DispName="备注" Index="13"/>
+		</item>
+		<!-- 查询资金 -->
+		<item Name="4520">
+			<column Name="money_type" DispName="币种类别" ConvertTable="money_type" Index="0"/>
+			<column Name="current_balance" DispName="资金余额" Index="1"/>
+			<column Name="enable_balance" DispName="可用资金" Index="2"/>
+			<column Name="fetch_balance" DispName="可用资金" Index="3"/>
+			<column Name="frozen_balance" DispName="履约保证金" Index="4"/>
+			<column Name="real_hold_balanceA" DispName="当日开仓预冻结金额" Index="5"/>
+			<column Name="real_hold_balanceB" DispName="当日开仓预冻结保证金和费用" Index="6"/>
+			<column Name="hold_profit" DispName="盯市盈亏" Index="7"/>
+			<column Name="hold_profit_float" DispName="总浮动盈亏" Index="8"/>
+			<column Name="pre_rights_balance" DispName="期初客户权益" Index="9"/>
+			<column Name="rights_balance" DispName="客户权益" Index="10"/>
+			<column Name="interest_balance" DispName="预计利息" Index="11"/>
+			<column Name="rights_balance_float" DispName="浮动客户权益" Index="12"/>
+			<column Name="real_drop" DispName="盯市平仓盈亏" Index="13"/>
+			<column Name="real_drop_float" DispName="浮动平仓盈亏" Index="14"/>
+			<column Name="frozen_fare" DispName="冻结费用" Index="15"/>
+			<column Name="bail_balanc" DispName="客户保证金" Index="16"/>
+			<column Name="exch_bail_balance" DispName="交易所保证金" Index="17"/>
+			<column Name="client_risk" DispName="客户风险率" Index="18"/>
+			<column Name="exch_risk" DispName="交易所风险率" Index="19"/>
+		</item>
+		<!-- 查询当日成交 -->
+		<item Name="4023" LinkTable="4011">
+		</item>
+		<item Name="4011">
+			<column Name="init_date" DispName="发生日期" Index="0"/>
+			<column Name="serial_no" DispName="流水编号" Index="1"/>
+			<column Name="entrust_no" DispName="委托编号" Index="2"/>
+			<column Name="exchange_name" DispName="交易名称" Index="3"/>
+			<column Name="futures_account" DispName="期货账号" Index="4"/>
+			<column Name="contract_code" DispName="合约代码" Index="5"/>
+			<column Name="contract_name" DispName="合约名称" Index="6"/>
+			<column Name="money_type" DispName="币种类别" ConvertTable="money_type" Index="7"/>
+			<column Name="futures_direction_name" DispName="开平仓" Index="8"/>
+			<column Name="entrust_bs_name" DispName="买卖方向" Index="9"/>
+			<column Name="futu_business_price" DispName="成交价格" Index="10"/>
+			<column Name="futu_entrust_type_name" DispName="委托类别" Index="11"/>
+			<column Name="business_time" DispName="成交时间" Index="12"/>
+			<column Name="business_amount" DispName="成交数量" Index="13"/>
+			<column Name="frozen_fare" DispName="冻结费用" Index="14"/>
+			<column Name="futu_business_no" DispName="成交编号" Index="15"/>
+		</item>
+		<!-- 查询历史成交 -->
+		<item Name="4024" LinkTable="4506">
+		</item>
+		<item Name="4506">
+			<column Name="init_date" DispName="发生日期" Index="0"/>
+			<column Name="serial_no" DispName="流水编号" Index="1"/>
+			<column Name="exchange_name" DispName="交易名称" Index="2"/>
+			<column Name="futures_account" DispName="期货账号" Index="3"/>
+			<column Name="contract_code" DispName="合约代码" Index="4"/>
+			<column Name="contract_name" DispName="合约名称" Index="5"/>
+			<column Name="money_type" DispName="币种类别" ConvertTable="money_type" Index="6"/>
+			<column Name="futures_direction_name" DispName="开平仓" Index="7"/>
+			<column Name="entrust_bs_name" DispName="买卖方向" Index="8"/>
+			<column Name="open_drop_price" DispName="成交价格" Index="9"/>
+			<column Name="futu_business_price" DispName="成交价格" Index="9"/>
+			<column Name="business_name" DispName="委托类别" Index="10"/>
+			<column Name="business_time" DispName="成交时间" Index="11"/>
+			<column Name="business_amount" DispName="成交数量" Index="12"/>
+			<column Name="frozen_fare" DispName="冻结总费用" Index="13"/>
+			<column Name="drop_profit" DispName="平仓盈亏" Index="14"/>
+			<column Name="drop_profit_float" DispName="平仓浮动盈亏" Index="15"/>
+			<column Name="futu_business_no" DispName="成交编号" Index="16"/>
+		</item>
+		<!--查询转账银行-->
+		<item Name="4522">
+			<column Name="bank_no" DispName="银行号码" Index="0"/>
+			<column Name="bank_name" DispName="银行名称" Index="1"/>
+			<column Name="bank_account" DispName="银行账号" Index="2"/>
+		</item>
+		<!--查询转账流水-->
+		<item Name="4019">
+			<column Name="fund_account" DispName="资金账号" Index="0"/>
+			<column Name="bank_name" DispName="银行名称" Index="1"/>
+			<column Name="entrust_no" DispName="合同号" Index="2"/>
+			<column Name="trans_name" DispName="成交类别" Index="3"/>
+			<column Name="source_flag" DispName="发起方" Index="4"/>
+			<column Name="money_name" DispName="币种名称" Index="5"/>
+			<column Name="occur_balance" DispName="资金发生额" Index="6"/>
+			<column Name="entrust_time" DispName="委托时间" Index="7"/>
+			<column Name="entrust_name" DispName="委托状态" Index="8"/>
+			<column Name="cancel_info" DispName="废单原因" Index="9"/>
+		</item>
+		<!--银行账号查询-->
+		<item Name="5001">
+			<column Name="money_type" DispName="币种类别" ConvertTable="money_type" Index="0"/>
+			<column Name="bank_no" DispName="银行代码" Index="1"/>
+			<column Name="bank_name" DispName="银行名称" Index="2"/>
+			<column Name="bank_account" DispName="银行帐号" Index="3"/>
+			<column Name="bkaccount_status" DispName="银行帐号状态" Index="4"/>
+			<column Name="bkaccount_rights" DispName="银行帐号权限" Index="5"/>
+		</item>
+		<!--账户查询-->
+		<item Name="5002">
+			<column Name="fund_account" DispName="资金帐号" Index="0"/>
+			<!--column Name="bank_no" DispName="银行代码" Index="1"/>
+			<column Name="bank_name" DispName="银行名称" Index="2"/-->
+			<column Name="main_flag" DispName="主账号标志" ConvertTable="main_flag" Index="3"/>
+			<column Name="money_type" DispName="币种类别" ConvertTable="money_type" Index="4"/>
+			<column Name="current_balance" DispName="当前余额" Index="5"/>
+			<column Name="enable_balance" DispName="可用金额" Index="6"/>
+			<column Name="fetch_balance" DispName="可取金额" Index="7"/>
+			<!--合计 HLType 0:表示是币种,1:表示市场-->
+			<sumcolumn AmountIndex="" HLAmountIndex="5|6|7|" HLType="2" Index="0"/>
+		</item>
+		<!--当日调拨流水-->
+		<item Name="5004">
+			<column Name="curr_time" DispName="发生时间" Index="0"/>
+			<column Name="serial_no" DispName="流水序号" Index="1"/>
+			<column Name="Business_flag" DispName="业务标志" Index="2"/>
+			<column Name="fund_account_s" DispName="转出资金帐号" Index="3"/>
+			<column Name="branch_no_d" DispName="转入分支代码" Index="4"/>
+			<column Name="fund_account_d" DispName="转入资金帐号" Index="5"/>
+			<column Name="money_type" DispName="币种" ConvertTable="money_type" Index="6"/>
+			<column Name="occur_balance" DispName="操作金额" Index="7"/>
+			<column Name="deal_status" DispName="处理状态" ConvertTable="deal_status" Index="8"/>
+			<column Name="bank_name_s" DispName="转出银行名称" Index="9"/>
+			<column Name="bank_name_d" DispName="转入银行名称" Index="10"/>
+		</item>
+		<!--多银行转账流水-->
+		<item Name="5005">
+			<column Name="fund_account" DispName="资金帐号" Index="0"/>
+			<column Name="bank_name" DispName="银行名称" Index="1"/>
+			<column Name="entrust_no" DispName="合同号" Index="2"/>
+			<column Name="trans_name" DispName="成交类别" Index="3"/>
+			<column Name="source_flag" DispName="发起方" Index="4"/>
+			<column Name="money_name" DispName="币种" Index="5"/>
+			<column Name="occur_balance" DispName="资金发生额" Index="6"/>
+			<column Name="entrust_time" DispName="委托时间" Index="7"/>
+			<column Name="entrust_name" DispName="委托状态" Index="8"/>
+			<column Name="error_no" DispName="错误号" Index="9"/>
+			<column Name="cancel_info" DispName="废单原因" Index="10"/>
+		</item>
+		<!--历史调拨流水-->
+		<item Name="5012">
+			<column Name="init_date" DispName="发生日期" Index="0"/>
+			<column Name="curr_time" DispName="发生时间" Index="1"/>
+			<column Name="serial_no" DispName="流水序号" Index="2"/>
+			<column Name="business_name" DispName="业务名称" Index="3"/>
+			<column Name="fund_account_s" DispName="转出资金帐号" Index="4"/>
+			<column Name="fund_account_d" DispName="转入资金帐号" Index="5"/>
+			<column Name="money_type" DispName="币种" ConvertTable="money_type" Index="6"/>
+			<column Name="occur_balance" DispName="操作金额" Index="7"/>
+			<column Name="deal_status" DispName="处理状态" ConvertTable="deal_status" Index="8"/>
+			<column Name="bank_name_s" DispName="转出银行名称" Index="9"/>
+			<column Name="bank_name_d" DispName="转入银行名称" Index="10"/>
+		</item>
+		<!--历史转账流水-->
+		<item Name="5009">
+			<column Name="fund_account" DispName="资金帐号" Index="0"/>
+			<column Name="bank_name" DispName="银行名称" Index="1"/>
+			<column Name="entrust_no" DispName="合同号" Index="2"/>
+			<column Name="trans_name" DispName="成交类别" Index="3"/>
+			<column Name="source_flag" DispName="发起方" Index="4"/>
+			<column Name="money_name" DispName="币种名称" Index="5"/>
+			<column Name="occur_balance" DispName="资金发生额" Index="6"/>
+			<column Name="entrust_time" DispName="委托时间" Index="7"/>
+			<column Name="entrust_name" DispName="委托状态" Index="8"/>
+			<column Name="error_no" DispName="错误号" Index="9"/>
+			<column Name="cancel_info" DispName="废单原因" Index="10"/>
+		</item>
+		<!-- 字段内容转换表-->
+		<item Name="main_flag">
+			<column Name="1" DispName="是" Index="0"/>
+			<column Name="0" DispName="否" Index="2"/>
+		</item>
+		<!-- 市场 -->
+		<item Name="exchange_type">
+			<column Name="1" DispName="上海A" Index="0"/>
+			<column Name="2" DispName="深圳A" Index="1"/>
+			<column Name="D" DispName="上海B" Index="2"/>
+			<column Name="H" DispName="深圳B" Index="3"/>
+			<column Name="8" DispName="创业版" Index="4"/>
+			<column Name="9" DispName="三板A" Index="5"/>
+			<column Name="A" DispName="三板B" Index="6"/>
+			<column Name="0" DispName="未知交易所" Index="7"/>
+		</item>
+		<item Name="MarkType">
+			<column Name="1" DispName="上A" Index="0"/>
+			<column Name="2" DispName="深A" Index="1"/>
+			<column Name="D" DispName="上B" Index="2"/>
+			<column Name="H" DispName="深B" Index="3"/>
+			<column Name="8" DispName="创业" index="4"/>
+			<column Name="9" DispName="三A" Index="5"/>
+			<column Name="A" DispName="三B" Index="6"/>
+			<column Name="F1" DispName="郑州" Index="7"/>
+			<column Name="F2" DispName="大连" Index="8"/>
+			<column Name="F3" DispName="上海" Index="9"/>
+			<column Name="F4" DispName="中金" Index="10"/>
+		</item>
+		<!-- 币种 -->
+		<item Name="money_type">
+			<column Name="0" DispName="人民币" Index="0"/>
+			<column Name="1" DispName="美元" Index="1"/>
+			<column Name="2" DispName="港币" Index="2"/>
+		</item>
+		<!-- 成交类别 -->
+		<item Name="business_type">
+			<column Name="0" DispName="买卖" Index="0"/>
+			<column Name="2" DispName="撤单" Index="2"/>
+		</item>
+		<!-- 买卖方向 -->
+		<item Name="entrust_bs">
+			<column Name="1" DispName="买入" Index="0"/>
+			<column Name="2" DispName="卖出" Index="2"/>
+		</item>
+		<!-- 委托状态 -->
+		<item Name="entrust_status">
+			<column Name="0" DispName="未报" Index="0"/>
+			<column Name="1" DispName="待报" Index="2"/>
+			<column Name="2" DispName="已报" Index="0"/>
+			<column Name="3" DispName="已报待撤" Index="2"/>
+			<column Name="4" DispName="部成待撤" Index="0"/>
+			<column Name="5" DispName="部撤" Index="2"/>
+			<column Name="6" DispName="已撤" Index="0"/>
+			<column Name="7" DispName="部成" Index="2"/>
+			<column Name="8" DispName="已成" Index="0"/>
+			<column Name="9" DispName="废单" Index="2"/>
+			<column Name="W" DispName="待确认" Index="2"/>
+		</item>
+		<!-- 风险委托类型 -->
+		<item Name="regflag">
+			<column Name="0" DispName="未评测" Index="0"/>
+			<column Name="1" DispName="正常" Index="1"/>
+			<column Name="2" DispName="超风险" Index="2"/>
+			<column Name="3" DispName="默认评测" Index="3"/>
+			<column Name="4" DispName="未支持" Index="4"/>
+		</item>
+	</Tables>
+	<ReqParam>
+		<item Name="3010">
+			<param Name="password" Value="Old_Password"/>
+		</item>
+		<item Name="2029">
+			<param Name="deliver_type" Value="1"/>
+		</item>
+		<item Name="2026">
+			<param Name="query_mode" Value="0"/>
+		</item>
+		<item Name="3015">
+			<param Name="action_in" Value="0"/>
+		</item>
+	</ReqParam>
+</root>

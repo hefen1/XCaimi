@@ -1,0 +1,286 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\Transaction.rc2""  // 2?ê?óé Microsoft Visual C++ ±à?-1yμ?×ê?′\r\n"
+    "#include ""afxres.rc""     // ±ê×?×é?t\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Transaction.dll"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "Transaction.dll"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GENERAL_ENSTRUST DIALOGEX 0, 0, 130, 100
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT1,47,4,71,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,47,20,71,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,47,37,71,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "确定",IDC_BTN_ENTRUST,11,59,50,14
+    PUSHBUTTON      "清空",IDC_BUTTON2,67,59,50,14
+    LTEXT           "证券代码",IDC_STATIC,7,7,33,8
+    LTEXT           "委托数量",IDC_STATIC,7,23,33,8
+    LTEXT           "委托价格",IDC_STATIC,7,40,33,8
+END
+
+IDD_ENTRUST_LIST DIALOGEX 0, 0, 258, 119
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_ENTRUST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,10,11,127,92
+END
+
+IDD_SHARTHOLDER DIALOGEX 0, 0, 258, 119
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SHARTHOLDER,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_TABSTOP,10,11,127,92
+END
+
+IDD_MENUTREE DIALOGEX 0, 0, 258, 119
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    PUSHBUTTON      "Button1",IDC_BT_FONT,3,1,50,14,NOT WS_VISIBLE
+END
+
+IDD_STATUS_BAR DIALOGEX 0, 0, 258, 119
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "日志",IDC_BUTTON1,0,1,50,14
+    PUSHBUTTON      "改变大小",IDC_BUTTON2,51,1,50,14
+END
+
+IDD_SCROLL_NEWS DIALOGEX 0, 0, 368, 93
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Button1",IDC_BUTTON1,311,7,50,14
+END
+
+IDD_TRADETOOLBAR DIALOGEX 0, 0, 541, 18
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    COMBOBOX        IDC_CB_FUNDACCOUNT,297,1,105,93,CBS_DROPDOWNLIST | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ED_ACCOUNT,141,3,82,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_ED_PSW,133,3,80,14,ES_PASSWORD | ES_AUTOHSCROLL | NOT WS_VISIBLE
+    PUSHBUTTON      "登陆",IDC_BT_LOGIN,67,1,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "刷新",IDC_BT_REFRESH,218,1,31,14
+    LTEXT           "多账号",IDC_ST_FUNDACCOUNT,113,5,25,8,NOT WS_VISIBLE
+    PUSHBUTTON      "",IDC_BT_MIN,413,0,23,14
+    PUSHBUTTON      "",IDC_BT_MAX,441,0,23,14
+    PUSHBUTTON      "",IDC_BT_CLOSE,469,0,23,14
+    PUSHBUTTON      "锁屏",IDC_BT_LOCK,187,1,31,14
+    LTEXT           "",IDC_ST_ACTIONNAME,6,0,140,15
+    PUSHBUTTON      "多账户",IDC_BT_MOREACCOUNT,265,1,31,14
+END
+
+IDD_QUOTEREPORT DIALOGEX 0, 0, 316, 186
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_TRADE_LOCK DIALOGEX 0, 0, 316, 149
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    COMBOBOX        IDC_CB_FUNDACCOUNT,103,45,105,93,CBS_DROPDOWNLIST | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ED_PSW,103,65,105,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "确定",ID_BT_OK,83,88,36,14
+    PUSHBUTTON      "取消",ID_BT_CANCEL,128,88,36,14
+    PUSHBUTTON      "退出",ID_BT_EXIT,172,88,36,14
+    LTEXT           "请选择账号，输入交易密码解琐",IDC_ST_HINT,97,32,113,8
+    LTEXT           "账号",IDC_ST_FUNDACCOUNT,83,49,17,8
+    LTEXT           "密码",IDC_ST_PSW,83,69,17,8
+    GROUPBOX        "",IDC_GB_LOCK,79,22,141,83
+    LTEXT           "111",IDC_ST_ERRORHINT,79,111,191,8
+END
+
+IDD_TCPVIEW DIALOGEX 0, 0, 429, 180
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    CONTROL         "",IDC_ENTRUST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_TABSTOP,7,7,293,100
+    CONTROL         "",IDC_TREE_DATA,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,314,7,102,123
+    LTEXT           "",IDC_SPLITTER,303,22,8,68,NOT WS_VISIBLE | WS_BORDER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_GENERAL_ENSTRUST, DIALOG
+    BEGIN
+        RIGHTMARGIN, 128
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_SCROLL_NEWS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 361
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_TRADETOOLBAR, DIALOG
+    BEGIN
+        RIGHTMARGIN, 537
+    END
+
+    IDD_TRADE_LOCK, DIALOG
+    BEGIN
+        RIGHTMARGIN, 315
+    END
+
+    IDD_TCPVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 422
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_MOREACCOUNT MENU 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "登陆其它账号",                      ID_LOGIN
+        MENUITEM "注销当前账号",                      ID_EXIT
+    END
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\Transaction.rc2"  // 2?ê?óé Microsoft Visual C++ ±à?-1yμ?×ê?′
+#include "afxres.rc"     // ±ê×?×é?t
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

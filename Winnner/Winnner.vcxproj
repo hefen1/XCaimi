@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Winner</ProjectName>
+    <ProjectGuid>{3B8DD779-7F55-4AE0-9D16-D43ECBA6D56D}</ProjectGuid>
+    <RootNamespace>Winnner</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.61030.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\bin\HSWinner\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\bin\HSWinner_Release\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\Controls\tinyxpath;..\Common;..\Common\TradeComm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>WinnerDef.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\Controls\tinyxpath;..\Common;..\Common\TradeComm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>WinnerDef.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences />
+      <EnableCOMDATFolding />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BizWindowContext.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="DockableView.cpp" />
+    <ClCompile Include="HotKeyManager.cpp" />
+    <ClCompile Include="HSAboutDlg.cpp" />
+    <ClCompile Include="HSMenuBar.cpp" />
+    <ClCompile Include="HSPanel.cpp" />
+    <ClCompile Include="HSSplitterWnd.cpp" />
+    <ClCompile Include="HSTabCtrl.cpp" />
+    <ClCompile Include="HSVisualManager.cpp" />
+    <ClCompile Include="LayoutContext.cpp" />
+    <ClCompile Include="LayoutView.cpp" />
+    <ClCompile Include="LinkageMsgManager.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MessagePromptDialog.cpp" />
+    <ClCompile Include="ModuleLoader.cpp" />
+    <ClCompile Include="ObjectManager.cpp" />
+    <ClCompile Include="PanelInfoManager.cpp" />
+    <ClCompile Include="PluginMgr.cpp" />
+    <ClCompile Include="PopupWindow.cpp" />
+    <ClCompile Include="SaveLayoutDialog.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Winner.cpp" />
+    <ClCompile Include="..\Common\WinnerApplication.cpp" />
+    <ClCompile Include="WinnerView.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="WinnerDef.def" />
+    <None Include="res\Winnner.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BizWindowContext.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="..\Common\ConfigStruct.h" />
+    <ClInclude Include="DockableView.h" />
+    <ClInclude Include="HotKeyManager.h" />
+    <ClInclude Include="HSAboutDlg.h" />
+    <ClInclude Include="HSMenuBar.h" />
+    <ClInclude Include="HSPanel.h" />
+    <ClInclude Include="HSSplitterWnd.h" />
+    <ClInclude Include="HSTabCtrl.h" />
+    <ClInclude Include="HSVisualManager.h" />
+    <ClInclude Include="LayoutContext.h" />
+    <ClInclude Include="LayoutView.h" />
+    <ClInclude Include="LinkageMsgManager.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MessagePromptDialog.h" />
+    <ClInclude Include="ModuleLoader.h" />
+    <ClInclude Include="ObjectManager.h" />
+    <ClInclude Include="PanelInfoManager.h" />
+    <ClInclude Include="PluginMgr.h" />
+    <ClInclude Include="PopupWindow.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SaveLayoutDialog.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Winner.h" />
+    <ClInclude Include="..\Common\WinnerApplication.h" />
+    <ClInclude Include="WinnerView.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Winnner.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Winnner.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BizEntity\Quote\DiagramCombAnalysis\DiagramCombAnalysis.vcxproj">
+      <Project>{358cf198-0306-4a8e-85e8-6856aecb0fe0}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\BizEntity\Quote\DiagramFoundation\DiagramFoundation.vcxproj">
+      <Project>{8dc042e6-bd87-4005-a0d3-587b21b71a85}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\BizEntity\Quote\DiagramHolder\DiagramHolder.vcxproj">
+      <Project>{59399401-1d35-4ac5-8ecb-7e932b2eef2e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\BizEntity\Quote\DiagramTechKLine\DiagramTechKLine.vcxproj">
+      <Project>{be3ae936-5a32-494b-a2f0-d180b8a0619c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\BizEntity\Quote\QuoteReport\QuoteReport.vcxproj">
+      <Project>{f23c310f-d28c-4bd8-a88d-4caba544515a}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\BizEntity\TradeCommAction\TradeCommAction.vcxproj">
+      <Project>{a6a5402b-b760-49bc-8526-901fd8967ab3}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\BizEntity\TradeFund\TradeFund.vcxproj">
+      <Project>{48f3e4ca-b769-4179-9e71-6b5ab4007764}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\BizEntity\TradeStock\TradeStock.vcxproj">
+      <Project>{df0fb351-417a-4a06-adf6-0bc21680a9e9}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\BizEntity\WinnerStatus\WinnerStatus.vcxproj">
+      <Project>{83a501da-c102-4212-8d05-9e384ffbc0bf}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Controls\zipFileDll\zipFileDll.vcxproj">
+      <Project>{4cafb30e-a602-443c-9387-2d29b50bf09c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\HelperLib\HelperLib.vcxproj">
+      <Project>{dc272474-ac0f-4bd0-ba8f-da1992a338b4}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Login\Login.vcxproj">
+      <Project>{032fe4b9-89eb-4a2d-afe5-3cd456520b3c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Resource\QuoteLang\QuoteLang.vcxproj">
+      <Project>{c1668567-75ce-4d2e-ab17-5c5755d7433d}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Resource\TradeLang\TradeLang.vcxproj">
+      <Project>{92d0e8a5-f1b4-428e-813b-82275d975caf}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceEntity\ConfigCore\ConfigCore.vcxproj">
+      <Project>{cb9d5ecc-d328-41a9-91f5-43e4f50f1335}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceEntity\DataSource\DataSource\DataSource.vcxproj">
+      <Project>{80940506-cdf2-45eb-a78f-e662c082f8f6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceEntity\HSFormulaManDll\HSFormulaManDll.vcxproj">
+      <Project>{ecee911e-fdd8-4d66-b4bd-f57d28aab3b8}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceEntity\KeyBoard\KeyBoard.vcxproj">
+      <Project>{519c6b76-c6c8-4e6e-86b8-081b6cd61720}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceEntity\LogService\LogService.vcxproj">
+      <Project>{814ed4de-37cc-4151-b4fb-53cb67823cee}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceEntity\NetEngine\NetEngine.vcxproj">
+      <Project>{ccbeeb0d-3276-4c0f-956b-2a11f73f018d}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceEntity\TradeCore\TradeCore.vcxproj">
+      <Project>{ad6f303e-dd5e-4403-b9ff-916d16904900}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Winnner.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

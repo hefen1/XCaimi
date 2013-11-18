@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DF0FB351-417A-4A06-ADF6-0BC21680A9E9}</ProjectGuid>
+    <RootNamespace>TradeStock</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.61030.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\bin\HSWinner\trade\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\bin\HSWinner\trade\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\Common;..\..\Common\TradeComm;..\..\Controls\CommControls;..\..\Controls\tinyxpath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\TradeStock.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\Common;..\..\Common\TradeComm;..\..\Controls\CommControls;..\..\Controls\tinyxpath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\TradeStock.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CTradeStockSJBuyDlg.cpp" />
+    <ClCompile Include="CTradeStockSJSellDlg.cpp" />
+    <ClCompile Include="QueryDealDlg.cpp" />
+    <ClCompile Include="QueryEntrustDlg.cpp" />
+    <ClCompile Include="QueryHoldDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TradeQueryBaseDlg.cpp" />
+    <ClCompile Include="TradeStock.cpp" />
+    <ClCompile Include="TradeStockBaseDlg.cpp" />
+    <ClCompile Include="TradeStockBuyDlg.cpp" />
+    <ClCompile Include="TradeStockSellDlg.cpp" />
+    <ClCompile Include="..\..\Common\HSBizDialog.cpp" />
+    <ClCompile Include="..\..\Common\TradeComm\TradeDialogBase.cpp" />
+    <ClCompile Include="..\..\Common\TradeComm\TradeGridBase.cpp" />
+    <ClCompile Include="..\..\Common\WinnerApplication.cpp" />
+    <ClCompile Include="QueryStockFundEntrustDlg.cpp" />
+    <ClCompile Include="QueryStockFundInfoDlg.cpp" />
+    <ClCompile Include="TradeStockFundMergeSplitDlg.cpp" />
+    <ClCompile Include="TradeStockFundTransDlg.cpp" />
+    <ClCompile Include="QuerySBEntrustDlg.cpp" />
+    <ClCompile Include="QuerySBQuoteDlg.cpp" />
+    <ClCompile Include="TradeStockSBBuyADlg.cpp" />
+    <ClCompile Include="TradeStockSBBuyBDlg.cpp" />
+    <ClCompile Include="TradeStockSBBuyCDlg.cpp" />
+    <ClCompile Include="TradeStockSBSellADlg.cpp" />
+    <ClCompile Include="TradeStockSBSellBDlg.cpp" />
+    <ClCompile Include="TradeStockSBSellCDlg.cpp" />
+    <ClCompile Include="TradeMQHKDlg.cpp" />
+    <ClCompile Include="TradeMQHQDlg.cpp" />
+    <ClCompile Include="TradeRQSellDlg.cpp" />
+    <ClCompile Include="TradeRZBuyDlg.cpp" />
+    <ClCompile Include="TradeZJHKDlg.cpp" />
+    <ClCompile Include="TradeZJHQDlg.cpp" />
+    <ClCompile Include="TradeStockAllotDlg.cpp" />
+    <ClCompile Include="TradeStockRedeemDlg.cpp" />
+    <ClCompile Include="TradeStockSubcribeDlg.cpp" />
+    <ClCompile Include="TradeStock9835Dlg.cpp" />
+    <ClCompile Include="TradeStock9837Dlg.cpp" />
+    <ClCompile Include="TradeStockSetCostPriceDlg.cpp" />
+    <ClCompile Include="TradeWarrantEntrustdlg.cpp" />
+    <ClCompile Include="TradeZQHSDlg.cpp" />
+    <ClCompile Include="TradeZQToStockDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TradeStock.def" />
+    <None Include="res\TradeStock.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="QueryDealDlg.h" />
+    <ClInclude Include="QueryEntrustDlg.h" />
+    <ClInclude Include="QueryHoldDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TradeQueryBaseDlg.h" />
+    <ClInclude Include="TradeStock.h" />
+    <ClInclude Include="TradeStockBaseDlg.h" />
+    <ClInclude Include="TradeStockBuyDlg.h" />
+    <ClInclude Include="TradeStockSellDlg.h" />
+    <ClInclude Include="TradeStockSJBuyDlg.h" />
+    <ClInclude Include="TradeStockSJSellDlg.h" />
+    <ClInclude Include="..\..\Common\HSBizDialog.h" />
+    <ClInclude Include="..\..\Common\TradeComm\TradeDialogBase.h" />
+    <ClInclude Include="..\..\Common\TradeComm\TradeGridBase.h" />
+    <ClInclude Include="..\..\Common\WinnerApplication.h" />
+    <ClInclude Include="QuerySBEntrustDlg.h" />
+    <ClInclude Include="QuerySBQuoteDlg.h" />
+    <ClInclude Include="TradeStockSBBuyADlg.h" />
+    <ClInclude Include="TradeStockSBBuyBDlg.h" />
+    <ClInclude Include="TradeStockSBBuyCDlg.h" />
+    <ClInclude Include="TradeStockSBSellADlg.h" />
+    <ClInclude Include="TradeStockSBSellBDlg.h" />
+    <ClInclude Include="TradeStockSBSellCDlg.h" />
+    <ClInclude Include="TradeMQHKDlg.h" />
+    <ClInclude Include="TradeMQHQDlg.h" />
+    <ClInclude Include="TradeRQSellDlg.h" />
+    <ClInclude Include="TradeRZBuyDlg.h" />
+    <ClInclude Include="TradeZJHKDlg.h" />
+    <ClInclude Include="TradeZJHQDlg.h" />
+    <ClInclude Include="QueryStockFundEntrustDlg.h" />
+    <ClInclude Include="QueryStockFundInfoDlg.h" />
+    <ClInclude Include="TradeStockFundMergeSplitDlg.h" />
+    <ClInclude Include="TradeStockFundTransDlg.h" />
+    <ClInclude Include="TradeStock9835Dlg.h" />
+    <ClInclude Include="TradeStock9837Dlg.h" />
+    <ClInclude Include="TradeStockSetCostPriceDlg.h" />
+    <ClInclude Include="TradeWarrantEntrustdlg.h" />
+    <ClInclude Include="TradeZQHSDlg.h" />
+    <ClInclude Include="TradeZQToStockDlg.h" />
+    <ClInclude Include="TradeStockAllotDlg.h" />
+    <ClInclude Include="TradeStockRedeemDlg.h" />
+    <ClInclude Include="TradeStockSubcribeDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TradeStock.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="TradeStock.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

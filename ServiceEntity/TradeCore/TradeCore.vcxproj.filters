@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{f0139da5-93fb-45f9-bd89-741637e3caab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Stock">
+      <UniqueIdentifier>{234c301f-2e00-4396-82b8-bbfe2e7c44cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Fund">
+      <UniqueIdentifier>{849b3d1e-d117-48b9-9483-a5929a98888e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Common">
+      <UniqueIdentifier>{8f311e3d-174c-4bb4-b5df-69a2da980786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Stock">
+      <UniqueIdentifier>{a5ca93b3-3d62-412f-8af7-bfa4c2f1bb2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Fund">
+      <UniqueIdentifier>{69a8850b-54c6-4b8d-870f-91565e762ce6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TradeCore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ar1Packet.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="BankStockTransfer.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="BusinessLogic.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangePassword.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\DLLEntryBase.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="ModifyUserInfo.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\PackEntry.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryBank.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryBase.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryFund.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryUserInfo.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="ReqHeart.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="TradeAccountMng.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="TradeDataBase.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="TradeDataCore.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="TradeLogin.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Trading.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\WinnerApplication.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="WndTrading.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryStockAccount.cpp">
+      <Filter>Source Files\Stock</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryStockDeal.cpp">
+      <Filter>Source Files\Stock</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryStockEntrust.cpp">
+      <Filter>Source Files\Stock</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryStockFundInfo.cpp">
+      <Filter>Source Files\Stock</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryStockHold.cpp">
+      <Filter>Source Files\Stock</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryStockMaxBuy.cpp">
+      <Filter>Source Files\Stock</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryStockMaxSell.cpp">
+      <Filter>Source Files\Stock</Filter>
+    </ClCompile>
+    <ClCompile Include="TradeSetStockCostPrice.cpp">
+      <Filter>Source Files\Stock</Filter>
+    </ClCompile>
+    <ClCompile Include="TradeStockEntrust.cpp">
+      <Filter>Source Files\Stock</Filter>
+    </ClCompile>
+    <ClCompile Include="TradeStockWithDraw.cpp">
+      <Filter>Source Files\Stock</Filter>
+    </ClCompile>
+    <ClCompile Include="TradeStockZJHK.cpp">
+      <Filter>Source Files\Stock</Filter>
+    </ClCompile>
+    <ClCompile Include="TradeStockZJHQ.cpp">
+      <Filter>Source Files\Stock</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryFundCompany.cpp">
+      <Filter>Source Files\Fund</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryFundEntrust.cpp">
+      <Filter>Source Files\Fund</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryFundHold.cpp">
+      <Filter>Source Files\Fund</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryFundInfo.cpp">
+      <Filter>Source Files\Fund</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryFundStockAccount.cpp">
+      <Filter>Source Files\Fund</Filter>
+    </ClCompile>
+    <ClCompile Include="TradeFundEntrust.cpp">
+      <Filter>Source Files\Fund</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TradeCore.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\TradeCore.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TradeCore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ar1Packet.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="BankStockTransfer.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\BankStockTransferIntf.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="BusinessLogic.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\BusinessLogicIntf.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangePassword.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\ChangePasswordIntf.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\DLLEntryBase.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="ModifyUserInfo.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\ModifyUserInfoIntf.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PackEntry.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryBank.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\QueryBankIntf.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryBase.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\QueryBaseIntf.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryFund.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\QueryFundIntf.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryUserInfo.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\QueryUserInfoIntf.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="ReqHeart.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\ReqHeartIntf.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="TradeAccountMng.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\TradeAccountMngIntf.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="TradeDataBase.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\TradeDataBaseIntf.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="TradeDataCore.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\TradeDataCoreIntf.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="TradeLogin.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\TradeLoginIntf.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Trading.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\TradingIntf.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\WinnerApplication.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="WndTrading.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryStockAccount.h">
+      <Filter>Header Files\Stock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\QueryStockAccountIntf.h">
+      <Filter>Header Files\Stock</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryStockDeal.h">
+      <Filter>Header Files\Stock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\QueryStockDealIntf.h">
+      <Filter>Header Files\Stock</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryStockEntrust.h">
+      <Filter>Header Files\Stock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\QueryStockEntrustIntf.h">
+      <Filter>Header Files\Stock</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryStockFundInfo.h">
+      <Filter>Header Files\Stock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\QueryStockFundInfoIntf.h">
+      <Filter>Header Files\Stock</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryStockHold.h">
+      <Filter>Header Files\Stock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\QueryStockHoldIntf.h">
+      <Filter>Header Files\Stock</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryStockMaxBuy.h">
+      <Filter>Header Files\Stock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\QueryStockMaxBuyIntf.h">
+      <Filter>Header Files\Stock</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryStockMaxSell.h">
+      <Filter>Header Files\Stock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\QueryStockMaxSellIntf.h">
+      <Filter>Header Files\Stock</Filter>
+    </ClInclude>
+    <ClInclude Include="TradeSetStockCostPrice.h">
+      <Filter>Header Files\Stock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\TradeSetStockCostPriceIntf.h">
+      <Filter>Header Files\Stock</Filter>
+    </ClInclude>
+    <ClInclude Include="TradeStockEntrust.h">
+      <Filter>Header Files\Stock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\TradeStockEntrustIntf.h">
+      <Filter>Header Files\Stock</Filter>
+    </ClInclude>
+    <ClInclude Include="TradeStockWithDraw.h">
+      <Filter>Header Files\Stock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\TradeStockWithDrawIntf.h">
+      <Filter>Header Files\Stock</Filter>
+    </ClInclude>
+    <ClInclude Include="TradeStockZJHK.h">
+      <Filter>Header Files\Stock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\TradeStockZJHKIntf.h">
+      <Filter>Header Files\Stock</Filter>
+    </ClInclude>
+    <ClInclude Include="TradeStockZJHQ.h">
+      <Filter>Header Files\Stock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\TradeStockZJHQIntf.h">
+      <Filter>Header Files\Stock</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryFundCompany.h">
+      <Filter>Header Files\Fund</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\QueryFundCompanyIntf.h">
+      <Filter>Header Files\Fund</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryFundEntrust.h">
+      <Filter>Header Files\Fund</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\QueryFundEntrustIntf.h">
+      <Filter>Header Files\Fund</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryFundHold.h">
+      <Filter>Header Files\Fund</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\QueryFundHoldIntf.h">
+      <Filter>Header Files\Fund</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryFundInfo.h">
+      <Filter>Header Files\Fund</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\QueryFundInfoIntf.h">
+      <Filter>Header Files\Fund</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryFundStockAccount.h">
+      <Filter>Header Files\Fund</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\QueryFundStockAccountIntf.h">
+      <Filter>Header Files\Fund</Filter>
+    </ClInclude>
+    <ClInclude Include="TradeFundEntrust.h">
+      <Filter>Header Files\Fund</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\TradeFundEntrustIntf.h">
+      <Filter>Header Files\Fund</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TradeCore.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

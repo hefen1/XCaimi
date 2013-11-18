@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{043d8ebf-f96e-4417-a13e-3f6f1cd006ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Trade">
+      <UniqueIdentifier>{f7b9be0d-a6d5-4894-a3cc-32708f7a28bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Quote">
+      <UniqueIdentifier>{2d71cc99-7a05-4a7c-9e08-8546d4c72b6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Comb">
+      <UniqueIdentifier>{f0db2d46-13ca-4208-9c21-f28172221b74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Common">
+      <UniqueIdentifier>{d655f885-1282-4f29-b2ba-10533513e0c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Trade">
+      <UniqueIdentifier>{4eee3160-886e-4c3a-8ec1-d9d240054334}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Quote">
+      <UniqueIdentifier>{19b87f16-c469-4cdf-bcba-cd0d4342c2f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ConfigCore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\WinnerApplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\HSXMLParser.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLDataBase.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="TradeConfigObj.cpp">
+      <Filter>Source Files\Trade</Filter>
+    </ClCompile>
+    <ClCompile Include="TradeSysConfig.cpp">
+      <Filter>Source Files\Trade</Filter>
+    </ClCompile>
+    <ClCompile Include="TradeTables.cpp">
+      <Filter>Source Files\Trade</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockManager.cpp">
+      <Filter>Source Files\Quote</Filter>
+    </ClCompile>
+    <ClCompile Include="Bridge.cpp">
+      <Filter>Source Files\Quote</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigBase.cpp">
+      <Filter>Source Files\Quote</Filter>
+    </ClCompile>
+    <ClCompile Include="HsColor.cpp">
+      <Filter>Source Files\Quote</Filter>
+    </ClCompile>
+    <ClCompile Include="HsColumnProperty.cpp">
+      <Filter>Source Files\Quote</Filter>
+    </ClCompile>
+    <ClCompile Include="HsCommunication.cpp">
+      <Filter>Source Files\Quote</Filter>
+    </ClCompile>
+    <ClCompile Include="HsFileManager.cpp">
+      <Filter>Source Files\Quote</Filter>
+    </ClCompile>
+    <ClCompile Include="HsFont.cpp">
+      <Filter>Source Files\Quote</Filter>
+    </ClCompile>
+    <ClCompile Include="HsGraph.cpp">
+      <Filter>Source Files\Quote</Filter>
+    </ClCompile>
+    <ClCompile Include="HsInfo.cpp">
+      <Filter>Source Files\Quote</Filter>
+    </ClCompile>
+    <ClCompile Include="HsKeyboardCfg.cpp">
+      <Filter>Source Files\Quote</Filter>
+    </ClCompile>
+    <ClCompile Include="HSKLinePositionCtrl.cpp">
+      <Filter>Source Files\Quote</Filter>
+    </ClCompile>
+    <ClCompile Include="HsKLineTab.cpp">
+      <Filter>Source Files\Quote</Filter>
+    </ClCompile>
+    <ClCompile Include="HsMiscellany.cpp">
+      <Filter>Source Files\Quote</Filter>
+    </ClCompile>
+    <ClCompile Include="HsQuoteSys.cpp">
+      <Filter>Source Files\Quote</Filter>
+    </ClCompile>
+    <ClCompile Include="HsScrollNews.cpp">
+      <Filter>Source Files\Quote</Filter>
+    </ClCompile>
+    <ClCompile Include="HsTabCfg.cpp">
+      <Filter>Source Files\Quote</Filter>
+    </ClCompile>
+    <ClCompile Include="HsUserDataCfg.cpp">
+      <Filter>Source Files\Quote</Filter>
+    </ClCompile>
+    <ClCompile Include="MyXmlDocument.cpp">
+      <Filter>Source Files\Quote</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ConfigCore.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\ConfigCore.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="hsxml2.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ConfigCore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\configDefined.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ConfigStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\WinnerApplication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\HSXMLParser.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\QuoteLangMngInterFace.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLDataBase.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\XMLDataBaseIntf.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="TradeConfigObj.h">
+      <Filter>Header Files\Trade</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\TradeConfigObjIntf.h">
+      <Filter>Header Files\Trade</Filter>
+    </ClInclude>
+    <ClInclude Include="TradeSysConfig.h">
+      <Filter>Header Files\Trade</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\TradeSysConfigIntf.h">
+      <Filter>Header Files\Trade</Filter>
+    </ClInclude>
+    <ClInclude Include="TradeTables.h">
+      <Filter>Header Files\Trade</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TradeComm\TradeTablesIntf.h">
+      <Filter>Header Files\Trade</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockManager.h">
+      <Filter>Header Files\Quote</Filter>
+    </ClInclude>
+    <ClInclude Include="Bridge.h">
+      <Filter>Header Files\Quote</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigBase.h">
+      <Filter>Header Files\Quote</Filter>
+    </ClInclude>
+    <ClInclude Include="HsColor.h">
+      <Filter>Header Files\Quote</Filter>
+    </ClInclude>
+    <ClInclude Include="HsColumnProperty.h">
+      <Filter>Header Files\Quote</Filter>
+    </ClInclude>
+    <ClInclude Include="HsCommunication.h">
+      <Filter>Header Files\Quote</Filter>
+    </ClInclude>
+    <ClInclude Include="HsFileManager.h">
+      <Filter>Header Files\Quote</Filter>
+    </ClInclude>
+    <ClInclude Include="HsFont.h">
+      <Filter>Header Files\Quote</Filter>
+    </ClInclude>
+    <ClInclude Include="HsGraph.h">
+      <Filter>Header Files\Quote</Filter>
+    </ClInclude>
+    <ClInclude Include="HsInfo.h">
+      <Filter>Header Files\Quote</Filter>
+    </ClInclude>
+    <ClInclude Include="HsKeyboardCfg.h">
+      <Filter>Header Files\Quote</Filter>
+    </ClInclude>
+    <ClInclude Include="HSKLinePositionCtrl.h">
+      <Filter>Header Files\Quote</Filter>
+    </ClInclude>
+    <ClInclude Include="HsKLineTab.h">
+      <Filter>Header Files\Quote</Filter>
+    </ClInclude>
+    <ClInclude Include="HsMiscellany.h">
+      <Filter>Header Files\Quote</Filter>
+    </ClInclude>
+    <ClInclude Include="HsQuoteSys.h">
+      <Filter>Header Files\Quote</Filter>
+    </ClInclude>
+    <ClInclude Include="HsScrollNews.h">
+      <Filter>Header Files\Quote</Filter>
+    </ClInclude>
+    <ClInclude Include="HsTabCfg.h">
+      <Filter>Header Files\Quote</Filter>
+    </ClInclude>
+    <ClInclude Include="HsUserDataCfg.h">
+      <Filter>Header Files\Quote</Filter>
+    </ClInclude>
+    <ClInclude Include="MyXmlDocument.h">
+      <Filter>Header Files\Quote</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ConfigCore.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

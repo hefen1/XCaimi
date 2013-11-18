@@ -1,0 +1,11 @@
+; TradeCore.def : Declares the module parameters for the DLL.
+
+LIBRARY      "TradeCore"
+
+EXPORTS
+	InitEntity
+	UninitEntity
+	GetServiceObject
+	OnFrameNotify
+SECTIONS
+	._tradecore_data	READ WRITE SHARED	   

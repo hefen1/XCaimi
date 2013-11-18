@@ -1,0 +1,273 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\WinnerStatus.rc2""  // ?¤? Microsoft Visual C++ ?à¨¤?-|ì??á¨o???\r\n"
+    "#include ""l.CHS\\afxres.rc""      // ?à¨o?á??á¨|?t\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "WinnerStatus.dll"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "WinnerStatus.dll"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_STATUEBAR DIALOGEX 0, 0, 330, 18
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+END
+
+IDD_SCROLLNEWSBAR DIALOGEX 0, 0, 330, 18
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+END
+
+IDD_SCROLLFRAME DIALOGEX 0, 0, 330, 19
+STYLE DS_SETFONT | WS_CHILD | WS_THICKFRAME
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+END
+
+IDD_PROP1 DIALOGEX 0, 0, 245, 210
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "外观设置"
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    LTEXT           "滚动字体颜色",IDC_STATIC1,36,24,48,12,SS_CENTERIMAGE
+    LTEXT           "滚动背景颜色",IDC_STATIC2,36,42,48,12,SS_CENTERIMAGE
+    LTEXT           "窗口背景颜色",IDC_STATIC3,36,60,48,12,SS_CENTERIMAGE
+    PUSHBUTTON      "",IDC_FONTCLR,108,24,72,12,NOT WS_TABSTOP
+    PUSHBUTTON      "",IDC_BKCLR,108,42,72,12,NOT WS_TABSTOP
+    PUSHBUTTON      "",IDC_BUTTON3,108,60,72,12,NOT WS_TABSTOP
+    GROUPBOX        "配色方案",IDC_STATIC,12,6,210,72
+    LTEXT           "设置显示字体",IDC_STATIC4,36,90,48,12,SS_CENTERIMAGE
+    LTEXT           "文字滚动速度",IDC_STATIC6,36,115,48,12,SS_CENTERIMAGE
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS,104,108,121,17
+    LTEXT           "慢",IDC_STATIC7,104,127,9,8,SS_CENTERIMAGE
+    LTEXT           "快",IDC_STATIC8,214,127,9,8,SS_CENTERIMAGE
+    LTEXT           "",IDC_FONTKIND,108,90,72,12,SS_NOTIFY | SS_CENTERIMAGE
+    GROUPBOX        "查看详细内容方式",IDC_STATIC,12,141,207,55
+    CONTROL         "单击查看详细内容",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,24,164,80,10
+    CONTROL         "双击查看详细内容",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,120,164,80,10
+END
+
+IDD_INDEX_USERDEF DIALOGEX 0, 0, 382, 155
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "指数条设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,324,18,50,14
+    PUSHBUTTON      "取消",IDCANCEL,324,36,50,14
+    LTEXT           "指数一",IDC_STATIC,6,6,25,8
+    LTEXT           "指数二",IDC_STATIC,84,6,25,8
+    LTEXT           "指数三",IDC_STATIC,162,6,25,8
+    LTEXT           "指数四",IDC_STATIC,240,6,25,8
+    LISTBOX         IDC_LIST1,6,18,72,75,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST2,84,18,72,75,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST3,162,18,72,75,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST4,240,18,72,75,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "添加",IDC_BUTTON1,7,102,30,12
+    PUSHBUTTON      "删除",IDC_BUTTON2,43,102,30,12
+    CONTROL         "显示",IDC_THREECHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,163,102,30,12
+    CONTROL         "显示",IDC_FOURCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,241,102,30,12
+    LTEXT           "每隔",IDC_STATIC,7,121,17,8
+    EDITTEXT        IDC_EDIT1,25,121,36,12,ES_AUTOHSCROLL
+    LTEXT           "秒，滚动到下一个（0 秒不滚动）。",IDC_STATIC,67,121,127,8
+    LTEXT           "鼠标点中列表框项，直接添加/删除/修改代码，或上下移动。",IDC_STATIC,7,138,214,8
+END
+
+IDD_SELECTSTOCK DIALOGEX 0, 0, 331, 199
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选择股票"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,211,177,50,14
+    PUSHBUTTON      "取消",IDCANCEL,274,177,50,14
+    CONTROL         "",IDC_TAB,"SysTabControl32",0x0,7,7,317,17
+    CONTROL         "",IDD_STOCKTYPE,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | WS_TABSTOP,7,22,115,149
+    CONTROL         "",IDD_STOCKLIST,"SysListView32",LVS_SMALLICON | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,126,23,198,149
+    CONTROL         "",IDC_TREE_SYSTEMBLOCKENTRY,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,7,23,115,149
+    LTEXT           "可用键盘精灵进行选择",IDC_STATIC,7,183,81,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_POPUP_SCROLL MENU 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "多行模式",                        ID_MULTILINE
+        MENUITEM "浮动显示",                        ID_FLOAT
+        MENUITEM SEPARATOR
+        MENUITEM "高级设置",                        ID_SETTING
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_STATUEBAR, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 16
+    END
+
+    IDD_SCROLLNEWSBAR, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 16
+    END
+
+    IDD_SCROLLFRAME, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 16
+    END
+
+    IDD_INDEX_USERDEF, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 375
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 148
+    END
+
+    IDD_SELECTSTOCK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 324
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\WinnerStatus.rc2"  // ?¤? Microsoft Visual C++ ?à¨¤?-|ì??á¨o???
+#include "l.CHS\afxres.rc"      // ?à¨o?á??á¨|?t
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,379 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\DiagramRTable.rc2""  // ?¤? Microsoft Visual C++ ?à¨¤?-|ì??á¨o???\r\n"
+    "#include ""l.CHS\\afxres.rc""      // ?à¨o?á??á¨|?t\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "DiagramRTable.dll"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "DiagramRTable.dll"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_QUOTE_TAB_SETTING DIALOGEX 0, 0, 299, 259
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "标签页设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,110,217,58,14
+    PUSHBUTTON      "取消",IDCANCEL,110,238,58,14
+    CONTROL         "",IDC_TABITEM,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,179,18,113,174,WS_EX_TRANSPARENT
+    PUSHBUTTON      "添加(&A)-->",IDC_ADD_TO_CURRENT,110,50,58,14
+    PUSHBUTTON      "<--删除",IDC_DEL_FROM_CURRENT,110,118,58,14
+    PUSHBUTTON      "<<==全部删除",IDC_DELETEALL,110,144,58,14
+    CONTROL         "",IDC_ALLTABITEM,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_HSCROLL | WS_TABSTOP,7,17,96,233
+    GROUPBOX        "全部分类",IDC_STATIC,7,7,96,245
+    GROUPBOX        "当前标签页",IDC_STATIC,176,7,116,245
+    PUSHBUTTON      "保存(&S)",IDC_SAVE_CURGROUP,178,217,50,14
+    PUSHBUTTON      "新建(&N)",IDC_NEW_GROUP,242,217,50,14
+    PUSHBUTTON      "还原(&R)",IDC_RESTOR_CURGROUP,177,238,50,14
+    PUSHBUTTON      "删除(&D)",IDC_DEL_CURGROUP,242,238,50,14
+    COMBOBOX        IDC_TABGROUP,178,197,114,53,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_NEW_TAB_GROUP DIALOGEX 0, 0, 170, 46
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "输入类型名称"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,57,25,50,14
+    PUSHBUTTON      "取消",IDCANCEL,113,25,50,14
+    EDITTEXT        IDC_GROUPNAME,7,7,156,14,ES_AUTOHSCROLL
+END
+
+IDD_QUOTE_COLUMN_SETTING DIALOGEX 0, 0, 372, 225
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "显示列设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,315,26,50,14
+    PUSHBUTTON      "取消",IDCANCEL,315,44,50,14
+    COMBOBOX        IDC_COLGROUP,206,165,102,53,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_CURCOLUMN,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,205,19,102,140
+    GROUPBOX        "所有可用列列表",IDC_STATIC,7,7,115,211
+    GROUPBOX        "当前列列表",IDC_STATIC,201,7,111,211
+    PUSHBUTTON      "添加(&A)-->",IDC_ADDTOCURRENT,125,50,74,14
+    PUSHBUTTON      "全部添加(&B)==>>",IDC_ADDALLTOCURRENT,125,72,74,14
+    PUSHBUTTON      "<--删除(&D)",IDC_DELFROMCURRENT,125,133,74,14
+    PUSHBUTTON      "<<==全部删除(&R)",IDC_DELALLFROMCURRENT,125,154,74,14
+    PUSHBUTTON      "保存(&S)",IDC_SAVE_CURGROUP,207,182,47,14
+    PUSHBUTTON      "新建(&N)",IDC_SAVEAS_CURGROUP,207,201,47,14
+    PUSHBUTTON      "删除(&E)",IDC_DEL_CUR_DISPCOL_GROUP,263,182,46,14
+    LISTBOX         IDC_ALL_COLUMN,13,38,104,140,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "新建字段(&N)",IDC_NEW_COLUMN,13,183,50,14
+    PUSHBUTTON      "删除字段(&L)",IDC_DEL_COLUMN,69,183,50,14
+    PUSHBUTTON      "字段属性(&P)",IDC_COLUMN_PROPERTY,13,202,50,14
+    COMBOBOX        IDC_ALL_COLGROUP,13,20,104,57,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "上移(&U)",IDC_UP,315,95,50,14
+    PUSHBUTTON      "下移(&D)",IDC_DOWN,315,110,50,14
+END
+
+IDD_MARK_CONTENT DIALOGEX 0, 0, 150, 118
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "输入标记文本内容"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,36,97,50,14
+    PUSHBUTTON      "取消",IDCANCEL,93,97,50,14
+    EDITTEXT        IDC_ED_CONTENT,7,7,136,86,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_BLOCK_ADSCRIPTION DIALOGEX 0, 0, 182, 182
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "刷新",IDC_REFRESH,101,161,35,14
+    PUSHBUTTON      "取消",IDCANCEL,140,161,35,14
+    LTEXT           "注：可双击查看板块行情",IDC_STATIC,7,164,91,11
+    CONTROL         "",IDC_BLOCK_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,168,151,WS_EX_TRANSPARENT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_QUOTE_TAB_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 292
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 252
+    END
+
+    IDD_NEW_TAB_GROUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_QUOTE_COLUMN_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 365
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_MARK_CONTENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 143
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_BLOCK_ADSCRIPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 175
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_NUM1         "①"
+    IDS_STRING_NUM2         "②"
+    IDS_STRING_NUM3         "③"
+    IDS_STRING_NUM4         "④"
+    IDS_STRING_NUM5         "⑤"
+    IDS_STRING_NUM6         "⑥"
+    IDS_STRING_NUM7         "⑦"
+    IDS_STRING_NUM8         "⑧"
+    IDS_STRING_NUM9         "⑨"
+    IDS_STRING_NUM10        "⑩"
+    IDS_STRING_BUY          "买"
+    IDS_STRING_SELL         "卖"
+    IDS_STRING_BUYAVG       "买均"
+    IDS_STRING_SELLAVG      "卖均"
+    IDS_STRING_BUYTOTAL     "总买"
+    IDS_STRING_SELLTOTAL    "总卖"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_WEIBI        "委比"
+    IDS_STRING_WEICHA       "委差"
+    IDS_STRING_CHENGJIAO    "成交"
+    IDS_STRING_ZHANGDIE     "涨跌"
+    IDS_STRING_FUDU         "幅度"
+    IDS_STRING_ZONGSHOU     "总手"
+    IDS_STRING_XIANSHOU     "现手"
+    IDS_STRING_ZONGE        "总额"
+    IDS_STRING_WAIPAN       "外盘"
+    IDS_STRING_ZHANGTING    "涨停"
+    IDS_STRING_SHIYING      "市盈"
+    IDS_STRING_LIUTONG      "流通"
+    IDS_STRING_SHIZHI       "市值"
+    IDS_STRING_JUNJIA       "均价"
+    IDS_STRING_KAIPAN       "开盘"
+    IDS_STRING_ZUIGAO       "最高"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_ZUIDI        "最低"
+    IDS_STRING_LIANGBI      "量比"
+    IDS_STRING_HUANSHOU     "换手"
+    IDS_STRING_NEIPAN       "内盘"
+    IDS_STRING_DIETING      "跌停"
+    IDS_STRING_SHIJING      "市净"
+    IDS_STRING_ZONGGU       "总股"
+    IDS_STRING_ZONGZHI      "总值"
+    IDS_STRING_LIXI         "利息"
+    IDS_STRING_QUANJIA      "全价"
+    IDS_STRING_JINGZHI      "净值"
+    IDS_STRING_IOPV         "IOPV"
+    IDS_STRING_ZHANGFU      "涨幅"
+    IDS_STRING_JINE         "金额"
+    IDS_STRING_BUYSHOUSHU   "委买手数"
+    IDS_STRING_SELLSHSOUSHU "委卖手数"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_SHANGZHANGJIASHU "上涨家数"
+    IDS_STRING_XIADIEJIASHU "下跌家数"
+    IDS_STRING_PINGPANJIASHU "平盘家数"
+    IDS_STRING_ZUOSHOU      "昨收"
+    IDS_STRING_ZHENFU       "振幅"
+    IDS_STRING_FENJIABIAO   "分价表"
+    IDS_STRING_CHENGJIAOJIA "成交价"
+    IDS_STRING_CHENGJIAOLIANG "成交量"
+    IDS_STRING_BILI         "比例"
+    IDS_STRING_LIUTONGPAN   "流通盘"
+    IDS_STRING_ZONGJINE     "总金额"
+    IDS_STRING_CHENGJIAOBISHU "成交笔数"
+    IDS_STRING_MEIBIJUNLIANG "每笔均量"
+    IDS_STRING_MEIBIJUNE    "每笔均额"
+    IDS_STRING_FENZHONGJUNLIANG "分钟均量"
+    IDS_STRING_FENZHONGJUNE "分钟均额"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_TENJUNZHI    "10天均值"
+    IDS_STRING_TWENTYJUNZHI "20天均值"
+    IDS_STRING_FIFTYJUNZHI  "50天均值"
+    IDS_STRING_MONTHMAX     "一个月最高"
+    IDS_STRING_MONTHMIN     "一个月最低"
+    IDS_STRING_YEARMAX      "一年最高"
+    IDS_STRING_YEARMIN      "一年最低"
+    IDS_STRING_SELFBLOCK    "自选板块"
+    IDS_STRING_ZONGBI       "总笔"
+    IDS_STRING_MEIBI        "每笔"
+    IDS_STRING_QUICKBUY     "闪电买入"
+    IDS_STRING_QUICKSELL    "闪电卖出"
+    IDS_STRING_SELLPRICE    "卖价"
+    IDS_STRING_BUYPRICE     "买价"
+    IDS_STRING_NEW          "最新"
+    IDS_STRING_JIESUAN      "结算"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_ZONGCHI      "总持"
+    IDS_STRING_SELLCOUNT    "卖量"
+    IDS_STRING_BUYCOUNT     "买量"
+    IDS_STRING_QIANJIE      "前结"
+    IDS_STRING_RIZENG       "日增"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\DiagramRTable.rc2"  // ?¤? Microsoft Visual C++ ?à¨¤?-|ì??á¨o???
+#include "l.CHS\afxres.rc"      // ?à¨o?á??á¨|?t
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

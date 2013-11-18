@@ -1,0 +1,9 @@
+; DiagramTechKLine.def : Declares the module parameters for the DLL.
+
+LIBRARY      "DiagramTechKLine"
+
+EXPORTS
+    ; Explicit exports can go here
+	InitEntity
+	UninitEntity
+	GetDiagramInstance

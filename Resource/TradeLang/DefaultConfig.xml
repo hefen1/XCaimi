@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!--系统默认配置表,提供
+1、系统完整的配置参数说明
+2、系统默认的配置-->
+<root>
+	<DefaultConfig>
+		<!--杂项参数配置
+		由于当初设计时未考虑分类，导致目前参数比较乱
+		在这里增加分类定义，但仍按Name为主索引，原来的调用不改变
+		分类主要为了参数能分类定义，并能够增加说明，并可能提供给配置程序使用-->
+		<Param>
+			<!--登录界面布局方式,由于开始界面不能使用布局，针对光大和瑞银有单独界面，
+			其它都使用4，通过登录界面布局实现
+			1：光大, 2:瑞银，4：自定义布局-->
+			<Item Name="LoginInterface" Value="4" Category="Login"/>
+			<!--查持仓股票余额是否体现当日买卖 1：默认体现；0或空：不体现-->
+			<Item Name="FTEmbTodayTrade" Value="1" Category="QuickTrade"/>
+			<!--批量查委托记录数-->
+			<Item Name="BatchInquireEntrustCount" Value="50" Category="Coreobj"/>
+			<!--快速交易业务逻辑批量撤单使用1741批量撤单-->
+			<Item Name="FTBatchWith1741" Value="0" Category="Coreobj"/>
+			<!--快速交易批量功能的最大记录数-->
+			<Item Name="BatchEntrustMaxNum" Value="50" Category="Coreobj"/>
+			<!--快速交易委托数据默认排序方式，默认1
+			需要保证关键字段的唯一性,查询返回与委托应答中一致
+			1：按委托时间、市场、委托号倒序排,目前恒生柜台使用
+			2: 按委托号、市场倒序排,目前金仕达柜台用-->
+			<Item Name="FTEntrustSortType" Value="1" Category="QuickTrade"/>
+			<!--右下角冒泡弹出窗口自动关闭时间，单位秒，0则不自动关闭-->
+			<Item Name="PopHintAutoCloseTime" Value="3" Category="Common"/>
+			<!--快速交易成交列表是否显示明细数据，1是，其它不是-->
+			<Item Name="FTDealShowDetail" Value="1" Category="QuickTrade"/>
+			<!--升级服务器类型，默认1
+			1: web服务器
+			2：接入TCP端口
+			3：接入SSL端口-->
+			<Item Name="UpdateType" Value="1" Category="Common"/>
+            <!--带行情的独立交易登陆是否检查资讯等级 -->
+			<Item Name="TraderNotCheckService" Value="0" Category="Login"/>
+			<!--快速交易成交数据默认排序方式，默认1
+			1： 申报号按 int 处理排序
+			2: 申报号按字符格式化固定长度排序-->
+			<Item Name="FTDealSortType" Value="1" Category="QuickTrade"/>
+			<!--股票单笔最大委托数量-->
+			<Item Name="StockOneMaxNum" Value="1000000" Category="Coreobj"/>
+			<!--股票超过最大委托数量的拆单步长-->
+			<Item Name="StockSplitStep" Value="100" Category="Coreobj"/>
+			<!--验签类型0：不验签 1：招行验签-->
+			<Item Name="CheckSignType" Value="0" Category="Login"/>
+			<!--验签通道0：HTTP 1：HTTPS-->
+			<Item Name="CheckSignWay" Value="0" Category="Login"/>
+			<!--验签地址-->
+			<Item Name="CheckSignAddr" Value="" Category="Login"/>
+			<!--查询委托验签数据-->
+			<Item Name="InquireEntrustSignData" Value="0" Category="Stock"/>
+			<!--查询撤单验签数据-->
+			<Item Name="InquireWithDrawSignData" Value="0" Category="Stock"/>
+			<!--显示测速数据方式,默认1
+			1-显示站点名称、响应时间、最大用户数
+			2-显示示站点名称、地址、端口、响应时间、最大用户数、在线数-->
+			<Item Name="ShowTestSpeed" Value="1" Category="Login"/>
+			<!--从柜台查询ETF趋势交易的代码列表,默认0
+			0-不查询
+			1-查询 -->
+			<Item Name="QueryETFList" Value="0" Category="Coreobj"/>
+			<!--期货日志级别 0：交易 1：调试-->
+			<Item Name="FutuLogLevel" Value="0" Category="Coreobj"/>
+			<!--期货日志模式 0：不记录 1：输出到debugview 2：输出到文件-->
+			<Item Name="FutuLogMode" Value="0" Category="Coreobj"/>
+			<!--期货交易时间控制调整幅度 默认5秒-->
+			<Item Name="FutuRangeTime" Value="5" Category="Basis"/>
+			<!--查询相关资讯方式，默认0
+			0-不显示
+			1-显示相关资讯字段，但不查询
+			2-显示相关资讯字段，通过查询是否有相关资讯显示不同状态-->
+			<Item Name="QueryService" Value="0" Category="Common"/>
+			<!--登陆是否显示行情初始化信息-->
+			<Item Name="LoginShowHQInitInfo" Value="0" Category="Login"/>
+			<!--控制期现套利界面上的功能显示等级-->
+			<Item Name="FutuFuncLevel" Value="0" Category="Basis"/>
+
+			<!--齐鲁消息客户端-->
+			<!--是否使用消息客户端 -->
+			<Item Name="UseMsgClient" Value="0" Category="Login"/>
+			<!--独立行情登陆后登陆交易是否启动消息客户端-->
+			<Item Name="LoginStartMsgClient" Value="0" Category="Login"/>
+
+			<!--登录提示信息类型
+			1: 最后登录信息+预留信息+WarningInfo
+			2: 最后登录信息+WarningInfo
+			3: 最后登录信息+预留信息+ AlertInfo + WarningInfo-->
+			<Item Name="LoginInfoType" Value="1" Category="Login"/>
+
+		</Param>
+		<!--系统快捷键定义-->
+		<SysHotKey>
+			<Item Id="1" Caption="账号切换" PValue="Alt+A"/>
+			<Item Id="2" Caption="锁定交易区域" PValue="Alt+S"/>
+		</SysHotKey>
+		<!--ETF代码表-->
+		<ETFCodeConfig>
+			<Item Id="1" Name="治理ETF" ExchangeType="1" StockCode="510011" StockCode0="510010" StockCode2="510012"/>
+			<Item Id="2" Name="50申 赎" ExchangeType="1" StockCode="510051" StockCode0="510050" StockCode2="510052"/>
+			<Item Id="3" Name="央企ETF" ExchangeType="1" StockCode="510061" StockCode0="510060" StockCode2="510062"/>
+			<Item Id="4" Name="180 ETF" ExchangeType="1" StockCode="510181" StockCode0="510180" StockCode2="510182"/>
+			<Item Id="5" Name="红利ETF" ExchangeType="1" StockCode="510881" StockCode0="510880" StockCode2="510882"/>
+			<Item Id="6" Name="深100ETF" ExchangeType="2" StockCode="159901" StockCode0="159901" StockCode2="159901"/>
+			<Item Id="7" Name="中 小 板" ExchangeType="2" StockCode="159902" StockCode0="159902" StockCode2="159902"/>
+			<Item Id="8" Name="深成ETF" ExchangeType="2" StockCode="159903" StockCode0="159903" StockCode2="159903"/>
+		</ETFCodeConfig>
+		<!--ETF趋势交易费用配置表-->
+		<ETFFareSet>
+			<Item Id="1" FareName="上海A股买入费率" ExchangeType="1" EntrustBs="1" StockType="1" YJRatio="0" YHRatio="0" GHRatio="0" QTRatio="0" YJMin="0" YHMin="0" GHMin="0" QTMin="0"/>
+			<Item Id="2" FareName="上海A股卖出费率" ExchangeType="1" EntrustBs="2" StockType="1" YJRatio="0" YHRatio="0" GHRatio="0" QTRatio="0" YJMin="0" YHMin="0" GHMin="0" QTMin="0"/>
+			<Item Id="3" FareName="上海ETF申购费率" ExchangeType="1" EntrustBs="1" StockType="N" YJRatio="0" YHRatio="0" GHRatio="0" QTRatio="0" YJMin="0" YHMin="0" GHMin="0" QTMin="0"/>
+			<Item Id="4" FareName="上海ETF赎回费率" ExchangeType="1" EntrustBs="2" StockType="N" YJRatio="0" YHRatio="0" GHRatio="0" QTRatio="0" YJMin="0" YHMin="0" GHMin="0" QTMin="0"/>
+			<Item Id="5" FareName="上海ETF买入费率" ExchangeType="1" EntrustBs="1" StockType="2" YJRatio="0" YHRatio="0" GHRatio="0" QTRatio="0" YJMin="0" YHMin="0" GHMin="0" QTMin="0"/>
+			<Item Id="6" FareName="上海ETF卖出费率" ExchangeType="1" EntrustBs="2" StockType="2" YJRatio="0" YHRatio="0" GHRatio="0" QTRatio="0" YJMin="0" YHMin="0" GHMin="0" QTMin="0"/>
+			<Item Id="7" FareName="深圳A股买入费率" ExchangeType="2" EntrustBs="1" StockType="1" YJRatio="0" YHRatio="0" GHRatio="0" QTRatio="0" YJMin="0" YHMin="0" GHMin="0" QTMin="0"/>
+			<Item Id="8" FareName="深圳A股卖出费率" ExchangeType="2" EntrustBs="2" StockType="1" YJRatio="0" YHRatio="0" GHRatio="0" QTRatio="0" YJMin="0" YHMin="0" GHMin="0" QTMin="0"/>
+			<Item Id="9" FareName="深圳ETF申购费率" ExchangeType="2" EntrustBs="1" StockType="N" YJRatio="0" YHRatio="0" GHRatio="0" QTRatio="0" YJMin="0" YHMin="0" GHMin="0" QTMin="0"/>
+			<Item Id="10" FareName="深圳ETF赎回费率" ExchangeType="2" EntrustBs="2" StockType="N" YJRatio="0" YHRatio="0" GHRatio="0" QTRatio="0" YJMin="0" YHMin="0" GHMin="0" QTMin="0"/>
+			<Item Id="11" FareName="深圳ETF买入费率" ExchangeType="2" EntrustBs="1" StockType="2" YJRatio="0" YHRatio="0" GHRatio="0" QTRatio="0" YJMin="0" YHMin="0" GHMin="0" QTMin="0"/>
+			<Item Id="12" FareName="深圳ETF卖出费率" ExchangeType="2" EntrustBs="2" StockType="2" YJRatio="0" YHRatio="0" GHRatio="0" QTRatio="0" YJMin="0" YHMin="0" GHMin="0" QTMin="0"/>
+		</ETFFareSet>
+    <!--账号类型配置-->
+    <AccountType>
+      <Item Name="资金账号" VisibleName="资金账号" Type="ZJ" BackType="1" ShortName="资金-" MarketType="0" LoginVisible="1"/>
+      <Item Name="客户号"   VisibleName="客  户  号" Type="KHH" BackType="6" ShortName="客户-" MarketType="0" LoginVisible="1"/>
+      <Item Name="沪A股东"  VisibleName="沪 A 股东" Type="SH" BackType="5" ShortName="沪A-" MarketType="1" LoginVisible="1"/>
+      <Item Name="深A股东"  VisibleName="深 A 股东" Type="SZ" BackType="5" ShortName="深A-" MarketType="2" LoginVisible="1"/>
+      <Item Name="沪B股东"  VisibleName="沪 B 股东" Type="SHB" BackType="5" ShortName="沪B-" MarketType="D" LoginVisible="1"/>
+      <Item Name="深B股东"  VisibleName="深 B 股东" Type="SZB" BackType="5" ShortName="深B-" MarketType="H" LoginVisible="1"/>
+      <Item Name="三板股东" VisibleName="三板股东" Type="SB" BackType="5" ShortName="三板-" MarketType="9" LoginVisible="1"/>
+    </AccountType>
+		<!--市场类型配置-->
+		<MarketType>
+			<Item Name="1" DisplayName="沪A" AccountType="SH" MoneyType="0"/>
+			<Item Name="2" DisplayName="深A" AccountType="SZ" MoneyType="0"/>
+			<Item Name="D" DisplayName="沪B" AccountType="SHB" MoneyType="1"/>
+			<Item Name="H" DisplayName="深B" AccountType="SZB" MoneyType="2"/>
+			<Item Name="8" DisplayName="创业" AccountType="SZ" MoneyType="0"/>
+			<Item Name="9" DisplayName="三A" AccountType="SB" MoneyType="0"/>
+			<Item Name="A" DisplayName="三B" AccountType="SBB" MoneyType="1"/>
+		</MarketType>
+    <!--委托名称-->
+    <StockEntrustType>
+      <Item Name="01" Value="买入"/>
+      <Item Name="02" Value="卖出"/>
+      <Item Name="U1" Value="买入"/>
+      <Item Name="R1" Value="买入"/>
+      <Item Name="Q1" Value="买入"/>
+      <Item Name="S1" Value="买入"/>
+      <Item Name="T1" Value="买入"/>
+      <Item Name="V1" Value="买入"/>
+      <Item Name="U2" Value="卖出"/>
+      <Item Name="R2" Value="卖出"/>
+      <Item Name="Q2" Value="卖出"/>
+      <Item Name="S2" Value="卖出"/>
+      <Item Name="T2" Value="卖出"/>
+      <Item Name="V2" Value="卖出"/>
+      <Item Name="P1" Value="行权"/>
+      <Item Name="P2" Value="行权"/>
+      <Item Name="71" Value="债券转股"/>
+      <Item Name="72" Value="债券转股"/>
+      <Item Name="81" Value="回售"/>
+      <Item Name="82" Value="回售"/>
+      <Item Name="0L1" Value="认购"/>
+      <Item Name="0L2" Value="认购"/>
+      <Item Name="L1" Value="申购"/>
+      <Item Name="L2" Value="赎回"/>
+      <Item Name="B1" Value="放弃中签"/>
+      <Item Name="B2" Value="放弃中签"/>
+      <Item Name="M1" Value="ETF认购"/>
+      <Item Name="M2" Value="ETF认购"/>
+      <Item Name="N1" Value="ETF申购"/>
+      <Item Name="N2" Value="ETF申购"/>
+      </StockEntrustType>
+    <!--证件类型-->
+    <IDKind>
+      <Item Name="0" Value="身份证"/>
+      <Item Name="1" Value="外国护照"/>
+      <Item Name="2" Value="营业执照"/>
+      <Item Name="3" Value="军官证"/>
+      <Item Name="7" Value="行政机关"/>
+      <Item Name="9" Value="法人社团"/>
+      <Item Name="a" Value="非法人社团"/>
+      <Item Name="b" Value="军队"/>
+      <Item Name="c" Value="武警"/>
+      <Item Name="d" Value="下属机构"/>
+      <Item Name="f" Value="基金会"/>
+      <Item Name="g" Value="技术监督局"/>
+      <Item Name="C" Value="解放军文职干部证"/>
+      <Item Name="D" Value="警官证"/>
+      <Item Name="E" Value="解放军士兵证"/>
+      <Item Name="F" Value="户口簿"/>
+      <Item Name="G" Value="港澳回乡通行证"/>
+      <Item Name="H" Value="台湾通行证及其他有效旅行证"/>
+      <Item Name="J" Value="本国护照"/>
+      <Item Name="K" Value="武警文职干部证"/>
+      <Item Name="L" Value="武警士兵证"/>
+      <Item Name="M" Value="社会团体"/>
+      <Item Name="N" Value="临时身份证"/>
+      <Item Name="P" Value="全国组织机构代码"/>
+      <Item Name="R" Value="境外身份证"/>
+      <Item Name="S" Value="港澳台居民身份证"/>
+      <Item Name="T" Value="事业法人登记证书"/>
+      <Item Name="X" Value="其他有效证件"/>
+    </IDKind>
+		<!--批量委托拆单方式-->
+		<BatchEntrustSplitType>
+			<Item Name="数量递减" Value="0"/>
+			<Item Name="区间随机" Value="1"/>
+			<Item Name="固定数量" Value="2"/>
+		</BatchEntrustSplitType>
+		<!--可修改密码类型-->
+		<ModifyPassWordType>
+			<Item Name="交易密码" Value="2" OldCharType="1" MaxLen="8" OldMinLen="0" NewCharType="1" NewMaxLen="8" NewMinLen="0" IsUseSoftKeyBoard="1"/>
+			<Item Name="资金密码" Value="1" OldCharType="2" MaxLen="8" OldMinLen="0" NewCharType="2" NewMaxLen="8" NewMinLen="0" IsUseSoftKeyBoard="1"/>
+		</ModifyPassWordType>
+		<!--测速策略配置-->
+		<TestSpeed TimeOut="5" HttpSpeedTest="True">
+			<Ratio>
+				<Item Min="50" Max="999" Times="3"/>
+			</Ratio>
+		</TestSpeed>
+		<!--快速交易一级费率配置-->
+		<FareSet1>
+			<Item Id="1" FareName="经手费" EntrustBs="!" ExchangeType="!" StockType="!" FareType="0" BalanceRatio="0.003" ParRatio="0.003" MinFare="0" MaxFare="0" DispartCount="0"/>
+			<Item Id="2" FareName="印花税" EntrustBs="!" ExchangeType="!" StockType="!" FareType="1" BalanceRatio="0.003" ParRatio="0.003" MinFare="0" MaxFare="0" DispartCount="0"/>
+			<Item Id="3" FareName="过户费" EntrustBs="!" ExchangeType="!" StockType="!" FareType="2" BalanceRatio="0.003" ParRatio="0.003" MinFare="0" MaxFare="0" DispartCount="0"/>
+			<Item Id="4" FareName="证管费" EntrustBs="!" ExchangeType="!" StockType="!" FareType="3" BalanceRatio="0.003" ParRatio="0.003" MinFare="0" MaxFare="0" DispartCount="0"/>
+			<Item Id="5" FareName="认购经手费" EntrustBs="!" ExchangeType="!" StockType="!" FareType="4" BalanceRatio="0.003" ParRatio="0.003" MinFare="0" MaxFare="0" DispartCount="0"/>
+			<Item Id="6" FareName="认购手续费" EntrustBs="!" ExchangeType="!" StockType="!" FareType="5" BalanceRatio="0.003" ParRatio="0.003" MinFare="0" MaxFare="0" DispartCount="0"/>
+			<Item Id="7" FareName="其它费用" EntrustBs="!" ExchangeType="!" StockType="!" FareType="6" BalanceRatio="0.003" ParRatio="0.003" MinFare="0" MaxFare="0" DispartCount="0"/>
+			<Item Id="8" FareName="风险费" EntrustBs="!" ExchangeType="!" StockType="!" FareType="x" BalanceRatio="0.003" ParRatio="0.003" MinFare="0" MaxFare="0" DispartCount="0"/>
+		</FareSet1>
+		<!--快速交易二级费率配置-->
+		<FareSet2>
+			<Item Id="1" FareName="佣金" EntrustBs="!" ExchangeType="!" StockType="!" FareType="0" BalanceRatio="0.003" ParRatio="0" MinFare="0" MaxFare="0" DispartCount="0"/>
+			<Item Id="2" FareName="印花税" EntrustBs="!" ExchangeType="!" StockType="!" FareType="1" BalanceRatio="0.003" ParRatio="0" MinFare="0" MaxFare="0" DispartCount="0"/>
+			<Item Id="3" FareName="过户费" EntrustBs="!" ExchangeType="!" StockType="!" FareType="2" BalanceRatio="0" ParRatio="0.001" MinFare="0" MaxFare="0" DispartCount="0"/>
+			<Item Id="4" FareName="经手费" EntrustBs="!" ExchangeType="!" StockType="!" FareType="3" BalanceRatio="0.003" ParRatio="0" MinFare="0" MaxFare="0" DispartCount="0"/>
+			<Item Id="5" FareName="证管费" EntrustBs="!" ExchangeType="!" StockType="!" FareType="x" BalanceRatio="0.003" ParRatio="0" MinFare="0" MaxFare="0" DispartCount="0"/>
+		</FareSet2>
+		<!--快速交易参数配置-->
+		<FormSet>
+			<Item Id="1" Caption="买默认价格档位" Visible="1" DataType="2" PValue="6" Flag="10"/>
+			<Item Id="2" Caption="卖默认价格档位" Visible="1" DataType="2" PValue="7" Flag="10"/>
+			<Item Id="3" Caption="买默认数量档位" Visible="1" DataType="3" PValue="17" Flag="10"/>
+			<Item Id="4" Caption="卖默认数量档位" Visible="1" DataType="3" PValue="17" Flag="10"/>
+			<Item Id="5" Caption="默认数量" Visible="1" DataType="1" PValue="0" Flag="10"/>
+			<Item Id="6" Caption="价格调整步长" Visible="1" DataType="1" PValue="1" Flag="10"/>
+			<Item Id="7" Caption="数量调整步长" Visible="1" DataType="1" PValue="100" Flag="10"/>
+			<Item Id="8" Caption="单笔最大委托数量" Visible="1" DataType="1" PValue="1000000" Flag="11"/>
+			<Item Id="9" Caption="拆单步长" Visible="1" DataType="1" PValue="100" Flag="11"/>
+			<Item Id="13" Caption="随机数下限" Visible="1" DataType="1" PValue="1" Flag="11"/>
+			<Item Id="14" Caption="随机数上限" Visible="1" DataType="1" PValue="1000" Flag="11"/>
+			<Item Id="10" Caption="成本价算法" Visible="0" DataType="4" PValue="5" Flag="11"/>
+			<Item Id="11" Caption="查询证券成本价处理模式4125" Visible="0" DataType="5" PValue="1" Flag="11"/>
+			<Item Id="12" Caption="估算费率4126" Visible="0" DataType="1" PValue="0" Flag="11"/>
+			<Item Id="16" Caption="最大委托数量" Visible="1" DataType="1" PValue="1000000" Flag="11"/>
+		</FormSet>
+		<!--快速交易成交列表费率显示控制-->
+		<FareShowSet>
+			<Item Id="1" Caption="佣金" Visible="1" Column="11" Flag="11"/>
+			<Item Id="2" Caption="印花税" Visible="1" Column="12" Flag="11"/>
+			<Item Id="3" Caption="过户费" Visible="1" Column="13" Flag="11"/>
+			<Item Id="4" Caption="成交金额" Visible="0" Column="14" Flag="11"/>
+			<Item Id="5" Caption="交收金额" Visible="0" Column="15" Flag="11"/>
+			<Item Id="6" Caption="交易所收费" Visible="0" Column="16" Flag="00"/>
+		</FareShowSet>
+		<!--快速交易控制开关配置-->
+		<EntrustSet>
+			<Item Id="1" Caption="委托确认提示" Visible="1" PValue="1" Flag="11"/>
+			<Item Id="6" Caption="委托成功提示" Visible="1" PValue="1" Flag="11"/>
+			<Item Id="2" Caption="撤单确认提示" Visible="1" PValue="1" Flag="11"/>
+			<Item Id="7" Caption="撤单成功提示" Visible="1" PValue="1" Flag="11"/>
+			<Item Id="3" Caption="委托数量回车/委托下单" Visible="1" PValue="1" Flag="10"/>
+			<Item Id="4" Caption="自动填写价格" Visible="1" PValue="1" Flag="10"/>
+			<Item Id="5" Caption="自动填写数量" Visible="1" PValue="1" Flag="10"/>
+			<Item Id="9" Caption="使用代码统一值" Visible="1" PValue="1" Flag="10"/>
+			<Item Id="10" Caption="代码超出涨跌停时弹出确认提示" Visible="1" PValue="1" Flag="11"/>
+			<Item Id="11" Caption="自动清空" Visible="1" PValue="0" Flag="10"/>
+			<Item Id="8" Caption="自动清空时清空代码" Visible="1" PValue="0" Flag="10"/>
+			<Item Id="12" Caption="支持市价委托" Visible="1" PValue="0" Flag="10"/>
+			<Item Id="13" Caption="双击持仓填卖单" Visible="1" PValue="0" Flag="10"/>
+			<Item Id="16" Caption="自动拆单" Visible="1" PValue="1" Flag="11"/>
+			<Item Id="14" Caption="起用随机数拆单" Visible="1" PValue="0" Flag="11"/>
+			<Item Id="15" Caption="显示测试时间" Visible="0" PValue="0" Flag="10"/>
+			<Item Id="23" Caption="隐藏序号列" Visible="0" PValue="1" Flag="11"/>
+			<Item Id="24" Caption="股票名称列固定" Visible="0" PValue="1" Flag="11"/>
+		</EntrustSet>
+		<!--快速交易快捷键配置-->
+		<HotKey>
+			<Item Id="1" Caption="定位买入股票代码" Visible="1" PValue="112" Modifier="" Flag="10"/>
+			<Item Id="2" Caption="定位卖出股票代码" Visible="1" PValue="113" Modifier="" Flag="10"/>
+			<Item Id="3" Caption="买入热键" Visible="1" PValue="114" Modifier="" Flag="10"/>
+			<Item Id="4" Caption="卖出热键" Visible="1" PValue="115" Modifier="" Flag="10"/>
+			<Item Id="5" Caption="撤最后一笔" Visible="1" PValue="116" Modifier="" Flag="11"/>
+			<Item Id="6" Caption="按代码撤单" Visible="1" PValue="117" Modifier="" Flag="11"/>
+			<Item Id="7" Caption="撤全部" Visible="1" PValue="118" Modifier="" Flag="11"/>
+			<Item Id="20" Caption="买全撤" Visible="1" PValue="0" Modifier="" Flag="11"/>
+			<Item Id="21" Caption="卖全撤" Visible="1" PValue="0" Modifier="" Flag="11"/>
+			<Item Id="8" Caption="定位到委托列表" Visible="1" PValue="119" Modifier="" Flag="11"/>
+			<Item Id="9" Caption="定位到持仓列表" Visible="1" PValue="120" Modifier="" Flag="11"/>
+			<Item Id="10" Caption="定位到成交列表" Visible="1" PValue="0" Modifier="" Flag="11"/>
+			<Item Id="18" Caption="定位到资金列表" Visible="1" PValue="0" Modifier="" Flag="11"/>
+			<Item Id="11" Caption="持仓自动填写卖单" Visible="1" PValue="0" Modifier="" Flag="10"/>
+			<Item Id="12" Caption="手动刷新" Visible="1" PValue="0" Modifier="" Flag="10"/>
+			<Item Id="13" Caption="价格自动增加一个单位" Visible="1" PValue="16571" Modifier="2" Flag="10"/>
+			<Item Id="14" Caption="价格自动减少一个单位" Visible="1" PValue="16573" Modifier="2" Flag="10"/>
+			<Item Id="15" Caption="数据同步" Visible="1" PValue="0" Modifier="" Flag="10"/>
+			<Item Id="16" Caption="数量自动增加一个单位" Visible="1" PValue="0" Modifier="" Flag="10"/>
+			<Item Id="17" Caption="数量自动减少一个单位" Visible="1" PValue="0" Modifier="" Flag="10"/>
+			<Item Id="19" Caption="勾选/不选委托记录" Visible="1" PValue="83" Modifier="" Flag="11"/>
+			<Item Id="22" Caption="委托热键" Visible="1" PValue="112" Modifier="" Flag="01"/>
+			<Item Id="23" Caption="精简界面" Visible="1" PValue="115" Modifier="" Flag="01"/>
+			<Item Id="24" Caption="锁定输入" Visible="1" PValue="0" Modifier="" Flag="10"/>
+		</HotKey>
+		<!--快速交易止损止盈配置-->
+		<LossProfitSet>
+			<Item Id="1" Caption="使用止损" Visible="1" DataType="3" PValue="0"/>
+			<Item Id="2" Caption="止损类别" Visible="1" DataType="4" PValue="0" ComboListName="LossProfitType"/>
+			<Item Id="3" Caption="止损参数" Visible="1" DataType="1" PValue="1" MaxValue="1000" MinValue="0"/>
+			<Item Id="4" Caption="止损触发次数" Visible="0" DataType="1" PValue="1" MaxValue="10" MinValue="1"/>
+			<Item Id="5" Caption="止损委托价位" Visible="1" DataType="4" PValue="6" ComboListName="PriceSelect"/>
+			<Item Id="6" Caption="止损偏移价位" Visible="1" DataType="1" PValue="1" MaxValue="10000" MinValue="0"/>
+			<Item Id="7" Caption="使用止盈" Visible="1" DataType="3" PValue="0"/>
+			<Item Id="8" Caption="止盈类别" Visible="1" DataType="4" PValue="0" ComboListName="LossProfitType"/>
+			<Item Id="9" Caption="止盈参数" Visible="1" DataType="1" PValue="1" MaxValue="1000" MinValue="0"/>
+			<Item Id="10" Caption="止盈触发次数" Visible="0" DataType="1" PValue="1" MaxValue="10" MinValue="1"/>
+			<Item Id="11" Caption="止盈委托价位" Visible="1" DataType="4" PValue="6" ComboListName="PriceSelect"/>
+			<Item Id="12" Caption="止盈偏移价位" Visible="1" DataType="1" PValue="1" MaxValue="10000" MinValue="0"/>
+		</LossProfitSet>
+		<!--快速交易声音配置-->
+		<SoundConfig>
+			<Item Id="1" Caption="委托成功" Visible="1" DataType="0" PValue=""/>
+			<Item Id="2" Caption="委托失败" Visible="1" DataType="0" PValue=""/>
+			<Item Id="3" Caption="撤单成功" Visible="1" DataType="0" PValue=""/>
+			<Item Id="4" Caption="撤单失败" Visible="1" DataType="0" PValue=""/>
+		</SoundConfig>
+		<!--默认请求参数-->
+		<DefaultReqData>
+			<Item Name="version" Value="1"/>
+			<Item Name="op_entrust_way" Value="7"/>
+			<Item Name="query_direction" Value="1"/>
+			<Item Name="request_num" Value="2000"/>
+			<Item Name="position_str" Value=""/>
+		</DefaultReqData>
+		<!--上海市价委托类型-->
+		<SHSJWTType>
+			<Item Name="五档即成剩撤" Value="U"/>
+			<Item Name="五档即成转限价" Value="R"/>
+		</SHSJWTType>
+		<!--深圳市价委托买入类型-->
+		<SZSJWTType>
+			<Item Name="对手方最优价格" Value="Q"/>
+			<Item Name="本方最优价格" Value="S"/>
+			<Item Name="五档即成剩撤" Value="U"/>
+			<Item Name="即时成交剩余撤销" Value="T"/>
+			<Item Name="全额成交或撤销" Value="V"/>
+		</SZSJWTType>
+		<!--登录安全方式-->
+		<SecurityTypes>
+			<Item Name="验证码" Value="1"/>
+			<Item Name="通讯密码" Value="2"/>
+			<Item Name="文件证书" Value="4"/>
+			<Item Name="移动证书" Value="5"/>
+			<Item Name="动态口令" Value="3"/>
+		</SecurityTypes>
+		<!--ETF人工套利参数配置-->
+		<ETFZXConfig>
+			<Item Id="1" Caption="使用已有持仓" Visible="1" DataType="1" PValue="0"/>
+			<Item Id="2" Caption="使用统一盘口比例" Visible="1" DataType="1" PValue="1"/>
+			<Item Id="3" Caption="ETF盘口比例" Visible="1" DataType="2" PValue="0.5"/>
+			<Item Id="4" Caption="成份股盘口比例" Visible="1" DataType="2" PValue="0.5"/>
+			<Item Id="5" Caption="ETF各档盘口比例" Visible="1" DataType="2" PValue="1;1;1;1"/>
+			<Item Id="6" Caption="成份股各档盘口比例" Visible="1" DataType="2" PValue="1;1;1;1"/>
+			<Item Id="7" Caption="溢价套利最小收益比例" Visible="1" DataType="2" PValue="0.05"/>
+			<Item Id="8" Caption="折价套利最小收益比例" Visible="1" DataType="2" PValue="0.06"/>
+			<Item Id="9" Caption="监控代码" Visible="1" DataType="2" PValue=""/>
+			<Item Id="10" Caption="买入委托数量圆整" Visible="1" DataType="1" PValue="1"/>
+			<Item Id="11" Caption="刷新频率" Visible="1" DataType="2" PValue="2000"/>
+			<Item Id="12" Caption="选择ETF代码时自动增加监控" Visible="1" DataType="1" PValue="1"/>
+		</ETFZXConfig>
+		<!--登录用户类型配置-->
+		<UserType>
+			<Item Name="Trader" Value="0"/>
+		</UserType>
+		<!--断线自动重连配置-->
+		<AutoReconnect Count="5"/>
+		<!--心跳包设置-->
+		<HeartBeat Interval="25"/>
+		<!--皮肤配置-->
+		<Skin Default="DefaultSkin"/>
+		<!--主推服务器配置-->
+		<AutoPushServer ChannelType="0"/>
+		<!--创业版配置-->
+		<GEM IsInquireGEMRiskQuestion="0" IsSendGEMRiskQuestion="0"/>
+		<!--基金新规配置说明
+          FundRiskCheckType：风险等级检查，1：本地比较，2：柜台比较， 默认值1。
+          NotFundRiskGradeDealType：没有风险等级处理类别，0：不处理继续，1：强制跳转到风险问卷调查，2：选择是否做问卷，3:3：选择是否继续,(提示信息 NotFundRiskGradeDealHint配置  ，默认0。)
+          NotFundRiskGradeDealHint：没有风险等级的提示信息
+          IsInquireFundRiskQuestion：是否从柜台查询问卷，0：否，1：是，默认0。
+          IsSendRiskQuestion：是否发送问卷到柜台，0：不发送，1：发送，默认0。
+          InquireFundRiskGrade：查询基金风险等级功能号，默认3509 瑞银先做，不配置就是瑞银的功能。其它柜台配置3514。
+          FundRiskGradeDef:设置默认的风险等级。
+		  FundRiskGradeUrl:设置风险等级的网站地址。
+		 -->
+		<FundNewRule FloorFundRiskCheckType="1" FundRiskCheckType="1" NotFundRiskGradeDealType="0" NotFundRiskGradeDealHint="" IsInquireFundRiskQuestion="0" IsSendRiskQuestion="0" InquireFundRiskGrade="3509" FundRiskGradeDef=""/>
+		<!--基金风险等级-->
+		<FundRiskTypes>
+			<Item Name="保本等级" Value="1"/>
+			<Item Name="低风险等级" Value="2"/>
+			<Item Name="中风险等级" Value="3"/>
+			<Item Name="高风险等级" Value="4"/>
+		</FundRiskTypes>
+		<!--用户风险等级-->
+		<FundAccRiskTypes>
+			<Item Name="默认型" Value="0" ValueEx="10"/>
+			<Item Name="保守型" Value="1" ValueEx="20"/>
+			<Item Name="稳健型" Value="2" ValueEx="30"/>
+			<Item Name="积极型" Value="3" ValueEx="40"/>
+			<Item Name="激进型" Value="4" ValueEx="50"/>
+		</FundAccRiskTypes>
+
+    <!--巨额赎回-->
+    <ExceedFlag>
+      <Item Name="赎回取消" Value="0"/>
+      <Item Name="赎回顺延" Value="1"/>
+    </ExceedFlag>
+      <!--收费方式-->
+    <ChargeType>
+      <Item Name="前台收费" Value="0"/>
+      <Item Name="后台收费" Value="1"/>      
+    </ChargeType>
+    <!--分红方式-->
+    <DividendMethod>
+      <Item Name="红利转投" Value="0"/>
+      <Item Name="现金分红" Value="1"/>
+    </DividendMethod>   
+		<!--合一版系统下拉菜单选项-->    
+		<!--ValueEx: 业务类型，空为适合所有业务类型-->
+		<SystemMenu>
+			<Item Name="机器码绑定" Value="1"/>
+			<Item Name="解除机器码绑定" Value="2"/>
+			<Item Name="证书绑定" Value="3"/>
+			<Item Name="解除证书绑定" Value="4"/>
+			<Item Name="设置预留信息" Value="5"/>
+			<Item Name="期货交易设置" Value="100" ValueEx="Future"/>
+		</SystemMenu>
+		<!--是否查询基金帐号-->
+		<InquireJJAccount IsInquireJJAccount="1"/>
+		<!--是否保存登录账号列表-->
+		<SaveAccount IsSave="1"/>
+		<!--登录交易密码参数配置-->
+		<Password CharType="1" MaxLen="16" MinLen="0" MaxModLen="16" MinModLen="0" IsUseSoftKeyBoard="1"/>
+		<!--默认语言配置-->
+		<Language DefaultExt="CHS"/>
+		<!--期货特殊查询显示-->
+		<FuturesInquireView IsFuturesInquireView="0"/>
+		<!--分批查询数据查询条数选项-->
+		<!--RequestNum>
+			<Item Name="1" Value="100"/>
+			<Item Name="2" Value="200"/>
+			<Item Name="3" Value="500"/>
+			<Item Name="4" Value="1000" DefaultNum="1"/>
+		</RequestNum-->
+		<!--以下字典定义-->
+		<!--界面字体风格选项配置,value配置比例(默认是100)-->
+		<UIRatio>
+			<Item Name="默认" Value="100"/>
+			<Item Name="大字体" Value="125"/>
+			<Item Name="特大字体" Value="150"/>
+		</UIRatio>
+		<!--价位选项，目前使用的有
+		1、快速交易止盈止损委托价位-->
+		<PriceSelect>
+			<Item Name="最新价" Value="0"/>
+			<Item Name="卖五价" Value="1"/>
+			<Item Name="卖四价" Value="2"/>
+			<Item Name="卖三价" Value="3"/>
+			<Item Name="卖二价" Value="4"/>
+			<Item Name="卖一价" Value="5"/>
+			<Item Name="买一价" Value="6"/>
+			<Item Name="买二价" Value="7"/>
+			<Item Name="买三价" Value="8"/>
+			<Item Name="买四价" Value="9"/>
+			<Item Name="买五价" Value="10"/>
+			<Item Name="涨停价" Value="11"/>
+			<Item Name="跌停价" Value="12"/>
+			<Item Name="今开价" Value="13"/>
+			<Item Name="昨收价" Value="14"/>
+			<Item Name="最高价" Value="15"/>
+			<Item Name="最低价" Value="16"/>
+		</PriceSelect>
+		<!--止损止盈类别选项-->
+		<LossProfitType>
+			<Item Name="价位" Value="0"/>
+			<Item Name="比例" Value="1"/>
+		</LossProfitType>
+		<!--融资融券币种-->
+		<RZRQMoneyType>
+			<Item Name="人民币" Value="0"/>
+			<Item Name="美元" Value="1"/>
+			<Item Name="港币" Value="2"/>
+		</RZRQMoneyType>
+		<!--期现套利委托价位-->
+		<QXPriceSelect>
+			<Item Name="最新价" Value="0"/>
+			<Item Name="卖五价" Value="1"/>
+			<Item Name="卖四价" Value="2"/>
+			<Item Name="卖三价" Value="3"/>
+			<Item Name="卖二价" Value="4"/>
+			<Item Name="卖一价" Value="5"/>
+			<Item Name="买一价" Value="6"/>
+			<Item Name="买二价" Value="7"/>
+			<Item Name="买三价" Value="8"/>
+			<Item Name="买四价" Value="9"/>
+			<Item Name="买五价" Value="10"/>
+			<Item Name="涨停价" Value="11"/>
+			<Item Name="跌停价" Value="12"/>
+			<Item Name="今开价" Value="13"/>
+			<Item Name="昨收价" Value="14"/>
+			<Item Name="最高价" Value="15"/>
+			<Item Name="最低价" Value="16"/>
+			<Item Name="市价委托" Value="17"/>
+			<Item Name="自定义" Value="18"/>
+			<Item Name="自由盘口" Value="19"/>
+		</QXPriceSelect>
+		<!--币种字典-->
+		<MoneyType>
+			<Item Name="人民币" Value="0"/>
+			<Item Name="美元" Value="1"/>
+			<Item Name="港币" Value="2"/>
+		</MoneyType>
+		<!--基金分红方式-->
+		<FundFHType>
+			<Item Name="红利再投资/红股" Value="0"/>
+			<Item Name="现金分红/现金" Value="1"/>
+		</FundFHType>
+		<!--ETF趋势交易配置-->
+		<!--TDataType = (stChar:0, stInt:1, stFloat:2, stBool:3, stCombo:4)-->
+		<ETFTrendZXConfig>
+			<Item Id="1" Caption="ETF盘口比例" Visible="1" DataType="0" PValue="1,1,1,1,1"/>
+			<Item Id="2" Caption="成份股盘口比例" Visible="1" DataType="0" PValue="1,1,1,1,1"/>
+			<Item Id="3" Caption="涨幅提示" Visible="1" DataType="2" PValue="10" MaxValue="10" MinValue="5"/>
+			<Item Id="4" Caption="跌幅提示" Visible="1" DataType="2" PValue="10" MaxValue="10" MinValue="5"/>
+			<Item Id="5" Caption="自动撤补等待间隔(毫秒)" Visible="1" DataType="1" PValue="2000" MaxValue="5000" MinValue="500"/>
+			<Item Id="6" Caption="上海市价买入" Visible="1" DataType="4" PValue="U" ComboListName="SHSJWTBuyType"/>
+			<Item Id="7" Caption="上海市价卖出" Visible="1" DataType="4" PValue="U" ComboListName="SHSJWTSellType"/>
+			<Item Id="8" Caption="深圳市价买入" Visible="1" DataType="4" PValue="Q" ComboListName="SZSJWTBuyType"/>
+			<Item Id="9" Caption="深圳市价卖出" Visible="1" DataType="4" PValue="Q" ComboListName="SZSJWTSellType"/>
+			<Item Id="10" Caption="盘口不足颜色" Visible="1" DataType="5" PValue="0"/>
+			<Item Id="11" Caption="停牌颜色" Visible="1" DataType="5" PValue="16711680"/>
+			<Item Id="12" Caption="涨停颜色" Visible="1" DataType="5" PValue="255"/>
+			<Item Id="13" Caption="跌停颜色" Visible="1" DataType="5" PValue="32768"/>
+			<Item Id="14" Caption="必须替代颜色" Visible="1" DataType="5" PValue="0"/>
+		</ETFTrendZXConfig>
+		<!--ETF趋势交易方向-->
+		<ArbDirName>
+			<Item Name="0" Value="未知"/>
+			<Item Name="1" Value="溢价"/>
+			<Item Name="2" Value="折价"/>
+		</ArbDirName>
+		<!--ETF趋势交易步骤-->
+		<ArbStepName>
+			<Item Name="0" Value="新建"/>
+			<Item Name="1" Value="买篮子"/>
+			<Item Name="2" Value="申购"/>
+			<Item Name="3" Value="卖ETF"/>
+			<Item Name="4" Value="买ETF"/>
+			<Item Name="5" Value="赎回"/>
+			<Item Name="6" Value="卖篮子"/>
+			<Item Name="7" Value="完成"/>
+			<Item Name="8" Value="买篮子完成"/>
+			<Item Name="9" Value="申购完成"/>
+			<Item Name="10" Value="买ETF完成"/>
+			<Item Name="11" Value="赎回完成"/>
+		</ArbStepName>
+		<!--委托状态名称-->
+		<EntrustStatus>
+			<Item Name="0" Value="未报" ValueEx="1"/>
+			<Item Name="1" Value="待报" ValueEx="0"/>
+			<Item Name="2" Value="已报" ValueEx="1"/>
+			<Item Name="3" Value="已报待撤" ValueEx="0"/>
+			<Item Name="4" Value="部成待撤" ValueEx="0"/>
+			<Item Name="5" Value="部撤" ValueEx="0"/>
+			<Item Name="6" Value="已撤" ValueEx="0"/>
+			<Item Name="7" Value="部成" ValueEx="1"/>
+			<Item Name="8" Value="已成" ValueEx="0"/>
+			<Item Name="9" Value="废单" ValueEx="0"/>
+		</EntrustStatus>
+		<!--多账户委托配置-->
+		<!--TDataType = (stChar:0, stInt:1, stFloat:2, stBool:3, stCombo:4)-->
+		<MultiAccountTradeSet>
+			<Item Id="1" Caption="买默认价格档位" Visible="1" DataType="4" PValue="5" ComboListName="PriceSelect"/>
+			<Item Id="2" Caption="卖默认价格档位" Visible="1" DataType="4" PValue="6" ComboListName="PriceSelect"/>
+			<Item Id="3" Caption="默认数量" Visible="1" DataType="1" PValue="1000" ModValue="100"/>
+			<Item Id="4" Caption="单笔最大委托数量" Visible="1" DataType="1" PValue="100000" ModValue="100" MaxValue="1000000" MinValue="100000"/>
+			<Item Id="5" Caption="拆单步长" Visible="1" DataType="1" PValue="100" ModValue="100" MaxValue="1000000" MinValue="100"/>
+			<Item Id="6" Caption="拆单最大笔数" Visible="1" DataType="1" PValue="30" MaxValue="200" MinValue="1"/>
+			<Item Id="7" Caption="估算费率" Visible="1" DataType="2" PValue="0.003" MaxValue="0.1" MinValue="0"/>
+		</MultiAccountTradeSet>
+		<!--买卖方向-->
+		<BsName>
+			<Item Name="1" Value="买入"/>
+			<Item Name="2" Value="卖出"/>
+		</BsName>
+		<!--ETF套利类型,ETF普通交易与人工套利功能使用-->
+		<ArbTypeName>
+			<Item Name="0" Value="普通交易"/>
+			<Item Name="1" Value="人工套利"/>
+			<Item Name="2" Value="半自动套利"/>
+			<Item Name="3" Value="全自动套利"/>
+		</ArbTypeName>
+		<!--溢价套利过程,ETF人工套利功能使用-->
+		<UpOptTypeName>
+			<Item Name="0" Value="股票买入"/>
+			<Item Name="1" Value="股票买入中"/>
+			<Item Name="2" Value="ETF申购"/>
+			<Item Name="3" Value="ETF申购中"/>
+			<Item Name="4" Value="ETF卖出"/>
+			<Item Name="5" Value="ETF卖出中"/>
+			<Item Name="6" Value="完成"/>
+		</UpOptTypeName>
+		<!--折价套利过程,ETF人工套利功能使用-->
+		<DownOptTypeName>
+			<Item Name="0" Value="ETF买入"/>
+			<Item Name="1" Value="ETF买入中"/>
+			<Item Name="2" Value="ETF赎回"/>
+			<Item Name="3" Value="ETF赎回中"/>
+			<Item Name="4" Value="股票卖出"/>
+			<Item Name="5" Value="股票卖出中"/>
+			<Item Name="6" Value="完成"/>
+		</DownOptTypeName>
+		<!--股票状态,ETF普通交易与人工套利功能使用-->
+		<CodeStatusName>
+			<Item Name="0" Value="正常"/>
+			<Item Name="1" Value="停牌"/>
+			<Item Name="2" Value="不足"/>
+			<Item Name="3" Value="涨停"/>
+			<Item Name="4" Value="跌停"/>
+		</CodeStatusName>
+		<!--交易状态,ETF人工套利功能使用-->
+		<FinishStatusName>
+			<Item Name="0" Value="未建"/>
+			<Item Name="1" Value="未成"/>
+			<Item Name="2" Value="部成"/>
+			<Item Name="3" Value="已成"/>
+		</FinishStatusName>
+		<!--ETF现金替代类型-->
+		<ReplaceFlagName>
+			<Item Name="0" Value="不可"/>
+			<Item Name="1" Value="可以"/>
+			<Item Name="2" Value="必须"/>
+		</ReplaceFlagName>
+		<!--ETF套利方向-->
+		<ArbDirectName>
+			<Item Name="1" Value="溢价"/>
+			<Item Name="2" Value="折价"/>
+		</ArbDirectName>
+		<!--成本价类型-->
+		<CostPriceType>
+			<Item Name="买入成本价" Value="0"/>
+			<Item Name="买入摊薄成本价" Value="1"/>
+			<Item Name="保本价" Value="2"/>
+			<Item Name="买入摊薄成本价体现当天买入" Value="3"/>
+		</CostPriceType>
+		<!--跨期套利价位-->
+		<ArbPriceSelect>
+			<Item Name="对手价" Value="0"/>
+			<Item Name="市价" Value="1"/>
+			<Item Name="最新价" Value="2"/>
+			<Item Name="本方价" Value="3"/>
+			<Item Name="停板价" Value="4"/>
+		</ArbPriceSelect>
+		<!--登陆验签证件类型
+		C01 2 营业执照
+		C06 9 社会团体法人登记证书
+		C08 T 事业法人登记证书
+		C09 P 组织机构代码证
+		P01 0 居民身份证
+		P03 N 临时居民身份证
+		P04 3 军人证
+		P08 c 武警身份证
+		P16 F 居民户口簿
+		P31 J 护照
+		P99 X 个人其它证件
+		--> 
+		<CheckSignIDKind>
+			<Item Name="2" Value="C01"/>
+			<Item Name="9" Value="C06"/>
+			<Item Name="T" Value="C08"/>
+			<Item Name="P" Value="C09"/>
+			<Item Name="0" Value="P01"/>
+			<Item Name="N" Value="P03"/>
+			<Item Name="3" Value="P04"/>
+			<Item Name="c" Value="P08"/>
+			<Item Name="F" Value="P16"/>
+			<Item Name="J" Value="P31"/>
+			<Item Name="X" Value="P99"/>
+		</CheckSignIDKind>
+		<!--基金定投周期,为金仕达基金定投增加-->
+		<FundCycleNum>
+			<Item Name="一个月" Value="1"/>
+			<Item Name="二个月" Value="2"/>
+			<Item Name="三个月" Value="3"/>
+		</FundCycleNum>
+		<!--期货费率设置-->
+		<FutureFareSet>
+			<Item Id="1" ExchangeType="F4" ExchangeName="中金" StockType="IF" FareType="0" FareName="开仓费" BalanceRatio="0.0001" ParRatio="0" MinFare="0" MaxFare="0"/>
+			<Item Id="2" ExchangeType="F4" ExchangeName="中金" StockType="IF" FareType="1" FareName="平仓费" BalanceRatio="0.0001" ParRatio="0" MinFare="0" MaxFare="0"/>
+		</FutureFareSet>
+		<!--期现套利二级费率配置-->
+		<StockFareSet>
+			<Item Id="1" FareName="佣金" EntrustBs="!" ExchangeType="!" StockType="!" FareType="0" BalanceRatio="0.0004" ParRatio="0" MinFare="0" MaxFare="0" DispartCount="0"/>
+			<Item Id="2" FareName="印花税" DispartCount="0" EntrustBs="2" ExchangeType="!" StockType="0" FareType="1" BalanceRatio="0.001" ParRatio="0" MinFare="0" MaxFare="0"/>
+			<Item Id="3" FareName="过户费" DispartCount="0" EntrustBs="!" ExchangeType="1" StockType="0" FareType="2" BalanceRatio="0" ParRatio="0.001" MinFare="0" MaxFare="0"/>
+		</StockFareSet>
+		<!--期货快速委托快捷键-->
+		<FutuQuickTradeShortCutList>
+			<Item Name="qaBuyAtBuyPrice" ShortCut="Ctrl+1"/>
+			<Item Name="qaBuyAtSellPrice" ShortCut="Ctrl+2"/>
+			<Item Name="qaSellAtBuyPrice" ShortCut="Ctrl+3"/>
+			<Item Name="qaSellAtSellPrice" ShortCut="Ctrl+4"/>
+		</FutuQuickTradeShortCutList>
+	<!--跨期快捷键 正向建仓，正向撤补，正向平仓，反向建仓，反向撤补，反向平仓 -->
+		<FutureArbShortCutList>
+			<Item Name="qaCCArbBuy" ShortCut="Ctrl+1"/>
+			<Item Name="qaCCArbWithdraw" ShortCut="Ctrl+2"/>
+			<Item Name="qaCCArbSell" ShortCut="Ctrl+3"/>
+			<Item Name="qaRevCCArbBuy" ShortCut="Ctrl+4"/>
+			<Item Name="qaRevCCArbWithdraw" ShortCut="Ctrl+5"/>
+			<Item Name="qaRevCCArbsell" ShortCut="Ctrl+6"/>
+		</FutureArbShortCutList>
+		<!--'股票', '港股', '期货', '外盘', '外汇'-->
+		<QuotaUpdateTime>
+			<Item Name="qtStock" Time="10000"/>
+			<Item Name="qtHK" Time="3000"/>
+			<Item Name="qtFutures" Time="3000"/>
+			<Item Name="qtWaiPan" Time="3000"/>
+			<Item Name="qtForex" Time="3000"/>
+		</QuotaUpdateTime> 
+	</DefaultConfig>
+	<CellConfig>
+    <Cell id="1" name="股票模拟营业部" type="Stock" serverid="1001" branchno="1"/>
+    <Cell id="2" name="期货模拟营业部" type="Future" serverid="2001" branchno="2001"/>
+  </CellConfig>
+</root>

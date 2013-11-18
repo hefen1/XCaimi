@@ -1,0 +1,833 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{dfe6970e-e941-474d-9db1-347c9980eca9}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{189b9e2e-a617-493a-b9a9-b9d69f3f99e3}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="FormulaCtrl Header Files">
+      <UniqueIdentifier>{ac56720e-53ac-4718-a327-dbad58b4b6fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FormulaCtrl Source Files">
+      <UniqueIdentifier>{9759626f-fb88-45fa-b33b-2428734afc30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="alarm Source Files">
+      <UniqueIdentifier>{13784628-40ca-4ecd-b01d-fb3757d9648f}</UniqueIdentifier>
+      <Extensions>.cpp</Extensions>
+    </Filter>
+    <Filter Include="Alarm head Files">
+      <UniqueIdentifier>{672ad24c-3b0d-4e0c-90e9-b5a5d5f3df97}</UniqueIdentifier>
+      <Extensions>.h</Extensions>
+    </Filter>
+    <Filter Include="systemtest Source Files">
+      <UniqueIdentifier>{5857da23-60c1-4ef2-8553-ca34fd71ae17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SelectStock">
+      <UniqueIdentifier>{08b830f4-8bc5-4be8-bf6c-13044b4f8045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="systemtest Header Files">
+      <UniqueIdentifier>{263cb7f1-1bbc-4f45-8f8f-85a5263757f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{e5c8b284-4e27-4072-b84e-70d41fd2d524}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="FormulaCalc">
+      <UniqueIdentifier>{7ee24f0a-9433-4333-98e9-fa1b01af05f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{469bc6cd-fdef-427a-b98f-5011595e89f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DownoadData">
+      <UniqueIdentifier>{ed26b7e6-e8b8-4ccd-99a3-effbf6ed6ecf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CompManWinApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgFormulaEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgFormulaFind.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgFormulaMan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgInputUnionName.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSaveTrig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgStrategy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgStrategyHQ.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgStrategyJY.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgStrategyMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgStrategyManage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgStrategyTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgTestStrategy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExpTabCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FormulaExport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HSBaseDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\HSBizDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KBEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SelUnionDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseListCtrl.cpp">
+      <Filter>FormulaCtrl Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CHSProgressCtrl.cpp">
+      <Filter>FormulaCtrl Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CompileEditView.cpp">
+      <Filter>FormulaCtrl Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgError.cpp">
+      <Filter>FormulaCtrl Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgEstopPeriod.cpp">
+      <Filter>FormulaCtrl Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgFormulaImportExport.cpp">
+      <Filter>FormulaCtrl Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgFunctionMan.cpp">
+      <Filter>FormulaCtrl Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgnotesAndEidolon.cpp">
+      <Filter>FormulaCtrl Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditEidolon.cpp">
+      <Filter>FormulaCtrl Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HeaderCtrlEx.cpp">
+      <Filter>FormulaCtrl Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HSNumEdit.cpp">
+      <Filter>FormulaCtrl Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HSNumRangeEdit.cpp">
+      <Filter>FormulaCtrl Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HSNumSpinEdit.cpp">
+      <Filter>FormulaCtrl Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HSShadeButton.cpp">
+      <Filter>FormulaCtrl Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HSSpin.cpp">
+      <Filter>FormulaCtrl Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InportPromptDlg.cpp">
+      <Filter>FormulaCtrl Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InputPassPwD.cpp">
+      <Filter>FormulaCtrl Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OnlineList.cpp">
+      <Filter>FormulaCtrl Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptEditViewFormula.cpp">
+      <Filter>FormulaCtrl Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SpinEditEx.cpp">
+      <Filter>FormulaCtrl Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>FormulaCtrl Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeCtrlFormula.cpp">
+      <Filter>FormulaCtrl Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeDroptarget.cpp">
+      <Filter>FormulaCtrl Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AdvancedAlarmData.cpp">
+      <Filter>alarm Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAddProjectToBlock.cpp">
+      <Filter>alarm Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAddStockToAlarm.cpp">
+      <Filter>alarm Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAlarmAnalysis.cpp">
+      <Filter>alarm Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAlarmMan.cpp">
+      <Filter>alarm Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAlarmParamSet.cpp">
+      <Filter>alarm Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAlarmSet.cpp">
+      <Filter>alarm Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgBlockAnalysis.cpp">
+      <Filter>alarm Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgBlockPicAnalysis.cpp">
+      <Filter>alarm Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgUniteAnalysis.cpp">
+      <Filter>alarm Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgExchOptimize.cpp">
+      <Filter>systemtest Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgExchParamSet.cpp">
+      <Filter>systemtest Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSingleExchCalcResult.cpp">
+      <Filter>systemtest Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExchCalcMain.cpp">
+      <Filter>systemtest Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExchYouSelCaclData.cpp">
+      <Filter>systemtest Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HSNewWizDialog.cpp">
+      <Filter>systemtest Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HSNewWizPage.cpp">
+      <Filter>systemtest Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RichEditCtrlEx.cpp">
+      <Filter>systemtest Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RichEditCtrlResult.cpp">
+      <Filter>systemtest Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SheetExchMain.cpp">
+      <Filter>systemtest Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TabCtrlExch.cpp">
+      <Filter>systemtest Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WizPageExchBase.cpp">
+      <Filter>systemtest Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WizPageExchBuy.cpp">
+      <Filter>systemtest Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WizPageExchModel.cpp">
+      <Filter>systemtest Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WizPageExchResult.cpp">
+      <Filter>systemtest Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WizPageExchSelIndicator.cpp">
+      <Filter>systemtest Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WizPageExchSell.cpp">
+      <Filter>systemtest Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WizPageUnionExchCaclResult.cpp">
+      <Filter>systemtest Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCondition.cpp">
+      <Filter>SelectStock</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgConSelStock.cpp">
+      <Filter>SelectStock</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgFormulaBrowser.cpp">
+      <Filter>SelectStock</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgIndicatorSelStock.cpp">
+      <Filter>SelectStock</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgIntelligentSelStock.cpp">
+      <Filter>SelectStock</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSetStockAndTime.cpp">
+      <Filter>SelectStock</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgTailorSelStock.cpp">
+      <Filter>SelectStock</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgUnionConSelStock.cpp">
+      <Filter>SelectStock</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgUnionList.cpp">
+      <Filter>SelectStock</Filter>
+    </ClCompile>
+    <ClCompile Include="FormulaCalc\ExchData.cpp">
+      <Filter>FormulaCalc</Filter>
+    </ClCompile>
+    <ClCompile Include="FormulaCalc\ExpPublic.cpp">
+      <Filter>FormulaCalc</Filter>
+    </ClCompile>
+    <ClCompile Include="FormulaCalc\express.cpp">
+      <Filter>FormulaCalc</Filter>
+    </ClCompile>
+    <ClCompile Include="FormulaCalc\ExpValue.cpp">
+      <Filter>FormulaCalc</Filter>
+    </ClCompile>
+    <ClCompile Include="FormulaCalc\FormulaCalc.cpp">
+      <Filter>FormulaCalc</Filter>
+    </ClCompile>
+    <ClCompile Include="FormulaCalc\FunExpresion.cpp">
+      <Filter>FormulaCalc</Filter>
+    </ClCompile>
+    <ClCompile Include="FormulaCalc\HSDataSource.cpp">
+      <Filter>FormulaCalc</Filter>
+    </ClCompile>
+    <ClCompile Include="FormulaCalc\SystemFun.cpp">
+      <Filter>FormulaCalc</Filter>
+    </ClCompile>
+    <ClCompile Include="FormulaCalc\Tools.cpp">
+      <Filter>FormulaCalc</Filter>
+    </ClCompile>
+    <ClCompile Include="FormulaCalc\Value.cpp">
+      <Filter>FormulaCalc</Filter>
+    </ClCompile>
+    <ClCompile Include="FormulaCalc\VarValue.cpp">
+      <Filter>FormulaCalc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\FormulaManPublic.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\KeyBoardStruct.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\WinnerApplication.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="HSDownloadData.cpp">
+      <Filter>DownoadData</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FormulaMan.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\avi1.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\CompMan.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\cursor1.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\idr_drag.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="idr_drag.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="nodrop.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap1_.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmap1_.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmap2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap2_.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmap2_.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmap3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmap3_.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap3_.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap_d.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmap_d.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmap_f.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap_f.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00001.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00002.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00003.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp00013.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00013.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp00014.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00014.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp00015.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00015.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00016.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp00016.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\checkbox.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="checkbox.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\classview.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="classview.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\close.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="closebtn.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\closebtn.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\drawimag.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="drawimag.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="funimage.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\funimage.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\HxCpLang.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HxCpLang.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\HxCpLangDoc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HxCpLangDoc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="idd_alli.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\idd_alli.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="NewQuote.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\outimage.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="outimage.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\resource.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\treeImageList.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="treeImageList.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseListCtrl.h">
+      <Filter>FormulaCtrl Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CHSProgressCtrl.h">
+      <Filter>FormulaCtrl Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CompileEditView.h">
+      <Filter>FormulaCtrl Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgError.h">
+      <Filter>FormulaCtrl Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgEstopPeriod.h">
+      <Filter>FormulaCtrl Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgFormulaImportExport.h">
+      <Filter>FormulaCtrl Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgFunctionMan.h">
+      <Filter>FormulaCtrl Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgnotesAndEidolon.h">
+      <Filter>FormulaCtrl Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditEidolon.h">
+      <Filter>FormulaCtrl Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderCtrlEx.h">
+      <Filter>FormulaCtrl Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HSNumEdit.h">
+      <Filter>FormulaCtrl Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HSNumRangeEdit.h">
+      <Filter>FormulaCtrl Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HSNumSpinEdit.h">
+      <Filter>FormulaCtrl Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HSShadeButton.h">
+      <Filter>FormulaCtrl Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HSSpin.h">
+      <Filter>FormulaCtrl Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InportPromptDlg.h">
+      <Filter>FormulaCtrl Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputPassPwD.h">
+      <Filter>FormulaCtrl Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OnlineList.h">
+      <Filter>FormulaCtrl Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptEditViewFormula.h">
+      <Filter>FormulaCtrl Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SpinEditEx.h">
+      <Filter>FormulaCtrl Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeCtrlFormula.h">
+      <Filter>FormulaCtrl Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeDroptarget.h">
+      <Filter>FormulaCtrl Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AdvancedAlarmData.h">
+      <Filter>Alarm head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAddProjectToBlock.h">
+      <Filter>Alarm head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAddStockToAlarm.h">
+      <Filter>Alarm head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAlarmAnalysis.h">
+      <Filter>Alarm head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAlarmMan.h">
+      <Filter>Alarm head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAlarmParamSet.h">
+      <Filter>Alarm head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAlarmSet.h">
+      <Filter>Alarm head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgBlockAnalysis.h">
+      <Filter>Alarm head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgBlockPicAnalysis.h">
+      <Filter>Alarm head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgUniteAnalysis.h">
+      <Filter>Alarm head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCondition.h">
+      <Filter>SelectStock</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgConSelStock.h">
+      <Filter>SelectStock</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgFormulaBrowser.h">
+      <Filter>SelectStock</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgIndicatorSelStock.h">
+      <Filter>SelectStock</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgIntelligentSelStock.h">
+      <Filter>SelectStock</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSetStockAndTime.h">
+      <Filter>SelectStock</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgTailorSelStock.h">
+      <Filter>SelectStock</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgUnionConSelStock.h">
+      <Filter>SelectStock</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgUnionList.h">
+      <Filter>SelectStock</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgExchOptimize.h">
+      <Filter>systemtest Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgExchParamSet.h">
+      <Filter>systemtest Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSingleExchCalcResult.h">
+      <Filter>systemtest Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExchCalcMain.h">
+      <Filter>systemtest Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExchYouSelCaclData.h">
+      <Filter>systemtest Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HSNewWizDialog.h">
+      <Filter>systemtest Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HSNewWizPage.h">
+      <Filter>systemtest Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RichEditCtrlEx.h">
+      <Filter>systemtest Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RichEditCtrlResult.h">
+      <Filter>systemtest Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SheetExchMain.h">
+      <Filter>systemtest Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TabCtrlExch.h">
+      <Filter>systemtest Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WizPageExchBase.h">
+      <Filter>systemtest Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WizPageExchBuy.h">
+      <Filter>systemtest Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WizPageExchModel.h">
+      <Filter>systemtest Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WizPageExchResult.h">
+      <Filter>systemtest Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WizPageExchSelIndicator.h">
+      <Filter>systemtest Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WizPageExchSell.h">
+      <Filter>systemtest Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WizPageUnionExchCaclResult.h">
+      <Filter>systemtest Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CompManWinApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgFormulaEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgFormulaFind.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgFormulaMan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgInputUnionName.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSaveTrig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgStrategy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgStrategyHQ.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgStrategyJY.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgStrategyMain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgStrategyManage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgStrategyTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgTestStrategy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpTabCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FormulaExport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HSBaseDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KBEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SelUnionDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FormulaCalc\CompileInterFace.h">
+      <Filter>FormulaCalc</Filter>
+    </ClInclude>
+    <ClInclude Include="FormulaCalc\ExchData.h">
+      <Filter>FormulaCalc</Filter>
+    </ClInclude>
+    <ClInclude Include="FormulaCalc\ExportDll.h">
+      <Filter>FormulaCalc</Filter>
+    </ClInclude>
+    <ClInclude Include="FormulaCalc\ExpPublic.h">
+      <Filter>FormulaCalc</Filter>
+    </ClInclude>
+    <ClInclude Include="FormulaCalc\Express.h">
+      <Filter>FormulaCalc</Filter>
+    </ClInclude>
+    <ClInclude Include="FormulaCalc\ExpValue.h">
+      <Filter>FormulaCalc</Filter>
+    </ClInclude>
+    <ClInclude Include="FormulaCalc\FormulaCalc.h">
+      <Filter>FormulaCalc</Filter>
+    </ClInclude>
+    <ClInclude Include="FormulaCalc\FormulaStruct.h">
+      <Filter>FormulaCalc</Filter>
+    </ClInclude>
+    <ClInclude Include="FormulaCalc\FunExpresion.h">
+      <Filter>FormulaCalc</Filter>
+    </ClInclude>
+    <ClInclude Include="FormulaCalc\FxjFormulaStruct.h">
+      <Filter>FormulaCalc</Filter>
+    </ClInclude>
+    <ClInclude Include="FormulaCalc\FxjFunc.h">
+      <Filter>FormulaCalc</Filter>
+    </ClInclude>
+    <ClInclude Include="FormulaCalc\HSDataSource.h">
+      <Filter>FormulaCalc</Filter>
+    </ClInclude>
+    <ClInclude Include="FormulaCalc\HxCompileOut.h">
+      <Filter>FormulaCalc</Filter>
+    </ClInclude>
+    <ClInclude Include="FormulaCalc\MfcBaseOut.h">
+      <Filter>FormulaCalc</Filter>
+    </ClInclude>
+    <ClInclude Include="FormulaCalc\PubStruct.h">
+      <Filter>FormulaCalc</Filter>
+    </ClInclude>
+    <ClInclude Include="FormulaCalc\RegMsg.h">
+      <Filter>FormulaCalc</Filter>
+    </ClInclude>
+    <ClInclude Include="FormulaCalc\SystemFun.h">
+      <Filter>FormulaCalc</Filter>
+    </ClInclude>
+    <ClInclude Include="FormulaCalc\targetver.h">
+      <Filter>FormulaCalc</Filter>
+    </ClInclude>
+    <ClInclude Include="FormulaCalc\Tools.h">
+      <Filter>FormulaCalc</Filter>
+    </ClInclude>
+    <ClInclude Include="FormulaCalc\Value.h">
+      <Filter>FormulaCalc</Filter>
+    </ClInclude>
+    <ClInclude Include="FormulaCalc\VarValue.h">
+      <Filter>FormulaCalc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\FormulaManInterFace.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\FormulaManPublic.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\KeyBoardStruct.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\WinnerApplication.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="HSDownloadData.h">
+      <Filter>DownoadData</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CompMan.rc">
+      <Filter>FormulaCtrl Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

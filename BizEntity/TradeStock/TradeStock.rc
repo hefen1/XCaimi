@@ -1,0 +1,254 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\TradeStock.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "TradeStock.dll"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "TradeStock.dll"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_STOCKENTRUST DIALOGEX 0, 0, 126, 202
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    COMBOBOX        IDC_CB_STOCKACCOUNT,39,2,73,93,CBS_DROPDOWNLIST | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ED_STOCKCODE,39,15,73,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_ED_PRICE,39,46,61,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_AMOUNT,44,93,61,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "委托[F3]",IDC_BT_OK,70,106,42,14
+    LTEXT           "证券代码",IDC_ST_STOCK,2,19,33,8
+    LTEXT           "委托数量",IDC_ST_AMOUNT,7,96,33,8
+    LTEXT           "委托价格",IDC_ST_PRICE,2,49,33,8
+    LTEXT           "证券名称",IDC_ST_STOCKNAME,2,34,33,8
+    LTEXT           "股东代码",IDC_ST_STOCKACCOUNT,2,5,33,8
+    LTEXT           "可用资金",IDC_ST_ENABLEBALANCE,7,66,33,8
+    LTEXT           "可买数量",IDC_ST_ENABLEAMOUNT,7,81,33,8
+    CONTROL         "",IDC_ED_STOCKNAME,"Static",SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | WS_GROUP,38,30,73,15,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_ED_ENABLEBALANCE,"Static",SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | WS_GROUP,44,62,73,15,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_ED_ENABLEAMOUNT,"Static",SS_LEFTNOWORDWRAP | SS_NOTIFY | SS_CENTERIMAGE | WS_GROUP,44,77,73,15,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_SP_PRICE,"msctls_updown32",UDS_ARROWKEYS,106,48,11,14
+    CONTROL         "",IDC_SP_AMOUNT,"msctls_updown32",UDS_ARROWKEYS,106,93,11,14
+    COMBOBOX        IDC_CB_SJTYPE,44,135,73,93,CBS_DROPDOWNLIST | CBS_NOINTEGRALHEIGHT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "委托类型",IDC_ST_SJTYPE,10,136,33,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_ED_SEATNO,47,148,73,14,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_VISIBLE
+    LTEXT           "对方席位",IDC_ST_SEATNO,11,150,33,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_ED_CONFERNO,47,164,73,14,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_VISIBLE
+    LTEXT           "协议编号",IDC_ST_CONFERNO,11,167,33,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_ED_TRANSCODE,48,179,73,14,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_VISIBLE
+    LTEXT           "转换代码",IDC_ST_TRANSCODE,12,182,33,8,NOT WS_VISIBLE
+END
+
+IDD_DIALOG_STOCKQUERY DIALOGEX 0, 0, 316, 182
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+END
+
+IDD_DIALOG_SETCOSTPRICE DIALOGEX 0, 0, 152, 176
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    COMBOBOX        IDC_CB_STOCKACCOUNT,39,2,73,93,CBS_DROPDOWNLIST | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ED_STOCKCODE,39,15,73,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_ED_STOCKNAME,"Static",SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | WS_GROUP,39,30,73,15,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_ED_PRICE,39,46,73,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "重置[F3]",IDC_BT_OK,69,63,42,14
+    LTEXT           "证券代码",IDC_ST_STOCK,2,19,33,8
+    LTEXT           "成本价格",IDC_ST_PRICE,2,49,33,8
+    LTEXT           "证券名称",IDC_ST_STOCKNAME,2,34,33,8
+    LTEXT           "股东代码",IDC_ST_STOCKACCOUNT,2,5,33,8
+END
+
+IDD_DIALOG_ZJHK DIALOGEX 0, 0, 158, 180
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    COMBOBOX        IDC_CB_MONEYTYPE,39,4,73,93,CBS_DROPDOWNLIST | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ED_BALANCE,39,19,73,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "还款金额",IDC_ST_BALANCE,4,22,33,8
+    LTEXT           "币种类别",IDC_ST_MONEYTYPE,4,7,33,8
+    LTEXT           "可还资金",IDC_ST_ENABLEBALANCE,4,39,33,8
+    LTEXT           "应还资金",IDC_ST_ENABLEAMOUNT,4,54,33,8
+    CONTROL         "",IDC_ED_ENABLEBALANCE,"Static",SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | WS_GROUP,39,35,73,15,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_ED_REALBALANCE,"Static",SS_LEFTNOWORDWRAP | SS_NOTIFY | SS_CENTERIMAGE | WS_GROUP,39,50,73,15,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "确定[F3]",IDC_BT_OK,69,66,42,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_STOCKENTRUST, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_DIALOG_STOCKQUERY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_DIALOG_SETCOSTPRICE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 145
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_DIALOG_ZJHK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ID_POP_BUY              "买入1"
+    ID_POP_SELL             "卖出1"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(936)
+#include "res\TradeStock.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

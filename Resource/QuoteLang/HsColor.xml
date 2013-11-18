@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<root>
+  <ColorTemplet name="ClassicalColor" />
+  <ClassicalColor>
+    <!--PenStyle:线风格,-1(无线) PS_SOLID(实线) PS_DASH(虚线) PS_DOT(点线); PenWidth:线宽;ColorValue:颜色值 -->
+    <Group name="ReportColor">
+      <!--报价区域颜色-->
+      <ID3 name="背景" PenStyle="-1" PenWidth="0" ColorValue="RGB(1,1,1)"/>
+      <ID4 name="报价证券代码" PenStyle="-1" PenWidth="0" ColorValue="RGB(68, 226, 220)" />
+      <ID5 name="报价证券名称" PenStyle="-1" PenWidth="0" ColorValue="RGB(249, 219, 9)" />
+      <ID6 name="自选股票名称" PenStyle="-1" PenWidth="0" ColorValue="RGB(41, 222, 214)" />
+      <ID7 name="上涨" PenStyle="-1" PenWidth="0" ColorValue="RGB(229, 13, 34)" />
+      <ID8 name="下跌" PenStyle="-1" PenWidth="0" ColorValue="RGB(77, 220, 35)" />
+      <ID9 name="平盘" PenStyle="-1" PenWidth="0" ColorValue="RGB(178, 178, 178)" />
+      <ID10 name="昨收" PenStyle="-1" PenWidth="0" ColorValue="RGB(188, 188, 188)" />
+      <ID11 name="总手" PenStyle="-1" PenWidth="0" ColorValue="RGB(239, 213, 27)" />
+      <ID12 name="现手" PenStyle="-1" PenWidth="0" ColorValue="RGB(239, 213, 27)" />
+      <ID13 name="成交额" PenStyle="-1" PenWidth="0" ColorValue="RGB(239, 213, 27)" />
+      <ID14 name="委买量" PenStyle="-1" PenWidth="0" ColorValue="RGB(68, 226,220)" />
+      <ID15 name="委卖量" PenStyle="-1" PenWidth="0" ColorValue="RGB(68, 226,220)" />
+      <ID16 name="换手率" PenStyle="-1" PenWidth="0" ColorValue="RGB(188, 188, 188)" />
+      <ID17 name="量比" PenStyle="-1" PenWidth="0" ColorValue="RGB(188, 188, 188)" />
+      <ID18 name="市盈率" PenStyle="-1" PenWidth="0" ColorValue="RGB(188, 188, 188)" />
+      <ID19 name="报价加亮背景色" PenStyle="PS_DOT" PenWidth="0" ColorValue="RGB(0, 0, 128)" />
+      <ID20 name="报价加亮前景色" PenStyle="PS_DOT" PenWidth="0" ColorValue="RGB(255,255,18)" />
+      <ID21 name="行情更新.高亮文本背景" PenStyle="-1" PenWidth="0" ColorValue="RGB(60,80,180)" />
+      <ID22 name="报价升序加亮" PenStyle="-1" PenWidth="0" ColorValue="RGB(165, 0, 0)" />
+      <ID23 name="报价降序加亮" PenStyle="-1" PenWidth="0" ColorValue="RGB(135, 0, 0)" />
+      <ID24 name="报价抬头文本"  PenStyle="-1" PenWidth="0" ColorValue="RGB(178, 178, 178)" />
+      <ID25 name="报价固定文本" PenStyle="-1" PenWidth="0" ColorValue="RGB(178, 178,  178)" />
+      <ID26 name="固定Tab文本" PenStyle="-1" PenWidth="0" ColorValue="RGB(242, 114, 0)" />
+      <ID34 name="固定标签页边框" PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(155, 0, 0)"/>
+      <ID35 name="固定标签页背景" PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(28, 28, 28)"/>
+      <ID27 name="活动Tab文本" PenStyle="-1" PenWidth="0" ColorValue="RGB(178, 178, 178)" />
+      <ID28 name="活动Tab击活背景" PenStyle="-1" PenWidth="0" ColorValue="RGB(90, 0, 0)" />
+      <ID29 name="活动Tab击活文本" PenStyle="-1" PenWidth="0" ColorValue="RGB(255, 247, 129)" />
+      <ID30 name="Tab背景" PenStyle="-1" PenWidth="0" ColorValue="RGB(28, 28, 28)" />
+      <ID31 name="Tab边框" PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(155, 0, 0)" />
+      <ID32 name="综合排名横线" PenStyle="-1" PenWidth="0" ColorValue="RGB(155, 0, 0)" />
+      <ID33 name="拆分边框色"  PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(155, 0, 0)" />
+      <ID36 name="报价固定行列背景"  PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(36, 21, 36)"/>
+      <ID37 name="报价固定行背景"  PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(46, 31, 46)"/>
+      <ID38 name="报价固定列背景"  PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(46, 31, 46)"/>
+      <ID39 name="标签页按钮背景" PenStyle="-1" PenWidth="0" ColorValue="RGB(181, 55, 89)"/>
+    </Group>
+    <Group name="TrendColor">
+      <!--分时区域类颜色-->
+      <ID203 name="分时图.均线"  PenStyle="-1" PenWidth="0" ColorValue="RGB(237, 217, 39)" />
+      <ID204 name="分时图.价格线"  PenStyle="-1" PenWidth="0" ColorValue="RGB(230, 230, 230)" />
+      <ID205 name="分时图.成交量跌线"  PenStyle="-1" PenWidth="0" ColorValue="RGB(80, 228, 221)" />
+      <ID206 name="分时图.成交量涨线"  PenStyle="-1" PenWidth="0" ColorValue="RGB(229, 13, 34)" />
+      <ID207 name="成交量坐标文本"  PenStyle="-1" PenWidth="0" ColorValue="RGB(237, 217, 39)" />
+      <ID208 name="分时图.网格横线" PenStyle="PS_DOT" PenWidth="1" ColorValue="RGB(155, 0, 0)" />
+      <ID209 name="分时图.中间横线" PenStyle="PS_SOLID" PenWidth="2" ColorValue="RGB(155, 0, 0)" />
+      <ID210 name="分时图.中间竖线" PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(155, 0, 0)" />
+      <ID211 name="分时图.小时线"  PenStyle="PS_DASH" PenWidth="1" ColorValue="RGB(155, 0, 0)" />
+      <ID212 name="分时图.半小时线" PenStyle="PS_DOT" PenWidth="1" ColorValue="RGB(155, 0, 0)" />
+      <ID213 name="分时,日线图坐标轴" PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(155,  0,  0)" />
+      <ID214 name="分时,日线坐标刻度线" PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(155,  0,  0)" />
+      <ID215 name="量比指标坐标文本" PenStyle="-1" PenWidth="0" ColorValue="RGB(176, 0, 0)" />
+      <ID216 name="ADL指标坐标文本"  PenStyle="-1" PenWidth="0" ColorValue="RGB(176, 0, 0)" />
+      <ID217 name="量比指标线" PenStyle="-1" PenWidth="0" ColorValue="RGB(230, 230, 230)" />
+      <ID218 name="ADL指标线"  PenStyle="-1" PenWidth="0" ColorValue="RGB(230, 230, 230)" />
+      <ID219 name="多空指标坐标文本"  PenStyle="PS_SOLID" PenWidth="0" ColorValue="RGB(176, 0, 0)" />
+      <ID220 name="买卖力道坐标文本"  PenStyle="-1" PenWidth="0" ColorValue="RGB(176, 0, 0)" />
+      <ID221 name="多空指标线" PenStyle="-1" PenWidth="0" ColorValue="RGB(230,230,230)" />
+      <ID222 name="买卖差值" PenStyle="PS_SOLID" PenWidth="0" ColorValue="RGB(255, 62, 255)" />
+      <ID223 name="买卖力道之买量线"  PenStyle="-1" PenWidth="0" ColorValue="RGB(255, 255, 84)" />
+      <ID224 name="买卖力道之卖量线"  PenStyle="-1" PenWidth="0" ColorValue="RGB(230, 230, 230)" />
+      <ID225 name="IOPV线"  PenStyle="-1" PenWidth="0" ColorValue="RGB(15, 255, 15)" />
+      <ID226 name="浮动框边框(须重启)"  PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(178, 178, 178)" />
+      <ID227 name="浮动框字段文本"  PenStyle="-1" PenWidth="" ColorValue="RGB(178, 178, 178)" />
+    </Group>
+    <Group name="RightViewColor">
+      <!--右小图颜色(表格图元)-->
+      <ID603 name="右图.分价.明细证券名称"  PenStyle="-1" PenWidth="0" ColorValue="RGB(249, 219, 9)" />
+      <ID604 name="右图.分价.明细证券代码"  PenStyle="-1" PenWidth="0" ColorValue="RGB(68, 226, 220)" />
+      <ID605 name="右图.时间日期"  PenStyle="-1" PenWidth="0" ColorValue="RGB(178, 178, 178)" />
+      <ID606 name="右图字段名称"  PenStyle="-1" PenWidth="0" ColorValue="RGB(178, 178, 178)" />
+      <ID607 name="右图横线"  PenStyle="-1" PenWidth="0" ColorValue="RGB(155, 0, 0)" />
+      <ID608 name="右图竖线"  PenStyle="-1" PenWidth="0" ColorValue="RGB(155, 0, 0)" />
+      <ID609 name="右图附加星级色"  PenStyle="-1" PenWidth="0" ColorValue="RGB(218,218,112)" />
+      <ID610 name="右图附加类型前景色"  PenStyle="-1" PenWidth="0" ColorValue="RGB(229,13,34)" />
+      <ID611 name="右图附加类型背景色"  PenStyle="-1" PenWidth="0" ColorValue="RGB(255,255,128)" />
+      <ID612 name="大盘右图名称列"  PenStyle="-1" PenWidth="0" ColorValue="RGB(178,178, 178)" />
+      <ID613 name="表格标题图元字体颜色" PenStyle="-1" PenWidth="0" ColorValue="RGB(192, 192, 192)" />
+      <ID614 name="表格标题图元背景色" PenStyle="-1" PenWidth="0" ColorValue="RGB(48, 48, 48)" />
+      <ID615 name="交易图元名称列" PenStyle="-1" PenWidth="0" ColorValue="RGB(0,0,0)" />
+    </Group>
+    <Group name="KLineColor">
+      <!--日线区域颜色-->
+      <ID403 name="日线横坐标文本"  PenStyle="-1" PenWidth="0" ColorValue="RGB(176,  0,  0)" />
+      <ID404 name="日线纵坐标文本"  PenStyle="-1" PenWidth="0" ColorValue="RGB(176,  0,  0)" />
+      <ID405 name="日线图.上涨线(阳线)"  PenStyle="-1" PenWidth="0" ColorValue="RGB(229, 13, 34)" />
+      <ID406 name="日线图.下跌线(阴线)"  PenStyle="-1" PenWidth="0" ColorValue="RGB(80, 228, 221)" />
+      <ID407 name="日线图.阳线填充色"  PenStyle="-1" PenWidth="0" ColorValue="RGB(0, 0, 0)" />
+      <ID408 name="日线图.阴线填充色"  PenStyle="-1" PenWidth="0" ColorValue="RGB(80, 228, 221)" />
+      <ID409 name="最大最小值加亮背景"  PenStyle="-1" PenWidth="0" ColorValue="RGB(0, 0, 245)" />
+      <ID410 name="日线图.网格横线"  PenStyle="PS_DOT" PenWidth="1" ColorValue="RGB(155, 0, 0)" />
+      <ID411 name="日线图.网格竖线"  PenStyle="PS_DOT" PenWidth="1" ColorValue="RGB(155, 0, 0)" />
+      <ID412 name="日线图.顶部横线"  PenStyle="PS_DOT" PenWidth="1" ColorValue="RGB(155, 0, 0)" />
+      <ID413 name="指标线名称文本"  PenStyle="-1" PenWidth="0" ColorValue="RGB(230, 230, 230)" />
+      <ID414 name="图元内文本"  PenStyle="-1" PenWidth="0" ColorValue="RGB(230, 230, 230)" />
+      <ID415 name="tip提示标题背景"  PenStyle="-1" PenWidth="0" ColorValue="RGB(16, 132, 198)" />
+      <ID416 name="tip提示标题前景"  PenStyle="-1" PenWidth="0" ColorValue="RGB(243, 243, 243)" />
+      <ID417 name="tip提示文本背景"  PenStyle="-1" PenWidth="0" ColorValue="RGB(16, 16, 66)" />
+      <ID418 name="tip提示文本前景"  PenStyle="-1" PenWidth="0" ColorValue="RGB(243, 243, 243)" />
+      <ID419 name="移动光标线"  PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(98, 98, 98)" />
+    </Group>
+    <Group name="Information">
+      <!--资讯,信息地雷类颜色-->
+      <ID803 name="资讯背景颜色"  PenStyle="-1" PenWidth="0" ColorValue="RGB(0, 0, 0)" />
+      <ID804 name="资讯前景颜色"  PenStyle="-1" PenWidth="0" ColorValue="RGB(248, 218, 96)" />
+    </Group>
+    <Group name="Miscellany">
+      <!---杂项颜色配置-->
+      <ID1003 name="状态条文本"  PenStyle="-1" PenWidth="0" ColorValue="RGB(239,213,27)" />
+      <ID1004 name="火焰山"  PenStyle="-1" PenWidth="0" ColorValue="RGB(255, 128, 0)" />
+      <ID1005 name="活跃度"  PenStyle="-1" PenWidth="0" ColorValue="RGB(0, 0, 255)" />
+      <ID1006 name="成本分布"  PenStyle="-1" PenWidth="0" ColorValue="RGB(32, 32, 32)" />
+      <ID1007 name="信息提示背景色"  PenStyle="-1" PenWidth="0" ColorValue="RGB(255, 255, 255)" />
+      <ID1008 name="信息提示前景色"  PenStyle="-1" PenWidth="0" ColorValue="RGB(0, 0, 0)" />
+      <ID1009 name="滚动字体颜色"  PenStyle="-1" PenWidth="0" ColorValue="RGB(0, 0, 0)" />
+      <ID1010 name="滚动背景颜色"  PenStyle="-1" PenWidth="0" ColorValue="RGB(85, 85, 85)" />
+      <ID1011 name="图层标签页背景"  PenStyle="-1" PenWidth="0" ColorValue="RGB(0,0,0)" />
+      <ID1012 name="图层标签页激活"  PenStyle="-1" PenWidth="0" ColorValue="RGB(48,48,48)" />
+      <ID1013 name="图层标签页常规"  PenStyle="-1" PenWidth="0" ColorValue="RGB(0,0,0)" />
+      <ID1014 name="图层标签页前景"  PenStyle="-1" PenWidth="0" ColorValue="RGB(192,192,192)" />
+      <ID1015 name="图层标签页边框"  PenStyle="-1" PenWidth="0" ColorValue="RGB(192,0,0)" />
+    </Group>
+    <Group name="DefaultIndexColor">
+      <!--缺省指标线颜色-->
+      <ID1203 name="缺省指标线1"  PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(230,  230,  230)" />
+      <ID1204 name="缺省指标线2"  PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(234,  234,  0)" />
+      <ID1205 name="缺省指标线3"  PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(213,  0,  186)" />
+      <ID1206 name="缺省指标线4"  PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(68,  226,  220)" />
+      <ID1207 name="缺省指标线5"  PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(0,  0,  255)" />
+      <ID1208 name="缺省指标线6"  PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(0,  255,  0)" />
+      <ID1209 name="缺省指标线7"  PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(128,  128,  128)" />
+      <ID1210 name="缺省指标线8"  PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(128,  128,  0)" />
+      <ID1211 name="缺省指标线9"  PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(128,  0,  0)" />
+      <ID1212 name="缺省指标线10"  PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(0,  128,  128)" />
+      <ID1213 name="缺省指标线11"  PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(0,  0,  128)" />
+      <ID1214 name="缺省指标线12"  PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(0,  128,  0)" />
+      <ID1215 name="缺省指标线13"  PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(0,  0,  255)" />
+      <ID1216 name="缺省指标线14"  PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(123,  123,  192)" />
+      <ID1217 name="缺省指标线15"  PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(102,  102,  102)" />
+      <ID1218 name="缺省指标线16"  PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(255,  0,  0)" />
+      <ID1219 name="缺省指标线17"  PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(255,  173,  91)" />
+      <ID1220 name="缺省指标线18"  PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(50,  205,  50)" />
+      <ID1221 name="缺省指标线19"  PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(60,  179,  113)" />
+      <ID1222 name="缺省指标线20"  PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(255,  255,  0)" />
+      <ID1223 name="缺省指标线21"  PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(0,  255,  0)" />
+      <ID1224 name="缺省指标线22"  PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(104,  131,  139)" />
+      <ID1225 name="缺省指标线23"  PenStyle="PS_SOLID" PenWidth="1" ColorValue="RGB(255,  255,  255)" />
+    </Group>
+  </ClassicalColor>
+</root>

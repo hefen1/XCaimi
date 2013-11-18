@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CB9D5ECC-D328-41A9-91F5-43E4F50F1335}</ProjectGuid>
+    <RootNamespace>ConfigCore</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.61030.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\bin\HSWinner\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\bin\HSWinner_Release\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\Common;..\..\Common\TradeComm;..\..\Controls\tinyxpath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\ConfigCore.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\..\Common;..\..\Common\TradeComm;..\..\Controls\tinyxpath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\ConfigCore.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences />
+      <EnableCOMDATFolding />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ConfigCore.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\WinnerApplication.cpp" />
+    <ClCompile Include="..\..\Common\HSXMLParser.cpp" />
+    <ClCompile Include="XMLDataBase.cpp" />
+    <ClCompile Include="TradeConfigObj.cpp" />
+    <ClCompile Include="TradeSysConfig.cpp" />
+    <ClCompile Include="TradeTables.cpp" />
+    <ClCompile Include="BlockManager.cpp" />
+    <ClCompile Include="Bridge.cpp" />
+    <ClCompile Include="ConfigBase.cpp" />
+    <ClCompile Include="HsColor.cpp" />
+    <ClCompile Include="HsColumnProperty.cpp" />
+    <ClCompile Include="HsCommunication.cpp" />
+    <ClCompile Include="HsFileManager.cpp" />
+    <ClCompile Include="HsFont.cpp" />
+    <ClCompile Include="HsGraph.cpp" />
+    <ClCompile Include="HsInfo.cpp" />
+    <ClCompile Include="HsKeyboardCfg.cpp" />
+    <ClCompile Include="HSKLinePositionCtrl.cpp" />
+    <ClCompile Include="HsKLineTab.cpp" />
+    <ClCompile Include="HsMiscellany.cpp" />
+    <ClCompile Include="HsQuoteSys.cpp" />
+    <ClCompile Include="HsScrollNews.cpp" />
+    <ClCompile Include="HsTabCfg.cpp" />
+    <ClCompile Include="HsUserDataCfg.cpp" />
+    <ClCompile Include="MyXmlDocument.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ConfigCore.def" />
+    <None Include="res\ConfigCore.rc2" />
+    <None Include="hsxml2.bin" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ConfigCore.h" />
+    <ClInclude Include="..\..\Common\configDefined.h" />
+    <ClInclude Include="..\..\Common\ConfigStruct.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="..\..\Common\WinnerApplication.h" />
+    <ClInclude Include="..\..\Common\HSXMLParser.h" />
+    <ClInclude Include="..\..\Common\QuoteLangMngInterFace.h" />
+    <ClInclude Include="XMLDataBase.h" />
+    <ClInclude Include="..\..\Common\XMLDataBaseIntf.h" />
+    <ClInclude Include="TradeConfigObj.h" />
+    <ClInclude Include="..\..\Common\TradeComm\TradeConfigObjIntf.h" />
+    <ClInclude Include="TradeSysConfig.h" />
+    <ClInclude Include="..\..\Common\TradeComm\TradeSysConfigIntf.h" />
+    <ClInclude Include="TradeTables.h" />
+    <ClInclude Include="..\..\Common\TradeComm\TradeTablesIntf.h" />
+    <ClInclude Include="BlockManager.h" />
+    <ClInclude Include="Bridge.h" />
+    <ClInclude Include="ConfigBase.h" />
+    <ClInclude Include="HsColor.h" />
+    <ClInclude Include="HsColumnProperty.h" />
+    <ClInclude Include="HsCommunication.h" />
+    <ClInclude Include="HsFileManager.h" />
+    <ClInclude Include="HsFont.h" />
+    <ClInclude Include="HsGraph.h" />
+    <ClInclude Include="HsInfo.h" />
+    <ClInclude Include="HsKeyboardCfg.h" />
+    <ClInclude Include="HSKLinePositionCtrl.h" />
+    <ClInclude Include="HsKLineTab.h" />
+    <ClInclude Include="HsMiscellany.h" />
+    <ClInclude Include="HsQuoteSys.h" />
+    <ClInclude Include="HsScrollNews.h" />
+    <ClInclude Include="HsTabCfg.h" />
+    <ClInclude Include="HsUserDataCfg.h" />
+    <ClInclude Include="MyXmlDocument.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ConfigCore.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
