@@ -17,7 +17,7 @@
 #endif
 
 #ifndef _WIN32_WINDOWS          // 指定要求的最低平台是 Windows 98。
-#define _WIN32_WINDOWS 0x0410 // 将此值更改为适当的值，以适用于 Windows Me 或更高版本。
+#define _WIN32_WINDOWS 0x0501 // 将此值更改为适当的值，以适用于 Windows Me 或更高版本。
 #endif
 
 #ifndef _WIN32_IE                       // 指定要求的最低平台是 Internet Explorer 7.0。
